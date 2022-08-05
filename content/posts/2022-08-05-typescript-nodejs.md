@@ -183,3 +183,5 @@ That's it! This was a minimal example of how to setup TypeScript with a Node.js 
 In practice you would probably want to add more stuff, when the project grows. This usually includes [ESLint](https://typescript-eslint.io/) for linting and something like [Prettier](https://prettier.io/) for enforcing a consistent code style.
 
 If you're building a web application, using a framework like [NestJS](https://nestjs.com/) is also probably a good idea.
+
+Feel free to leave a comment if you have suggestions or doubts!
