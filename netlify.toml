@@ -10,3 +10,10 @@ command = "hugo -b $DEPLOY_PRIME_URL"
 
 [context.branch-deploy]
 command = "hugo -b $DEPLOY_PRIME_URL"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Content-Security-Policy = "frame-ancestors 'none'"
