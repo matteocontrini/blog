@@ -1,7 +1,7 @@
 ---
 title: "A minimal Node.js TypeScript setup"
 date: 2022-08-05T10:00:00+02:00
-lastmod: 2022-08-05T10:00:00+02:00
+lastmod: 2022-08-05T11:45:00+02:00
 slug: minimal-nodejs-typescript-setup
 summary: "Confused about how to setup TypeScript with a Node.js backend application? Here's the most minimal setup to make it work."
 showtoc: true
@@ -71,7 +71,7 @@ You might sometimes find the following options in `tsconfig.json` examples:
 
 ## About `@tsconfig/node16`
 
-In addition to the above, our `tsconfig.json` file will include some additional compiler options from the `@tsconfig/node16` package:
+In addition to the above, our `tsconfig.json` file will include some additional compiler options from the [`@tsconfig/node16`](https://www.npmjs.com/package/@tsconfig/node16) package:
 
 ```json
 {
@@ -92,7 +92,7 @@ In addition to the above, our `tsconfig.json` file will include some additional 
 In short, this is what the options do:
 
 - [`target`](https://www.typescriptlang.org/tsconfig#target) defines which JavaScript specification we're using, and thus the syntax and APIs that are allowed in the output JavaScript. Here we're using ES2021, since Node.js 16 fully supports it;
-- [`lib`](https://www.typescriptlang.org/tsconfig#lib) tells TypeScript to include type definitions for built-in APIs defined by ES2021. According to the docs it is automatically set to the same value of `target`, but here they made it explicit;
+- [`lib`](https://www.typescriptlang.org/tsconfig#lib) tells TypeScript to include type definitions for built-in APIs defined by ES2021. According to the docs it is automatically set to the same value of `target`, but here they made it explicit anyway;
 - [`module`](https://www.typescriptlang.org/tsconfig#module) defines that the JavaScript code should use CommonJS for imports, i.e. it should use `require()` to import modules. Although Node.js 16 adds native support for the new ECMAScript Modules (ESM) syntax (the one you actually always use in TypeScript when you write `import helper from 'helper'`), this is still a new thing and this config doesn't make use of it. You can read more about ESM [here](https://www.typescriptlang.org/docs/handbook/esm-node.html). Note that this option also modifies [`moduleResolution`](https://www.typescriptlang.org/tsconfig#moduleResolution), which is however made explicit anyway in this config file;
 - `strict` enables a set of stricter checks that should really be the default. You can read more about the "strict mode family" options [in the official docs](https://www.typescriptlang.org/tsconfig#strict);
 - [`esModuleInterop`](https://www.typescriptlang.org/tsconfig#esModuleInterop) fixes problems when trying to import CommonJS modules with the ESM syntax. This also enables [`allowSyntheticDefaultImports`](https://www.typescriptlang.org/tsconfig#allowSyntheticDefaultImports), which simply allows you to write something like `import moment from 'moment'` instead of `import * as moment from 'moment'`.
@@ -120,7 +120,7 @@ A better way to run `tsc` is to make use of npm scripts. Modify your `package.js
 }
 ```
 
-Then you can use:
+Then you can run the build with:
 
 ```sh
 npm run build
@@ -146,7 +146,7 @@ Or even better, create a `start` npm script:
 
 ## Watch + reload
 
-While you're developing, you will often need to recompile and restart the application. Instead of manually running `npm run build && npm start` each time there's a better way.
+While you're developing, you will often need to recompile and restart the application. Instead of manually running `npm run build && npm start` each time, there's a better way.
 
 The `tsc` compiler allows to enable the "watch" feature with the `--watch` option: in this way the compiler will recompile the output each time a source file is changed.
 
