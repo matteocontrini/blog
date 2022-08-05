@@ -10,6 +10,7 @@ params:
   ShowShareButtons: true
   ShowCodeCopyButtons: true
   DateFormat: 2006-01-02
+  comments: true
 
   homeInfoParams:
     title: Hi there 👋
