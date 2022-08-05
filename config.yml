@@ -1,0 +1,33 @@
+baseURL: https://blog.contrini.it
+languageCode: en-us
+title: Matteo Contrini
+theme: PaperMod
+
+params:
+  env: production
+  description: I'm Matteo, a backend developer from Italy. And this is my personal blog.
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowCodeCopyButtons: true
+  DateFormat: 2006-01-02
+
+  homeInfoParams:
+    title: Hi there 👋
+    content: I'm Matteo and I'm from Italy. I (almost) have a master degree in Computer Science. I write code (sometimes, mostly backend), I'm interested in video compression and streaming technologies (often). I currently work at an edtech startup. I've also founded [FibraClick](https://fibra.click) and built [TrackBot](https://trackbot.eu). And this is my personal blog.
+
+  socialIcons:
+    - name: Twitter
+      url: https://twitter.com/matteosonoioo
+    - name: GitHub
+      url: https://github.com/matteocontrini
+    - name: LinkedIn
+      url: https://www.linkedin.com/in/matteo-contrini/
+
+menu:
+  main:
+    - identifier: archive
+      name: Archive
+      url: /archive/
+
+permalinks:
+  posts: /:slug/
