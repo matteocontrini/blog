@@ -1,13 +1,13 @@
 ---
 title: "A list of free self-hosted Google Analytics alternatives"
 date: 2022-08-20T21:00:00+02:00
-lastmod: 2022-08-20T21:00:00+02:00
+lastmod: 2022-08-20T21:10:00+02:00
 slug: google-analytics-alternatives
 summary: "My notes on a few Google Analytics alternatives that can be self-hosted, are open source and free."
 showtoc: true
 ---
 
-I was looking for Google Analytics alternatives I could self host, when you can't afford to pay for an analytics service.
+I was looking for Google Analytics alternatives I could self host, for situations where paid analytics services are over budget.
 
 The following are my notes on a few solutions that can be self-hosted, are open source and free.
 
