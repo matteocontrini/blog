@@ -9,7 +9,7 @@ showtoc: true
 
 **ASP.NET Core** has support for both **authentication** and **authorization**. However, in my opinion the official documentation on the topic is sometimes a bit confusing or lacking, especially if you don't want to use Identity, don't have a UI, or don't like/want the opinionated authentication schemes that are included with the framework.
 
-This article is an **introduction on how to use custom authentication schemes** to build a simple Web API application with authentication. You would use this approach if you wanted to implement, for example, session tokens-based authentication for your API.
+This article is an **introduction on how to use custom authentication schemes** to build a simple Web API application with authentication. You would use this approach if you wanted to implement, for example, session token-based authentication for your API.
 
 ## Authentication vs authorization
 
