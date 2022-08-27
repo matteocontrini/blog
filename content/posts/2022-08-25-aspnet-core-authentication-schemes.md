@@ -1,7 +1,7 @@
 ---
 title: "Working with custom authentication schemes in ASP.NET Core 6.0 Web API"
 date: 2022-08-25T22:00:00+02:00
-lastmod: 2022-08-25T22:00:00+02:00
+lastmod: 2022-08-27T10:30:00+02:00
 slug: aspnet-core-authentication-schemes
 summary: "How to define custom authentication schemes in ASP.NET Core 6.0, and why they're not enough to actually enforce authentication for your Web API."
 showtoc: true
@@ -69,7 +69,7 @@ builder.Services.AddAuthentication()
 
 As you can guess, when defining a new scheme you need to create an options class (`TokenAuthenticationSchemeOptions` in the example) and a handler that takes the authentication requests (`TokenAuthenticationSchemeHandler`). The handler must inherit from `AuthenticationHandler` or implement the `IAuthenticationHandler` interface. The first approach is a bit easier because the base abstract class provides a sensible default implementation for most methods. We'll see an example in a minute.
 
-Other than specifying the **type of the options and of the handler** as generic types, the `AddScheme<TOptions, THandler>()` method takes the **name of the scheme** as the first argument. To avoid hardcoding it you would usually put it in a static class, but we'll keep it simple here.
+Other than specifying the **types of the options and of the handler** as generic types, the `AddScheme<TOptions, THandler>()` method takes the **name of the scheme** as the first argument. To avoid hardcoding it you would usually put it in a static class, but let's keep it simple.
 
 The second argument allows you to assign the **options** of the scheme (defined as properties of the options class). If you don't have any, you can also pass `null`.
 
@@ -127,9 +127,9 @@ This is where **authorization** comes into play.
 
 ## Authorization
 
-So far, we've implemented the authentication mechanism. Now we need to tell the framework **the rules that define which endpoints a user is authorized to access**.
+So far, we've implemented the authentication mechanism. Now we need to tell the framework **the rules that define which endpoints an authenticated user is authorized to access**.
 
-Theoretically you could implement authorization by yourself. For example, you could use the `HttpContext.User.Identity.IsAuthenticated` property to return an error if the user is not authenticated:
+Theoretically, you could implement authorization by yourself. For example, you could use the `HttpContext.User.Identity.IsAuthenticated` property to return an error if the user is not authenticated:
 
 ```c#
 [HttpGet()]
@@ -150,7 +150,7 @@ Using ASP.NET Core authorization is obviously a wiser choice. The simplest way t
 app.MapControllers().RequireAuthorization();
 ```
 
-Now, if the authentication handler returns a failure result, the client will get a `401 Unauthorized` error. If you want to change the response you could override the `HandleChallengeAsync` method in the handler or tweak error handling globally.
+Now, if the authentication handler returns a failure result, the client will get a `401 Unauthorized` error. If you wanted to change the response you could override the `HandleChallengeAsync` method in the handler or tweak error handling globally.
 
 What if you wanted to **whitelist some specific controller or action**, e.g. for implementing the login endpoint?
 
