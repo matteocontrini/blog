@@ -132,7 +132,7 @@ So far, we've implemented the authentication mechanism. Now we need to tell the 
 Theoretically, you could implement authorization by yourself. For example, you could use the `HttpContext.User.Identity.IsAuthenticated` property to return an error if the user is not authenticated:
 
 ```c#
-[HttpGet()]
+[HttpGet]
 public IActionResult GetActuallyNothing()
 {
     if (!HttpContext.User.Identity.IsAuthenticated) // <--
