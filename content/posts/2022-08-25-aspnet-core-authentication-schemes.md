@@ -1,7 +1,7 @@
 ---
 title: "Working with custom authentication schemes in ASP.NET Core 6.0 Web API"
 date: 2022-08-25T22:00:00+02:00
-lastmod: 2022-08-27T10:30:00+02:00
+lastmod: 2022-11-27T22:30:00+01:00
 slug: aspnet-core-authentication-schemes
 summary: "How to define custom authentication schemes in ASP.NET Core 6.0, and why they're not enough to actually enforce authentication for your Web API."
 showtoc: true
@@ -214,6 +214,8 @@ builder.Services.AddAuthorization(options =>
 ```
 
 And then simply use `[Authorize]` on controllers and actions.
+
+>**NOTE**: If you have multiple authorization schemes configured and set a default authorization policy, the scheme associated with the default policy will be always applied even if you explicitly define a different scheme with the `[Authorize]` attribute. For a more detailed explanation, see the comments of this blog post below.
 
 As you've seen there are many possible combinations of what you can do with the authentication and authorization mechanisms that come with ASP.NET Core. Which one to choose depends on your application requirements.
 
