@@ -1,0 +1,9 @@
+.post-content video {
+    display: block;
+    margin: var(--content-gap) auto var(--content-gap) auto;
+}
+
+.post-content img {
+    display: block;
+    margin: var(--content-gap) auto var(--content-gap) auto;
+}

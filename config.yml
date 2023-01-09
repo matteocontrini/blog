@@ -3,6 +3,14 @@ languageCode: en-us
 title: Matteo Contrini
 theme: PaperMod
 
+defaultContentLanguage: en
+
+languages:
+  en:
+    languageName: English
+  it:
+    languageName: Italiano
+
 params:
   env: production
   description: I'm Matteo, a backend developer from Italy. And this is my personal blog.
@@ -32,3 +40,8 @@ menu:
 
 permalinks:
   posts: /:slug/
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
