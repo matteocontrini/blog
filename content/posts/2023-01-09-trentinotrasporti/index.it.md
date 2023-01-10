@@ -29,13 +29,15 @@ I dati sono pubblicati in due file ZIP, uno per l'urbano e uno per l'extraurbano
 
 - I **codici fermata** sono... creativi. Sono di solito composti da un numero seguito da una lettera con un significato tutto da decifrare.
   - Ad esempio, `21754z` significa che la fermata porta in direzione "periferia", per via della `z`.
-  - La `c` indicherebbe invece direzione "centro". In alcuni casi però c'è `n` per nord, `o` per ovest, e così via.
+  - La `x` indicherebbe invece direzione "centro", mentre `c` capolinea. In alcuni casi però c'è `n` per nord, `o` per ovest, e così via.
   - In altri casi c'è il segno `-`, che indica che la fermata non ha una controparte sull'altro lato della strada.
+  - A volte ci sono delle variazioni non ben definite, non poteva essere così "semplice" ovviamente.
+  - Ah, queste regole valgono solo per le fermate urbane, sull'extraurbano è tutta un'altra storia ed è ancora più incoerente. Ad esempio la fermata `Predazzo-Borgo Nuovo` ha codice `1220BN`, dove `BN` sono le iniziali di `Borgo Nuovo`. Ok.
   - Ovviamente tutto ciò non è documentato e non fa parte di nessuno standard, è creatività trentina DOP che si può comprendere solo dopo ore di osservazione manuale dei dati.
 
-- In alcuni casi sarebbe utile raggruppare le fermate che in realtà sono "la stessa fermata" ma sui due lati della strada. Dovrebbe essere banale ma è un'impresa faticosa sempre grazie alla magnifica creatività dei dati.
-  - Sarebbe bello se le fermate sui lati opposti avessero lo stesso nome. È così nella maggior parte dei casi, ma non sempre, non si sa perché.
-  - Sarebbe bello anche se i codici fermata fossero assegnati con un qualche criterio: ad esempio le fermate opposte potrebbero avere numeri consecutivi (magari pari e dispari), e invece sono casuali. Un'idea poteva anche essere usare lo stesso codice a poi aggiungerci `A` e `B` per identificare i due lati. E invece no, i codici sono numeri a caso seguiti da simboli indecifrabili (vedi sopra).
+- In alcuni casi sarebbe utile raggruppare le fermate che in realtà sono "la stessa fermata" ma sui due lati della strada.
+  - L'unico modo per farlo è prendere la parte numerica del codice fermata e sperare che corrisponda sempre con la fermata sull'altro lato.
+  - A questo punto sorgono comunque altri problemi perché le fermate sui lati opposti non sempre hanno lo stesso nome, quindi bisogna scegliere in qualche modo che nome dare alla fermata raggruppata...
 
 I **dati in tempo reale** su posizione e ritardi degli autobus esistono nei sistemi di Trentino Trasporti ma non vengono resi pubblici come open data. Si potrebbe usare il formato GTFS Realtime, pensato appositamente per questo tipo di dati. Permetterebbe ad app come Google Maps e Moovit di mostrare tempi di attesa basati su dati reali in tempo reale, offrendo un servizio migliore per tutti. E invece.
 
@@ -62,6 +64,8 @@ C'è una sezione con la **mappa delle fermate**, che però è tutto un lag persi
 <!-- ffmpeg -ss 2 -i screen-20230109-132529.mp4 -t 45 -an -map_metadata -1 mit-1.mp4 -y -->
 
 Una volta aperto il campo di ricerca sulla mappa non ci si può più uscire perché qualunque spostamento riapre la tastiera. **Una ricerca per "stazione" mostra 5 risultati e nemmeno uno è in provincia di Trento.** Straordinario.
+
+Su iOS, quando si apre una fermata cliccandoci sopra e poi si torna indietro, **il centro della mappa viene sempre riportato alla posizione attuale dell'utente**, rendendo abbastanza scomodo navigare la mappa. Ma solo su iOS, su Android non lo fa. Sia mai che ci sia della coerenza (per fortuna che non c'è in questo caso).
 
 Mentre testavo l'app per scrivere questo articolo, **non funzionava**. Succede spesso, almeno una volta alla settimana. Si rompe tutto e l'app non riesce a caricare i dati. Nel giorno in cui ho registrato il seguente video l'app è stata offline per circa tre ore. Ovviamente in questi casi c'è sempre il rischio che l'app si disintegri da sola e non si riprenda più. A volte in realtà succede anche senza fare niente, basta lasciare l'app in background per un po' di tempo e poi riaprirla perché finisca in coma. Qualità.
 
@@ -131,7 +135,7 @@ Sta per peggiorare: **il server comunica al client l'orario attuale letteralment
 
 Parliamo di cose più serie, come la **sicurezza delle password**: quando si fa il login la password viene trasmessa al server come digest SHA-256, calcolato sul client. Pensavo che non fossimo più nel 2012. Perché questo significa che le password sono salvate nel database come hash SHA-256, senza salt e senza alcuna protezione contro le rainbow table. È un **design fragile e superato da tempo**, e direi che non è sicuramente una buona strategia farlo sapere al mondo così.
 
-Passiamo alla **validazione dei biglietti e degli abbonamenti**. Datemi la forza. Le modalità di validazione sono tre: codice QR, NFC, codice inserito a mano. In ordine:
+Passiamo alla **validazione dei biglietti e degli abbonamenti**. Datemi la forza. Le modalità di validazione sono tre: codice QR, NFC, Bluetooth, codice inserito a mano. In ordine:
 
 - la **scansione dei QR** (esposti all'interno di tutti gli autobus) è atroce, lenta e imprecisa. Basta provarla qualche volta sul campo, quindi su un autobus dove c'è in genere poca stabilità e una luminosità variabile per capire che non va bene (almeno su Android).
   - Pare che l'app usi il plugin Cordova `phonegap-plugin-barcodescanner`, che non viene aggiornato dal 2018 e credo si basi quindi su una versione antiquata di Zxing, storica libreria per la scansione di codici a barre e matrici.
@@ -139,8 +143,13 @@ Passiamo alla **validazione dei biglietti e degli abbonamenti**. Datemi la forza
   - Per la cronaca il QR non contiene soltanto il codice del mezzo ma un URL lunghissimo, aumentando così la complessità di scansione del QR. Più precisamente il contenuto del QR è ad esempio `https://www.trentinotrasporti.it/applist.html?partner=TT&id=5669`. Questo URL se aperto direttamente porta a una pagina con la lista delle app ma non permette di fare altro.
   - Come si poteva fare: 1) inserire solo il codice del mezzo nel QR, oppure 2) fare in modo che il QR porti a una pagina dove quantomeno si può aprire direttamente l'app e validare. Con un redirect verso un'applicazione web si potrebbe addirittura fare la validazione interamente nel browser, senza installare nessuna app.
 - la **validazione con NFC** è una contorsione unica, ci vorrebbe quasi un premio. Per validare l'abbonamento o il biglietto con NFC bisogna: aprire l'app, aprire il menù di validazione, scegliere NFC e quindi appoggiare il telefono al tag NFC che si trova "sotto" il QR.
+  - A volte sugli autobus o alle fermate non è presente il tag NFC. Questo però non si può sapere in anticipo (credo), quindi bisogna provare e se poi non funziona tornare indietro e selezionare un'altra modalità di validazione 🤦‍♂️. Uno dei motivi per cui non ho mai visto una sola persona usare l'NFC per validare.
   - Come si poteva invece fare: si poteva inserire un intent/URI all'interno del tag NFC, in modo che semplicemente appoggiando il telefono al tag si avviasse la validazione. Senza aprire l'app a mano, senza diciotto tap e senza aspettare che l'interminabile splash screen termini di fare non si sa cosa per diversi secondi.
+- la **validazione tramite Bluetooth** è stata introdotta a gennaio 2023 ma non funziona. Se si preme il tasto viene mostrato immediatamente un errore. Fantastico.
+<img src="openmove-3.jpg" style="width: 70%" loading="lazy" alt="Screenshot dell'app OpenMove che mostra un avviso di errore.">
 - in alternativa ai metodi sopra si può anche **inserire a mano un codice**, che è stampato sotto il QR. Non lo so come sia possibile ma persino i campi di testo sono inusabili in questa app. A volte bisogna premere due o tre volte solo perché si apra la tastiera. Ovviamente si può inserire un qualsiasi codice esistente quindi si può validare anche prima di salire sull'autobus, con un codice a caso. Se il codice per la validazione corrispondesse al numero di matricola dell'autobus si potrebbe leggere già fuori dall'autobus, ma non è così.
+
+Per la validazione è **obbligatoria la presenza di una connessione ad Internet**. E ci può stare, ma anche dopo aver validato non è possibile vedere niente nell'app se non c'è una connessione dati. Quindi se il controllore vuole vedere che hai validato in un momento in cui non c'è copertura (es. in treno in galleria), niente, non puoi. Persino i controllori consigliano di fare lo screenshot dell'app in un momento in cui per grazia divina funziona...
 
 Il sito OpenMove dice che «è stata posta grande cura nella realizzazione dell'app per gli utenti». Pensate se non ci mettevano cura.
 
