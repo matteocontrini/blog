@@ -1,7 +1,7 @@
 ---
 title: "Il digitale secondo Trentino Trasporti"
-date: 2023-01-09T23:00:00+01:00
-lastmod: 2023-01-09T23:00:00+01:00
+date: 2023-01-10T10:00:00+01:00
+lastmod: 2023-01-10T10:00:00+01:00
 slug: trentino-trasporti-digitale
 summary: "Trentino Trasporti gestisce il trasporto pubblico in Trentino, prova ad essere moderna ma fallisce miseramente. Preparate i popcorn."
 showtoc: true
