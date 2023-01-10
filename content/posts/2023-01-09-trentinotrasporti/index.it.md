@@ -7,6 +7,14 @@ summary: "Trentino Trasporti gestisce il trasporto pubblico in Trentino, prova a
 showtoc: true
 ---
 
+<style type="text/css">
+@media screen and (max-width: 500px) {
+  .post-content img, .post-content video {
+    width: 100% !important;
+  }
+}
+</style>
+
 **Trentino Trasporti** è l'azienda che gestisce il trasporto pubblico nella provincia autonoma di Trento. Sulla carta sembra messa bene in quanto a tecnologie innovative e digitalizzazione, ma nella pratica fallisce miseramente. Preparate i popcorn.
 
 ## Open data
