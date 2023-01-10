@@ -1,7 +1,7 @@
 ---
 title: "Il digitale secondo Trentino Trasporti"
 date: 2023-01-10T10:00:00+01:00
-lastmod: 2023-01-10T10:00:00+01:00
+lastmod: 2023-01-10T11:50:00+01:00
 slug: trentino-trasporti-digitale
 summary: "Trentino Trasporti gestisce il trasporto pubblico in Trentino, prova ad essere moderna ma fallisce miseramente. Preparate i popcorn."
 showtoc: true
@@ -73,7 +73,7 @@ C'è una sezione con la **mappa delle fermate**, che però è tutto un lag persi
 
 Una volta aperto il campo di ricerca sulla mappa non ci si può più uscire perché qualunque spostamento riapre la tastiera. **Una ricerca per "stazione" mostra 5 risultati e nemmeno uno è in provincia di Trento.** Straordinario.
 
-Su iOS, quando si apre una fermata cliccandoci sopra e poi si torna indietro, **il centro della mappa viene sempre riportato alla posizione attuale dell'utente**, rendendo abbastanza scomodo navigare la mappa. Ma solo su iOS, su Android non lo fa. Sia mai che ci sia della coerenza (per fortuna che non c'è in questo caso).
+Su iOS, quando si apre una fermata cliccandoci sopra e poi si torna indietro, **il centro della mappa viene sempre riportato alla posizione attuale**, rendendo abbastanza scomodo navigare la mappa. Ma solo su iOS, su Android non lo fa. Sia mai che ci sia della coerenza.
 
 Mentre testavo l'app per scrivere questo articolo, **non funzionava**. Succede spesso, almeno una volta alla settimana. Si rompe tutto e l'app non riesce a caricare i dati. Nel giorno in cui ho registrato il seguente video l'app è stata offline per circa tre ore. Ovviamente in questi casi c'è sempre il rischio che l'app si disintegri da sola e non si riprenda più. A volte in realtà succede anche senza fare niente, basta lasciare l'app in background per un po' di tempo e poi riaprirla perché finisca in coma. Qualità.
 
@@ -153,11 +153,11 @@ Passiamo alla **validazione dei biglietti e degli abbonamenti**. Datemi la forza
 - la **validazione con NFC** è una contorsione unica, ci vorrebbe quasi un premio. Per validare l'abbonamento o il biglietto con NFC bisogna: aprire l'app, aprire il menù di validazione, scegliere NFC e quindi appoggiare il telefono al tag NFC che si trova "sotto" il QR.
   - A volte sugli autobus o alle fermate non è presente il tag NFC. Questo però non si può sapere in anticipo (credo), quindi bisogna provare e se poi non funziona tornare indietro e selezionare un'altra modalità di validazione 🤦‍♂️. Uno dei motivi per cui non ho mai visto una sola persona usare l'NFC per validare.
   - Come si poteva invece fare: si poteva inserire un intent/URI all'interno del tag NFC, in modo che semplicemente appoggiando il telefono al tag si avviasse la validazione. Senza aprire l'app a mano, senza diciotto tap e senza aspettare che l'interminabile splash screen termini di fare non si sa cosa per diversi secondi.
-- la **validazione tramite Bluetooth** è stata introdotta a gennaio 2023 ma non funziona. Se si preme il tasto viene mostrato immediatamente un errore. Fantastico.
+- il pulsante per **validare tramite Bluetooth** è stata aggiunto a gennaio 2023 ma non funziona. Se si preme il tasto viene mostrato immediatamente un errore. Fantastico.
 <img src="openmove-3.jpg" style="width: 70%" loading="lazy" alt="Screenshot dell'app OpenMove che mostra un avviso di errore.">
 - in alternativa ai metodi sopra si può anche **inserire a mano un codice**, che è stampato sotto il QR. Non lo so come sia possibile ma persino i campi di testo sono inusabili in questa app. A volte bisogna premere due o tre volte solo perché si apra la tastiera. Ovviamente si può inserire un qualsiasi codice esistente quindi si può validare anche prima di salire sull'autobus, con un codice a caso. Se il codice per la validazione corrispondesse al numero di matricola dell'autobus si potrebbe leggere già fuori dall'autobus, ma non è così.
 
-Per la validazione è **obbligatoria la presenza di una connessione ad Internet**. E ci può stare, ma anche dopo aver validato non è possibile vedere niente nell'app se non c'è una connessione dati. Quindi se il controllore vuole vedere che hai validato in un momento in cui non c'è copertura (es. in treno in galleria), niente, non puoi. Persino i controllori consigliano di fare lo screenshot dell'app in un momento in cui per grazia divina funziona...
+Per la validazione è **obbligatoria la presenza di una connessione ad Internet**. E ci può stare, ma anche dopo aver validato non è possibile vedere niente nell'app se non c'è una connessione dati. Quindi se il controllore vuole vedere che hai validato in un momento in cui non c'è copertura (es. in treno in galleria), niente, non puoi. Persino i controllori consigliano di fare lo screenshot dell'app in un momento in cui per grazia divina l'app funziona.
 
 Il sito OpenMove dice che «è stata posta grande cura nella realizzazione dell'app per gli utenti». Pensate se non ci mettevano cura.
 
