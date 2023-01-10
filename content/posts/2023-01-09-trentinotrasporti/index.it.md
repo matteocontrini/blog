@@ -1,7 +1,7 @@
 ---
 title: "Il digitale secondo Trentino Trasporti"
 date: 2023-01-10T10:00:00+01:00
-lastmod: 2023-01-10T13:50:00+01:00
+lastmod: 2023-01-10T21:15:00+01:00
 slug: trentino-trasporti-digitale
 summary: "Trentino Trasporti gestisce il trasporto pubblico in Trentino, prova ad essere moderna ma fallisce miseramente. Preparate i popcorn."
 showtoc: true
@@ -46,6 +46,8 @@ I dati sono pubblicati in due file ZIP, uno per l'urbano e uno per l'extraurbano
 - In alcuni casi sarebbe utile **raggruppare le fermate** che in realtà sono "la stessa fermata" ma sui due lati della strada.
   - L'unico modo per farlo è prendere la parte numerica del codice fermata e sperare che corrisponda sempre con la fermata sull'altro lato.
   - A questo punto sorgono comunque altri problemi perché le fermate sui lati opposti non sempre hanno lo stesso nome, quindi bisogna scegliere in qualche modo che nome dare alla fermata raggruppata...
+
+- Il formato GTFS prevede anche la possibilità di definire le **tariffe dei biglietti**. Per qualche motivo questi dati non sono inseriti negli ZIP GTFS presenti sul sito Trentino Trasporti ma sono pubblicati su un [portale separato](https://dati.trentino.it/dataset/trasporti-pubblici-del-trentino-formato-gtfs) (Opendata Trentino), in file separati. Grazie a questo spezzettamento dei dati le applicazioni come Google Maps non acquisiscono i dati sulle tariffe e non possono mostrarle agli utenti quando calcolano i percorsi. Ottimo lavoro.
 
 I **dati in tempo reale** su posizione e ritardi degli autobus esistono nei sistemi di Trentino Trasporti ma non vengono resi pubblici come open data. Si potrebbe usare il formato GTFS Realtime, pensato appositamente per questo tipo di dati. Permetterebbe ad app come Google Maps e Moovit di mostrare tempi di attesa basati su dati reali in tempo reale, offrendo un servizio migliore per tutti. E invece.
 
@@ -155,6 +157,8 @@ Passiamo alla **validazione dei biglietti e degli abbonamenti**. Datemi la forza
   - Come si poteva invece fare: si poteva inserire un intent/URI all'interno del tag NFC, in modo che semplicemente appoggiando il telefono al tag si avviasse la validazione. Senza aprire l'app a mano, senza diciotto tap e senza aspettare che l'interminabile splash screen termini di fare non si sa cosa per diversi secondi.
 - il pulsante per **validare tramite Bluetooth** è stata aggiunto a gennaio 2023 ma non funziona. Se si preme il tasto viene mostrato immediatamente un errore. Fantastico.
 <img src="openmove-3.jpg" style="width: 70%" loading="lazy" alt="Screenshot dell'app OpenMove che mostra un avviso di errore.">
+  - La validazione Bluetooth funziona riconoscendo il sistema di bordo degli autobus (e quindi l'autobus su cui ci si trova) tramite il *MAC address*. Come fa l'app a sapere a quale autobus corrisponde un indirizzo MAC? Wait for it... **Ogni volta che si apre l'app viene scaricata la lista degli indirizzi MAC di tutti i 700+ autobus** di Trentino Trasporti. **Ogni volta**. **Tutti e 700**. Anche se non si è fatto il login, anche se non si è in Trentino. Sono **200 kB di dati**, ogni volta.
+<img src="openmove-4.png" loading="lazy" alt="Screenshot degli strumenti sviluppatore di Firefox dove si vedono alcuni messaggi trasmessi tramite WebSockets, contenenti l'indirizzo MAC dei mezzi.">
 - in alternativa ai metodi sopra si può anche **inserire a mano un codice**, che è stampato sotto il QR. Non lo so come sia possibile ma persino i campi di testo sono inusabili in questa app. A volte bisogna premere due o tre volte solo perché si apra la tastiera. Ovviamente si può inserire un qualsiasi codice esistente quindi si può validare anche prima di salire sull'autobus, con un codice a caso. Se il codice per la validazione corrispondesse al numero di matricola dell'autobus si potrebbe leggere già fuori dall'autobus, ma non è così.
 
 Per la validazione è **obbligatoria la presenza di una connessione ad Internet**. E ci può stare, ma anche dopo aver validato non è possibile vedere niente nell'app se non c'è una connessione dati. Quindi se il controllore vuole vedere che hai validato in un momento in cui non c'è copertura (es. in treno in galleria), niente, non puoi. Persino i controllori consigliano di fare lo screenshot dell'app in un momento in cui per grazia divina l'app funziona.
@@ -185,13 +189,15 @@ Abbiamo parlato dei biglietti, che si possono acquistare o validare tramite Open
 
 Per gli **abbonamenti**, escluso quello per gli studenti dell'Università di Trento, siamo purtroppo fermi al Novecento.
 
-Bisogna per forza richiedere la **tessera magnetica** (e questo va benissimo, per carità, dato che funziona meglio delle app), ma **per ottenerla bisogna compilare un modulo di quattro pagine**. **Cartaceo**. Da consegnare **a mano** nelle biglietterie.
+Bisogna richiedere la **smart card**, cioè una tessera RFID (e questo va benissimo, per carità, dato che funziona meglio delle app), ma **per ottenerla bisogna compilare un modulo di quattro pagine**. **Cartaceo**. Da consegnare **a mano** nelle biglietterie.
 
 Il modulo è questo:
 
 <img src="modulo.png" loading="lazy" style="width: 50%" alt="Modulo per la richiesta di una tessera Trentino Trasporti.">
 
 Mi chiedo se qualcuno in provincia abbia mai provato a compilarlo e si sia reso conto di quanto sia estremamente scomodo scrivere all'interno di quei quadratini. Evidentemente no. Notare anche la filigrana con il logo della provincia di Trento al centro della pagina. Un'opera d'arte.
+
+La *smart card* per gli studenti **scade periodicamente** (il sito Trentino Trasporti dice dopo un anno, ma nel mio caso è sempre stato due anni). Dopodiché ne va richiesta una nuova usando il modulo qua sopra. Perché bisogna rifare la tessera in continuazione invece che usare sempre la stessa? Boh...
 
 Comunque, le **tariffe** dell'abbonamento sono indicate [sul sito Trentino Trasporti](https://www.trentinotrasporti.it/tariffe/abbonamenti/abbonamento-lavoratori), solo che sono contenute in una **tabella JPEG con il testo in Comic Sans**. Non serve nemmeno sforzarsi, si memano da soli. Per l'urbano il prezzo è fisso mentre per l'extraurbano dipende dalla lunghezza in km della tratta che si sceglie. Credo. Non è spiegato.
 
@@ -246,8 +252,7 @@ E direi che far uscire un'app all'anno, una peggiore dell'altra, mentre ci sono 
 Non serve comunque essere massimi esperti di innovazione per capire quando una strategia ha senso oppure no. Si può anche copiare (prendere spunto) da chi le cose le sta già facendo bene.
 
 Seguono idee sparse.
-
-- **I dati in tempo reale dovrebbero essere aperti**. Non c'è motivo per cui non debbano esserli. Si potrebbe usare il formato GTFS Realtime, in modo che i dati possano essere importati automaticamente in Google Maps, Moovit, ecc.
+- **I dati in tempo reale dovrebbero essere aperti**. Non c'è motivo per cui non debbano esserlo. Si potrebbe usare il formato GTFS Realtime, in modo che i dati possano essere importati automaticamente in Google Maps, Moovit, ecc.
   - Alcune aziende di trasporti in Italia già lo fanno, come GTT a Torino.
   - Il vantaggio è che quando si cerca un percorso in Google Maps questo tiene in considerazione i ritardi reali dei mezzi.
   - Non solo, il formato GTFS Realtime consente anche di comunicare avvisi a livello di linea o di fermata, ad esempio in caso di deviazioni temporanee.
