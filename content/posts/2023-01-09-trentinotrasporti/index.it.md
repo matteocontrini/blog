@@ -1,7 +1,7 @@
 ---
 title: "Il digitale secondo Trentino Trasporti"
 date: 2023-01-10T10:00:00+01:00
-lastmod: 2023-01-10T11:50:00+01:00
+lastmod: 2023-01-10T13:50:00+01:00
 slug: trentino-trasporti-digitale
 summary: "Trentino Trasporti gestisce il trasporto pubblico in Trentino, prova ad essere moderna ma fallisce miseramente. Preparate i popcorn."
 showtoc: true
@@ -43,7 +43,7 @@ I dati sono pubblicati in due file ZIP, uno per l'urbano e uno per l'extraurbano
   - Ah, queste regole valgono solo per le fermate urbane, sull'extraurbano è tutta un'altra storia ed è ancora più incoerente. Ad esempio la fermata `Predazzo-Borgo Nuovo` ha codice `1220BN`, dove `BN` sono le iniziali di `Borgo Nuovo`. Ok.
   - Ovviamente tutto ciò non è documentato e non fa parte di nessuno standard, è creatività trentina DOP che si può comprendere solo dopo ore di osservazione manuale dei dati.
 
-- In alcuni casi sarebbe utile raggruppare le fermate che in realtà sono "la stessa fermata" ma sui due lati della strada.
+- In alcuni casi sarebbe utile **raggruppare le fermate** che in realtà sono "la stessa fermata" ma sui due lati della strada.
   - L'unico modo per farlo è prendere la parte numerica del codice fermata e sperare che corrisponda sempre con la fermata sull'altro lato.
   - A questo punto sorgono comunque altri problemi perché le fermate sui lati opposti non sempre hanno lo stesso nome, quindi bisogna scegliere in qualche modo che nome dare alla fermata raggruppata...
 
@@ -250,7 +250,8 @@ Seguono idee sparse.
 - **I dati in tempo reale dovrebbero essere aperti**. Non c'è motivo per cui non debbano esserli. Si potrebbe usare il formato GTFS Realtime, in modo che i dati possano essere importati automaticamente in Google Maps, Moovit, ecc.
   - Alcune aziende di trasporti in Italia già lo fanno, come GTT a Torino.
   - Il vantaggio è che quando si cerca un percorso in Google Maps questo tiene in considerazione i ritardi reali dei mezzi.
-  - È chiaro che farsi la propria app che funziona male (e che poi usa comunque le API di Google Maps) è una strategia fallimentare.
+  - Non solo, il formato GTFS Realtime consente anche di comunicare avvisi a livello di linea o di fermata, ad esempio in caso di deviazioni temporanee.
+  - È chiaro invece che farsi la propria app che funziona male (e che poi usa comunque le API di Google Maps) è una strategia fallimentare.
   - Che piaccia o no, **gli utenti già usano app come Google Maps** e un'azienda di trasporti **non può ignorarlo** e mettersi a reinventare la ruota facendola quadrata.
   - Seguono screenshot di Google Maps a Torino con i ritardi reali dei mezzi.
 <img src="gtt-1.png" style="width: 50%" loading="lazy" alt="Screenshot di Google Maps che mostra i dati in tempo reale per la città di Torino.">
