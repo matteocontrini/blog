@@ -1,7 +1,7 @@
 ---
 title: "Il digitale secondo Trentino Trasporti"
 date: 2023-01-10T10:00:00+01:00
-lastmod: 2023-01-11T21:15:00+01:00
+lastmod: 2023-01-11T22:15:00+01:00
 slug: trentino-trasporti-digitale
 summary: "Trentino Trasporti gestisce il trasporto pubblico in Trentino, prova ad essere moderna ma fallisce miseramente. Preparate i popcorn."
 showtoc: true
@@ -276,6 +276,7 @@ Seguono idee sparse.
 - Una volta pubblicati i dati, **non ci sarebbe nemmeno bisogno di sviluppare un'applicazione dedicata**. Si spende di meno e si ottiene un'esperienza di gran lunga superiore. Non piace Google Maps? Va bene, ci sono altre applicazioni che si possono promuovere, probabilmente anche "open". Ma non mi sembra comunque questo il problema visto che Google Maps è indicata letteralmente come prima cosa sulla homepage del sito Trentino Trasporti.
 - I **codici fermata** potrebbero essere assegnati con un criterio più sensato ed essere così esposti chiaramente alle fermate. Ho sviluppato il sito web [Tra quanto passa](https://traquantopassa.in/) come alternativa a Muoversi in Trentino e se il codice fermata fosse indicato non in miniatura alle fermate potrebbe essere utilizzato per accedere velocemente a un fermata specifica e vedere quali corse passeranno nei prossimi minuti.
 - Il **sistema di abbonamenti** andrebbe rivisto in ottica 2023 e reso più moderno. Alla fine basta copiare qualche idea dall'Alto Adige.
+  - Tutti gli abbonamenti potrebbero (opzionalmente) essere digitali, mantenendo la **validazione tramite smartphone**: immaginate di poter avvicinare lo smartphone al **tag NFC**, avviando così all'istante l'app di validazione. **Niente splash screen, niente attese, niente conferme**. Potrebbe persino funzionare **offline** e sincronizzarsi in un secondo momento!
 - Tutto il sistema di *mobile ticketing* potrebbe essere direttamente sostituito dal **pagamento contactless con carta di debito o smartphone (Google/Apple Pay) a bordo**.
   - Il punto è questo: **perché dovrei scaricare un'app**, fare un account, acquistare il biglietto inserendo i dati della carta, andare sull'autobus e incrociare le dita che l'app funzioni per poi inserire codici o altro per completare la validazione? 
   - L'acquisto e validazione del biglietto tramite pagamento contactless sarebbe **infinitamente più veloce e comodo** e garantirebbe anche che si paghi sempre la tariffa più conveniente, in automatico.
