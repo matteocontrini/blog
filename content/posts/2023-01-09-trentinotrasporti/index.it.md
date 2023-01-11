@@ -1,7 +1,7 @@
 ---
 title: "Il digitale secondo Trentino Trasporti"
 date: 2023-01-10T10:00:00+01:00
-lastmod: 2023-01-10T21:15:00+01:00
+lastmod: 2023-01-11T21:15:00+01:00
 slug: trentino-trasporti-digitale
 summary: "Trentino Trasporti gestisce il trasporto pubblico in Trentino, prova ad essere moderna ma fallisce miseramente. Preparate i popcorn."
 showtoc: true
@@ -16,6 +16,8 @@ showtoc: true
 </style>
 
 **Trentino Trasporti** è l'azienda che gestisce il trasporto pubblico nella provincia autonoma di Trento. Sulla carta sembra messa bene in quanto a tecnologie innovative e digitalizzazione, ma nella pratica fallisce miseramente. Preparate i popcorn.
+
+***Nota:** questo articolo contiene diverse informazioni tecniche che potrebbero non essere comprensibili per tutti. Il senso generale dovrebbe comunque essere comprensibile anche saltando le parti più tecniche.*
 
 ## Open data
 
@@ -77,13 +79,20 @@ Una volta aperto il campo di ricerca sulla mappa non ci si può più uscire perc
 
 Su iOS, quando si apre una fermata cliccandoci sopra e poi si torna indietro, **il centro della mappa viene sempre riportato alla posizione attuale**, rendendo abbastanza scomodo navigare la mappa. Ma solo su iOS, su Android non lo fa. Sia mai che ci sia della coerenza.
 
-Mentre testavo l'app per scrivere questo articolo, **non funzionava**. Succede spesso, almeno una volta alla settimana. Si rompe tutto e l'app non riesce a caricare i dati. Nel giorno in cui ho registrato il seguente video l'app è stata offline per circa tre ore. Ovviamente in questi casi c'è sempre il rischio che l'app si disintegri da sola e non si riprenda più. A volte in realtà succede anche senza fare niente, basta lasciare l'app in background per un po' di tempo e poi riaprirla perché finisca in coma. Qualità.
-
+Mentre testavo l'app per scrivere questo articolo, **non funzionava**. Succede spesso, almeno una volta alla settimana. Si rompe tutto e l'app non riesce a caricare i dati. Nel giorno in cui ho registrato il seguente video l'app è stata offline per circa tre ore. Ovviamente in questi casi c'è sempre il rischio che l'app si disintegri da sola e non si riprenda più.
 <video controls style="width: 50%">
     <source src="mit-2.mp4" type="video/mp4">
 </video>
 
 <!-- ffmpeg -ss 12 -i screen-20230109-181633.mp4 -an -map_metadata -1 -t 32 mit-2.mp4 -y -->
+
+A volte in realtà succede anche senza fare niente, basta lasciare l'app in background per un po' di tempo e poi riaprirla perché finisca in coma. Qualità.
+
+<video controls style="width: 50%">
+    <source src="mit-3.mp4" type="video/mp4">
+</video>
+
+<!-- ffmpeg -ss 1 -i screen-20230111-131052.mp4 -an -map_metadata -1 -t 23 mit-3.mp4 -y -->
 
 Passiamo alla lista delle linee degli autobus. Alcune non hanno il colore, vi ricorda qualcosa?
 
@@ -113,7 +122,7 @@ Per completare dovremmo parlare anche della mostruosità delle **API** su cui l'
 
 Bonus: nelle impostazioni si può abilitare il **"filtro accessibilità"**, che presumo dovrebbe servire per rendere l'app meglio integrata con gli screen reader come TalkBack di Android. Non si sa perché dovrebbe essere un'opzione ma **non mi risulta faccia nulla**. TalkBack funziona malissimo in entrambi i casi anche perché **legge il testo in italiano come se fosse in inglese**. Con il telefono configurato in italiano. Sul serio.
 
-Non si salva molto. È tutto così da quasi tre anni e non è cambiato niente. Un'occasione sprecata. Ma chi l'avrebbe mai detto, di solito le app pubbliche sono fatte così bene.
+Non si salva molto. È tutto così da più di tre anni e non è cambiato niente. Un'occasione sprecata. Ma chi l'avrebbe mai detto, di solito le app pubbliche sono fatte così bene.
 
 ## OpenMove
 
@@ -133,7 +142,9 @@ OpenMove è un'applicazione web realizzata con il framework Meteor (che andava d
 
 Tutta **la trasmissione dei dati avviene tramite WebSockets**. Mi sfugge il senso, ma ok. Quando esegui un'azione nell'app il comando viene inviato al server e viene poi attesa la risposta. **A volte la risposta non arriva mai** o arriva dopo diversi minuti (sul serio). In questi casi l'app sta semplicemente lì ad aspettare, con l'icona di caricamento, senza nessun timeout né altro avviso. È stupendo.
 
-Che cosa succede se l'applicazione non riesce a (ri)connettersi al WebSocket? Ma niente, naturalmente. Solo una rotella di caricamento che a volte resta all'infinito, a volte sparisce dopo un po'. La gestione degli errori pare essere inesistente.
+Che cosa succede se l'applicazione non riesce a (ri)connettersi al WebSocket? Ma niente, naturalmente. Solo una rotella di caricamento che a volte resta all'infinito, a volte sparisce dopo un po'. A volte compare un messaggio che dice "OpenMove non è ancora sbarcata qui!". Boh. La gestione degli errori pare essere inesistente.
+
+<img src="openmove-5.png" style="width: 75%" loading="lazy" alt="Screenshot dell'app OpenMove con il messaggio di errore.">
 
 Per la cronaca, lo **"Stato servizio"** nelle impostazioni dell'app **è sempre "Online" anche quando non va niente**, ma un modo per vedere quando qualcosa non va è guardare nella pagina profilo la voce "Statistiche", dove viene indicato "#undefined" quando non riesce a caricare qualcosa.
 
@@ -159,6 +170,7 @@ Passiamo alla **validazione dei biglietti e degli abbonamenti**. Datemi la forza
 <img src="openmove-3.jpg" style="width: 70%" loading="lazy" alt="Screenshot dell'app OpenMove che mostra un avviso di errore.">
   - La validazione Bluetooth funziona riconoscendo il sistema di bordo degli autobus (e quindi l'autobus su cui ci si trova) tramite il *MAC address*. Come fa l'app a sapere a quale autobus corrisponde un indirizzo MAC? Wait for it... **Ogni volta che si apre l'app viene scaricata la lista degli indirizzi MAC di tutti i 700+ autobus** di Trentino Trasporti. **Ogni volta**. **Tutti e 700**. Anche se non si è fatto il login, anche se non si è in Trentino. Sono **200 kB di dati**, ogni volta.
 <img src="openmove-4.png" loading="lazy" alt="Screenshot degli strumenti sviluppatore di Firefox dove si vedono alcuni messaggi trasmessi tramite WebSockets, contenenti l'indirizzo MAC dei mezzi.">
+  - *Nota: questa analisi è stata svolta nella web app, da un computer. È possibile che l'app funzioni in qualche modo diversamente su mobile.*
 - in alternativa ai metodi sopra si può anche **inserire a mano un codice**, che è stampato sotto il QR. Non lo so come sia possibile ma persino i campi di testo sono inusabili in questa app. A volte bisogna premere due o tre volte solo perché si apra la tastiera. Ovviamente si può inserire un qualsiasi codice esistente quindi si può validare anche prima di salire sull'autobus, con un codice a caso. Se il codice per la validazione corrispondesse al numero di matricola dell'autobus si potrebbe leggere già fuori dall'autobus, ma non è così.
 
 Per la validazione è **obbligatoria la presenza di una connessione ad Internet**. E ci può stare, ma anche dopo aver validato non è possibile vedere niente nell'app se non c'è una connessione dati. Quindi se il controllore vuole vedere che hai validato in un momento in cui non c'è copertura (es. in treno in galleria), niente, non puoi. Persino i controllori consigliano di fare lo screenshot dell'app in un momento in cui per grazia divina l'app funziona.
