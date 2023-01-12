@@ -1,7 +1,7 @@
 ---
 title: "Il digitale secondo Trentino Trasporti"
 date: 2023-01-10T10:00:00+01:00
-lastmod: 2023-01-11T22:15:00+01:00
+lastmod: 2023-01-12T21:00:00+01:00
 slug: trentino-trasporti-digitale
 summary: "Trentino Trasporti gestisce il trasporto pubblico in Trentino, prova ad essere moderna ma fallisce miseramente. Preparate i popcorn."
 showtoc: true
@@ -156,7 +156,11 @@ Sta per peggiorare: **il server comunica al client l'orario attuale letteralment
 
 Parliamo di cose più serie, come la **sicurezza delle password**: quando si fa il login la password viene trasmessa al server come digest SHA-256, calcolato sul client. Pensavo che non fossimo più nel 2012. Perché questo significa che le password sono salvate nel database come hash SHA-256, senza salt e senza alcuna protezione contro le rainbow table. È un **design fragile e superato da tempo**, e direi che non è sicuramente una buona strategia farlo sapere al mondo così.
 
-Passiamo alla **validazione dei biglietti e degli abbonamenti**. Datemi la forza. Le modalità di validazione sono tre: codice QR, NFC, Bluetooth, codice inserito a mano. In ordine:
+Passiamo alla **validazione dei biglietti e degli abbonamenti**. Datemi la forza. Le modalità di validazione sono tre: codice QR, NFC, Bluetooth, codice inserito a mano. Per arrivarci bisogna premere il pulsante **Valida** su un biglietto o sull'abbonamento. No, scusate, non è un pulsante: bisogna letteralmente premere sul testo "Valida", che è minuscolo rispetto all'ampio spazio disponibile sulla pagina. Un pixel più in là e non funziona.
+
+<img src="openmove-6.png" style="width: 75%" loading="lazy" alt="Screenshot della sezione biglietto dell'app OpenMove.">
+
+A parte questo, alcune osservazioni sulle modalità di validazione:
 
 - la **scansione dei QR** (esposti all'interno di tutti gli autobus) è atroce, lenta e imprecisa. Basta provarla qualche volta sul campo, quindi su un autobus dove c'è in genere poca stabilità e una luminosità variabile per capire che non va bene (almeno su Android).
   - Pare che l'app usi il plugin Cordova `phonegap-plugin-barcodescanner`, che non viene aggiornato dal 2018 e credo si basi quindi su una versione antiquata di Zxing, storica libreria per la scansione di codici a barre e matrici.
@@ -174,6 +178,14 @@ Passiamo alla **validazione dei biglietti e degli abbonamenti**. Datemi la forza
 - in alternativa ai metodi sopra si può anche **inserire a mano un codice**, che è stampato sotto il QR. Non lo so come sia possibile ma persino i campi di testo sono inusabili in questa app. A volte bisogna premere due o tre volte solo perché si apra la tastiera. Ovviamente si può inserire un qualsiasi codice esistente quindi si può validare anche prima di salire sull'autobus, con un codice a caso. Se il codice per la validazione corrispondesse al numero di matricola dell'autobus si potrebbe leggere già fuori dall'autobus, ma non è così.
 
 Per la validazione è **obbligatoria la presenza di una connessione ad Internet**. E ci può stare, ma anche dopo aver validato non è possibile vedere niente nell'app se non c'è una connessione dati. Quindi se il controllore vuole vedere che hai validato in un momento in cui non c'è copertura (es. in treno in galleria), niente, non puoi. Persino i controllori consigliano di fare lo screenshot dell'app in un momento in cui per grazia divina l'app funziona.
+
+Un dettaglio a questo punto quasi irrilevante rispetto al resto è che su Android se si preme il **tasto indietro** non si chiude l'app, come avviene in tutte le app del mondo: si ricarica invece la pagina, e non si può uscire.
+
+<video controls style="width: 50%">
+    <source src="openmove-1.mp4" type="video/mp4">
+</video>
+
+<!-- ffmpeg -i screen-20230112-204803.mp4 -an -map_metadata -1 -t 10 openmove-1.mp4 -y -->
 
 Il sito OpenMove dice che «è stata posta grande cura nella realizzazione dell'app per gli utenti». Pensate se non ci mettevano cura.
 
