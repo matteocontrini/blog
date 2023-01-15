@@ -156,7 +156,7 @@ Sta per peggiorare: **il server comunica al client l'orario attuale letteralment
 
 Parliamo di cose più serie, come la **sicurezza delle password**: quando si fa il login la password viene trasmessa al server come digest SHA-256, calcolato sul client. Pensavo che non fossimo più nel 2012. Perché questo significa che le password sono salvate nel database come hash SHA-256, senza salt e senza alcuna protezione contro le rainbow table. È un **design fragile e superato da tempo**, e direi che non è sicuramente una buona strategia farlo sapere al mondo così.
 
-Passiamo alla **validazione dei biglietti e degli abbonamenti**. Datemi la forza. Le modalità di validazione sono tre: codice QR, NFC, Bluetooth, codice inserito a mano. Per arrivarci bisogna premere il pulsante **Valida** su un biglietto o sull'abbonamento. No, scusate, non è un pulsante: bisogna letteralmente premere sul testo "Valida", che è minuscolo rispetto all'ampio spazio disponibile sulla pagina. Un pixel più in là e non funziona.
+Passiamo alla **validazione dei biglietti e degli abbonamenti**. Datemi la forza. Le modalità di validazione sono quattro: codice QR, NFC, Bluetooth, codice inserito a mano. Per arrivarci bisogna premere il pulsante **Valida** su un biglietto o sull'abbonamento. No, scusate, non è un pulsante: bisogna letteralmente premere sul testo "Valida", che è minuscolo rispetto all'ampio spazio disponibile sulla pagina. Un pixel più in là e non funziona.
 
 <img src="openmove-6.png" style="width: 75%" loading="lazy" alt="Screenshot della sezione biglietto dell'app OpenMove.">
 
