@@ -1,7 +1,7 @@
 ---
 title: "Il digitale secondo Trentino Trasporti"
 date: 2023-01-10T10:00:00+01:00
-lastmod: 2023-01-12T21:00:00+01:00
+lastmod: 2023-01-18T18:00:00+01:00
 slug: trentino-trasporti-digitale
 summary: "Trentino Trasporti gestisce il trasporto pubblico in Trentino, prova ad essere moderna ma fallisce miseramente. Preparate i popcorn."
 showtoc: true
@@ -292,7 +292,7 @@ Seguono idee sparse.
 - Tutto il sistema di *mobile ticketing* potrebbe essere direttamente sostituito dal **pagamento contactless con carta di debito o smartphone (Google/Apple Pay) a bordo**.
   - Il punto è questo: **perché dovrei scaricare un'app**, fare un account, acquistare il biglietto inserendo i dati della carta, andare sull'autobus e incrociare le dita che l'app funzioni per poi inserire codici o altro per completare la validazione? 
   - L'acquisto e validazione del biglietto tramite pagamento contactless sarebbe **infinitamente più veloce e comodo** e garantirebbe anche che si paghi sempre la tariffa più conveniente, in automatico.
-  - In molte città è già presente, anche se non sempre su tutte le linee e i mezzi: è presente ad esempio sui mezzi ATAC (Roma), GTT (Torino), ATM (Milano), Tper (Bologna, Ferrara, Imola), ATAF (Firenze, finché non è cambiata gestione), ATB (Bergamo), Trieste Trasporti, ecc.
+  - In molte città è già presente, anche se non sempre su tutte le linee e i mezzi: è presente ad esempio sui mezzi ATAC (Roma), GTT (Torino), ATM (Milano), Tper (Bologna, Ferrara, Imola), ATAF (Firenze, finché non è cambiata gestione), ATB (Bergamo), Trieste Trasporti e altri. Si [aggiungerà](https://www.rainews.it/tgr/bolzano/video/2023/01/rivoluzione-per-la-mobilit-altoatesina--ecco-le-novit-digitali-in-arrivo-per-chi-viaggia--8d2df5c2-c169-4cf4-83b6-f90f5831f706.html) a breve anche l'Alto Adige.
 - Ciò non toglie che possano esserci dei benefici ad avere **un'app ufficiale** dove si possano acquistare i biglietti e gestire gli abbonamenti. Anche in questo caso in realtà basterebbe prendere spunto dagli altri.
   - **Qual è il senso di avere quattro app in concorrenza** tra loro (se ne aggiunge una all'anno praticamente)?
   - Non avrebbe più senso investire seriamente in dei servizi online di qualità, senza spezzettare tutto?
