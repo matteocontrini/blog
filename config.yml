@@ -8,21 +8,34 @@ defaultContentLanguage: en
 languages:
   en:
     languageName: English
+    description: I'm Matteo, a backend developer from Italy. This is my personal blog.
+    homeInfoParams:
+      title: Hi there 👋
+      content: I'm Matteo and I'm from Italy. I recently graduated in Computer Science (master's degree) at the University of Trento. I write code (mostly backend), but I'm also interested in video streaming, compression technologies and live video production.<br><br>I currently work at an edtech startup. I've also founded [FibraClick](https://fibra.click) and built [TrackBot](https://trackbot.eu). This is my personal blog, where I post both in [English](/) and [Italian](/it/).
+    menu:
+      main:
+        - identifier: archive
+          name: Archive
+          url: /archive/
   it:
     languageName: Italiano
+    description: Sono Matteo, uno sviluppatore backend. Questo è il mio blog personale.
+    homeInfoParams:
+      title: Ciao 👋
+      content: Mi chiamo Matteo e vivo in Italia. Mi sono recentemente laureato in Informatica (magistrale) presso l'Università di Trento. Mi piace scrivere codice (prevalentemente backend) ma sono anche interessato nelle tecnologie di streaming video, compressione e video e produzione video live.<br><br>Attualmente lavoro per una startup edtech. Ho anche fondato [FibraClick](https://fibra.click) e creato [TrackBot](https://trackbot.eu). Questo è il mio blog personale, dove scrivo sia in [inglese](/) che in [italiano](/it/).
+    menu:
+      main:
+        - identifier: archive
+          name: Archivio
+          url: /archive/
 
 params:
   env: production
-  description: I'm Matteo, a backend developer from Italy. And this is my personal blog.
   ShowReadingTime: true
   ShowShareButtons: true
   ShowCodeCopyButtons: true
   DateFormat: 2006-01-02
   comments: true
-
-  homeInfoParams:
-    title: Hi there 👋
-    content: I'm Matteo and I'm from Italy. I have a master degree in Computer Science. I write code (mostly backend), I'm also interested in video streaming and compression technologies and live video production. I currently work at an edtech startup. I've also founded [FibraClick](https://fibra.click) and built [TrackBot](https://trackbot.eu). This is my personal blog, I post both in [English](/) and [Italian](/it/).
 
   socialIcons:
     - name: Twitter
@@ -31,12 +44,6 @@ params:
       url: https://github.com/matteocontrini
     - name: LinkedIn
       url: https://www.linkedin.com/in/matteo-contrini/
-
-menu:
-  main:
-    - identifier: archive
-      name: Archive
-      url: /archive/
 
 permalinks:
   posts: /:slug/
