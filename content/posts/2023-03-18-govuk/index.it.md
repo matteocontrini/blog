@@ -2,7 +2,7 @@
 title: "L'Italia dovrebbe copiare il portale GOV.UK"
 date: 2023-03-18T15:00:00+01:00
 lastmod: 2023-03-18T15:00:00+01:00
-slug: italia-govuk
+slug: italia-portale-govuk
 summary: "Il portale GOV.UK è il punto di accesso per tutte le informazioni e i servizi pubblici del Paese. In Italia non abbiamo nulla di vagamente simile, purtroppo."
 ---
 
