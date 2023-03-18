@@ -44,6 +44,8 @@ params:
       url: https://github.com/matteocontrini
     - name: LinkedIn
       url: https://www.linkedin.com/in/matteo-contrini/
+    - name: Telegram
+      url: https://t.me/notedimatteo
 
 permalinks:
   posts: /:slug/
