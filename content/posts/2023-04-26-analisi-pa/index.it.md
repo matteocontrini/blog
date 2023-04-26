@@ -21,10 +21,10 @@ Quest'anno ho analizzato **46 siti web** (+9) ed estratto i seguenti parametri d
 - eventuale CDN utilizzata
 - supporto a IPv6
 - versione HTTP
-- presenza di header `Content-Security-Policy`
+- presenza di header `Content-Security-Policy` **(nuovo)**
 - web server utilizzato
-- CMS utilizzato
-- punteggio Lighthouse mobile/desktop
+- CMS utilizzato **(nuovo)**
+- punteggio Lighthouse mobile/desktop **(nuovo)**
 - conformità alle linee guida di design per i servizi della pubblica amministrazione
 
 <a href="tabella.png" target="_blank">
