@@ -1,5 +1,5 @@
 ---
-title: "Analisi della configurazione dei siti web della pubblica amministrazione (2023)"
+title: "Analisi configurazione siti web della pubblica amministrazione (2023)"
 date: 2023-04-26T22:30:00+02:00
 lastmod: 2023-04-26T22:30:00+02:00
 slug: analisi-pa-2023
