@@ -101,7 +101,7 @@ Da prendere un po' per le pinze, sia perché il test non è deterministico sia p
 
 Ho provato a categorizzare lo stile grafico dei siti web per capire quanto aderiscono alle [linee guida di design](https://designers.italia.it/) per i servizi pubblici di Designers Italia, gruppo di lavoro del Dipartimento per la Trasformazione Digitale.
 
-Seppur il design dei componenti non sia sufficiente da solo per definire quanto il sito sia conforme alle linee guida, è un utile indicatore della "modernità" del sito web.
+Seppur l'aspetto grafico dei componenti non sia sufficiente da solo per definire quanto il sito sia conforme alle linee guida (il "kit" prevede 15 passaggi di cui solo 2 riguardano la UI), è un utile indicatore della "modernità" del sito web e l'unico elemento valutabile in modo vagamente oggettivo. Se un sito web non segue nemmeno le linee guida per l'interfaccia grafica, è difficile credere che sia stato seguito come si deve l'intero processo di progettazione del sito.
 
 I valori in particolare significano:
 
@@ -112,7 +112,7 @@ I valori in particolare significano:
 - **Sirio**: è il design system dell'INPS, potrebbe sorprendere ma è davvero ottimo e molto curato (https://www.inps.design)
 - **Personalizzato**: alcuni siti hanno un design personalizzato ma la scelta può essere giustificata, ad esempio per siti promozionali (es. Italia.it) o di istituzioni particolari (es. il Quirinale). A differenza dei siti *legacy*, "non sanno di vecchio" e sono quantomeno responsive
 
-Nota: questa categorizzazione non è una scienza esatta e in alcuni casi è un po' soggettiva quindi prendetela come una nota indicativa.
+Nota: questa categorizzazione non è una scienza esatta e in alcuni casi è un po' soggettiva, quindi prendetela come una informazione indicativa.
 
 ## Le novità: cosa migliora e cosa peggiora
 
