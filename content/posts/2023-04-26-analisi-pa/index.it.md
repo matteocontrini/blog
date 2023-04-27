@@ -35,6 +35,10 @@ Il foglio Excel originale lo trovate [qua](https://1drv.ms/x/s!AgJdWI23CtyPmr1F1
 
 I dati sono stati raccolti il 25 e 26 aprile 2023, in parte con l'aiuto [di uno script](https://github.com/matteocontrini/analisi-siti-web-pa) e in parte manualmente (non tutto è facilmente automatizzabile). Potrebbero in entrambi i casi esserci degli errori.
 
+{{< center >}}
+*Leggi anche [**L'Italia dovrebbe copiare il portale GOV.UK**]({{< relref "/posts/2023-03-18-govuk/index.it.md" >}})*
+{{< /center >}}
+
 ## Parametri di valutazione
 
 *Se non ti interessano le spiegazioni, puoi saltare questa sezione e andare direttamente a [Le novità: cosa migliora e cosa peggiora](#le-novità-cosa-migliora-e-cosa-peggiora).*
@@ -186,7 +190,7 @@ Nota: questa categorizzazione non è una scienza esatta e in alcuni casi è un p
 
 Se teniamo in considerazione l'intero insieme di criteri (discutibile, chiaramente), **nessuno**.
 
-Si salverebbe soltanto `www.gov.uk`, che ho non a caso messo come riferimento (il team GovUK è molto attento a questi aspetti).
+Si salverebbe soltanto `www.gov.uk`, che ho non a caso messo come riferimento (il team GOV.UK è molto attento a questi aspetti).
 
 Se togliamo il requisito CSP, che effettivamente in alcuni casi (come per i siti statici) potrebbe non essere fondamentale, gli unici due siti con tutti gli indicatori "verdi" sono `innovazione.gov.it` e `padigitale2016.gov.it`. Non mi stupisce, visto che sono realizzati dal Dipartimento per la Trasformazione Digitale che fa sempre un ottimo lavoro. I due siti sono tra l'altro [open source](https://github.com/teamdigitale/innovazione.gov.it-site).
 
