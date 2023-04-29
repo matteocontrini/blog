@@ -166,7 +166,7 @@ Nota: questa categorizzazione non è una scienza esatta e in alcuni casi è un p
 ## I nuovi problemi
 
 - Una delle *new entry*, `www.vigilfuoco.it`, non fa redirect da HTTP a HTTPS ma ha HSTS. Immagino sia una svista
-- Per quanto riguarda la `Content-Security-Policy`, non ci siamo: è presente in solo 4 siti su 46. Comprendo che sia una funzionalità avanzata e complessa da configurare correttamente, ma stiamo parlando dei siti web di un Governo, non di un'associazione di volontariato
+- Per quanto riguarda la `Content-Security-Policy`, non ci siamo: è presente in solo 5 siti su 46. Comprendo che sia una funzionalità avanzata e complessa da configurare correttamente, ma stiamo parlando dei siti web di un Governo, non di un'associazione di volontariato
 - C'è una grande varietà di CMS utilizzati. Su 46 siti ho rilevato almeno 18 CMS o tecnologie diverse utilizzate per realizzare i siti. Immagino che i team che sviluppano e gestiscono questi siti web siano indipendenti, perché altrimenti non avrebbe senso acquisire competenze su 18 CMS diversi
 - Si sta diffondendo l'uso di Adobe Experience Manager come CMS. Non mi è del tutto chiaro cosa sia e come funzioni, ma non sono sicuro che legare a lungo termine siti web critici della PA (come `www.inps.it`) ad Adobe sia una scelta saggia
 - L'uso di tecnologie obsolete non ha giustificazioni: notate la presenza di IIS 6.0 (fine vita 2015), .NET 2.0 (fine vita 2011), Java 6 e JSP 2.2
