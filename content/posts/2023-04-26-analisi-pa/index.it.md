@@ -7,7 +7,9 @@ summary: "Seconda edizione dell'analisi dei siti web della PA. Quest'anno ho ana
 showtoc: true
 ---
 
-*tldr: Un passo avanti e uno indietro*
+🔍 ***Una versione meno tecnica e più discorsiva di questo articolo è stata pubblicata [su Agenda Digitale](https://www.agendadigitale.eu/sicurezza/siti-della-pa-centrale-carenti-anche-sulla-sicurezza-ecco-tutti-i-problemi/).***
+
+---
 
 Questa è la seconda edizione dell'**analisi dei siti web della pubblica amministrazione**. La prima risale a febbraio 2022 e la trovate [qua](https://forum.fibra.click/d/27650-analisi-configurazione-siti-web-pubblici-e-governativi).
 
