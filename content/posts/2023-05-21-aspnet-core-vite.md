@@ -301,9 +301,9 @@ To make sure that both `wwwroot` and `dist` are copied to the publish directory 
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk.Web">
-    <!-- ... -->
+    <!-- ...omitted... -->
 
-    <!-- Add these lines to copy wwwroot and dist -->
+    <!-- Copy `wwwroot` and `dist` -->
     <ItemGroup>
         <None Include="wwwroot/**" CopyToPublishDirectory="PreserveNewest" />
         <None Include="dist/**" CopyToPublishDirectory="PreserveNewest" />
