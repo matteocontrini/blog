@@ -1,7 +1,7 @@
 ---
 title: "Using Vite to bundle JS/CSS in ASP.NET Core MVC"
 date: 2023-05-21T22:30:00+02:00
-lastmod: 2023-05-21T22:30:00+02:00
+lastmod: 2023-05-22T10:00:00+02:00
 slug: aspnet-core-vite
 summary: "Vite is a popular build tool for frontends. Here's how to integrate it in an ASP.NET Core MVC multi-page application."
 showtoc: true
@@ -83,6 +83,13 @@ export default {
             }
         },
     },
+    server: {
+        port: 5173,
+        strictPort: true,
+        hmr: {
+            clientPort: 5173
+        }
+    }
 }
 ```
 
@@ -93,6 +100,7 @@ Let's go through it:
 - `outDir` is the directory where Vite will put the bundled files. In our case it's `../dist`, relative to the `Assets` directory. Since the `dist` directory is outside the Vite root, we need to explicitly allow Vite to clean the directory before build, with the `emptyOutDir` option.
 - `assetsDir` is set to an empty string so that output files are placed directly in `dist` and not in `dist/assets` (the default).
 - in `rollupOptions.input` we specify the entry points of the application. Here we have a single `main` entry point corresponding to the `Assets/main.js` file. The `output` overrides the output file names to remove the hashes. If you want hashes, just remove the `output` key.
+- the `server` options enforce the use of port `5173`, which `Vite.AspNetCore` expects, and makes sure that the WebSockets client for Hot Module Replacement (HMR) goes directly to the dev server instead of the proxy
 
 You've probably noticed that there's no mention of CSS. That's because in Vite we import CSS files through JavaScript. Here's the content of the `main.js` file:
 
@@ -194,7 +202,7 @@ if (app.Environment.IsDevelopment())
 }
 ```
 
-According to [this issue](https://github.com/Eptagone/Vite.AspNetCore/issues/12) it's best to add the middleware as the last middleware.
+According to [this issue](https://github.com/Eptagone/Vite.AspNetCore/issues/12) it's best to add the middleware as the last middleware, but in my experience it seems to work just fine even if you put it somewhere above.
 
 Now, modify your `_ViewImports.cshtml` and enable the Vite tag helpers:
 
@@ -248,31 +256,22 @@ Note that the development server doesn't use the `dist` folder.
 
 For production, what you typically want is to generate the output files at build time and then have them served statically.
 
-Run `npm run build` manually so that the `dist` directory is populated. We'll see how to automate this step later.
+Run `npm run build` manually so that the `dist` directory is populated with JS/CSS bundles. We'll see how to automate this step later.
 
-In `Program.cs`, change the web root path to `dist`:
+To make ASP.NET Core read static files from the `dist` directory, we need to change the web root path. At the same time, we'd like to retain the ability of using the "old" `wwwroot` directory to embed additional static files from there.
 
-```csharp
-var builder = WebApplication.CreateBuilder(new WebApplicationOptions()
-{
-    Args = args,
-    WebRootPath = "dist"
-});
-```
-
-This allows the JS/CSS bundles to be served statically, but overrides the default value of `wwwroot`, breaking the ability of embedding static files from the `wwwroot` directory.
-
-To make `wwwroot` work again, we need to replace the default web root file provider with a [composite file provider](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/static-files?view=aspnetcore-7.0#serve-files-from-multiple-locations) which reads static files from both `dist` and `wwwroot`.
+To achieve this, we need to replace the default web root file provider with a [composite file provider](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/static-files?view=aspnetcore-7.0#serve-files-from-multiple-locations) which reads static files from both `dist` and `wwwroot`. We also change the default web root path to `dist` since `Vite.AspNetCore` uses that to find the files.
 
 Here's how you can do it:
 
 ```csharp
 if (!app.Environment.IsDevelopment())
 {
-    var webRootProvider = new PhysicalFileProvider(builder.Environment.WebRootPath);
-    var newPathProvider = new PhysicalFileProvider(Path.Combine(builder.Environment.ContentRootPath, "wwwroot"));
-    var compositeProvider = new CompositeFileProvider(webRootProvider, newPathProvider);
+    var webRootProvider = new PhysicalFileProvider(Path.Combine(builder.Environment.ContentRootPath, "wwwroot"));
+    var distProvider = new PhysicalFileProvider(Path.Combine(builder.Environment.ContentRootPath, "dist"));
+    var compositeProvider = new CompositeFileProvider(webRootProvider, distProvider);
     app.Environment.WebRootFileProvider = compositeProvider;
+    app.Environment.WebRootPath = distProvider.Root;
 }
 
 app.UseStaticFiles();
