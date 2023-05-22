@@ -100,7 +100,7 @@ Let's go through it:
 - `outDir` is the directory where Vite will put the bundled files. In our case it's `../dist`, relative to the `Assets` directory. Since the `dist` directory is outside the Vite root, we need to explicitly allow Vite to clean the directory before build, with the `emptyOutDir` option.
 - `assetsDir` is set to an empty string so that output files are placed directly in `dist` and not in `dist/assets` (the default).
 - in `rollupOptions.input` we specify the entry points of the application. Here we have a single `main` entry point corresponding to the `Assets/main.js` file. The `output` overrides the output file names to remove the hashes. If you want hashes, just remove the `output` key.
-- the `server` options enforce the use of port `5173`, which `Vite.AspNetCore` expects, and makes sure that the WebSockets client for Hot Module Replacement (HMR) goes directly to the dev server instead of the proxy
+- the `server` options enforce the use of port `5173` and makes sure that the WebSockets client for Hot Module Replacement (HMR) connects directly to the development server (instead of going through the proxy, as we will see).
 
 You've probably noticed that there's no mention of CSS. That's because in Vite we import CSS files through JavaScript. Here's the content of the `main.js` file:
 
