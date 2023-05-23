@@ -1,15 +1,15 @@
 ---
-title: "Working with custom authentication schemes in ASP.NET Core 6.0 Web API"
+title: "Working with custom authentication schemes in ASP.NET Core 7.0"
 date: 2022-08-25T22:00:00+02:00
-lastmod: 2022-11-27T22:30:00+01:00
+lastmod: 2023-05-23T16:00:00+02:00
 slug: aspnet-core-authentication-schemes
-summary: "How to define custom authentication schemes in ASP.NET Core 6.0, and why they're not enough to actually enforce authentication for your Web API."
+summary: "How to define custom authentication schemes in ASP.NET Core 7.0, and why they're not enough to actually enforce authentication for your web application."
 showtoc: true
 ---
 
 **ASP.NET Core** has support for both **authentication** and **authorization**. However, in my opinion the official documentation on the topic is sometimes a bit confusing or lacking, especially if you don't want to use Identity, don't have a UI, or don't like/want the opinionated authentication schemes that are included with the framework.
 
-This article is an **introduction on how to use custom authentication schemes** to build a simple Web API application with authentication. You would use this approach if you wanted to implement, for example, session token-based authentication for your API.
+This article is an **introduction on how to use custom authentication schemes** to build a simple web application with authentication. This applies to both Web API and MVC or Razor projects with UI. You could use this approach if you wanted to implement, for example, session token-based authentication.
 
 ## Authentication vs authorization
 
@@ -20,7 +20,7 @@ So, very briefly:
 - **authentication** is about verifying that the user is who they say they are, usually by verifying that a token is valid;
 - **authorization** is the process of determining whether a specific (authenticated) user is allowed to perform some action.
 
-As we will see later, authentication alone is not enough to protect an API in ASP.NET Core, as it only means verifying a token (without actually enforcing that authentication is mandatory for an endpoint, for example).
+As we will see later, authentication alone is not enough to protect a web app in ASP.NET Core, as it only means verifying a token (without actually enforcing that authentication is mandatory for an endpoint, for example).
 
 ## Authentication schemes
 
@@ -34,14 +34,14 @@ Let's start with authentication. In ASP.NET Core authentication is achieved with
   - verifying that it's valid;
   - providing the framework with an authentication ticket that certifies that the user has been successfully authenticated;
   - alternatively, if the user cannot be authenticated with the cookie the scheme code returns a failure result
-- ASP.NET Core 6.0 ships with two authentication schemes:
+- ASP.NET Core 7.0 ships with two authentication schemes:
   - the **cookie** authentication scheme
   - the **JWT token** authentication scheme
 - these two schemes are **configurable to some extent**, but are still quite opinionated
   - for example, the cookie scheme builds a cookie that is encrypted and contains the claims (the properties of the user), which is something that you may want to avoid since the cookie can become large
 - if you don't like how they work or if you have different requirements (e.g. using session tokens) **you can create a custom authentication scheme**
 
-There are a few more details about authentication schemes that you can read about in the [overview page](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/?view=aspnetcore-6.0) of the official docs.
+There are a few more details about authentication schemes that you can read about in the [overview page](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/?view=aspnetcore-7.0) of the official docs.
 
 ## Custom authentication schemes
 
@@ -61,13 +61,15 @@ If you wanted to register a custom scheme, you would use exactly that `AddScheme
 
 ```c#
 builder.Services.AddAuthentication()
-    .AddScheme<TokenAuthenticationSchemeOptions, TokenAuthenticationSchemeHandler>(
-        "Tokens",
+    .AddScheme<SessionTokenAuthenticationSchemeOptions, SessionTokenAuthenticationSchemeHandler>(
+        "SessionTokens",
         opts => {}
     );
 ```
 
-As you can guess, when defining a new scheme you need to create an options class (`TokenAuthenticationSchemeOptions` in the example) and a handler that takes the authentication requests (`TokenAuthenticationSchemeHandler`). The handler must inherit from `AuthenticationHandler` or implement the `IAuthenticationHandler` interface. The first approach is a bit easier because the base abstract class provides a sensible default implementation for most methods. We'll see an example in a minute.
+As you can guess, when defining a new scheme you need to create:
+- an options class (`SessionTokenAuthenticationSchemeOptions` in the example) deriving from `AuthenticationSchemeOptions`. This class can be an empty class if you don't have any options
+- a handler that takes the authentication requests (`SessionTokenAuthenticationSchemeHandler` in the example). The handler must inherit from `AuthenticationHandler` or implement the `IAuthenticationHandler` interface. The first approach is a bit easier because the base abstract class provides a sensible default implementation for most methods. We'll see an example in a minute.
 
 Other than specifying the **types of the options and of the handler** as generic types, the `AddScheme<TOptions, THandler>()` method takes the **name of the scheme** as the first argument. To avoid hardcoding it you would usually put it in a static class, but let's keep it simple.
 
@@ -76,10 +78,10 @@ The second argument allows you to assign the **options** of the scheme (defined 
 The authentication handler in its most basic form only implements the `HandleAuthenticateAsync` method, by overriding it. This method gets called automatically at every request to an endpoint (if authentication is enabled on the endpoint) through a middleware.
 
 ```c#
-public class TokenAuthenticationSchemeHandler : AuthenticationHandler<TokenAuthenticationSchemeOptions>
+public class SessionTokenAuthenticationSchemeHandler : AuthenticationHandler<SessionTokenAuthenticationSchemeOptions>
 {
-    public TokenAuthenticationSchemeHandler(
-        IOptionsMonitor<TokenAuthenticationSchemeOptions> options,
+    public SessionTokenAuthenticationSchemeHandler(
+        IOptionsMonitor<SessionTokenAuthenticationSchemeOptions> options,
         ILoggerFactory logger,
         UrlEncoder encoder,
         ISystemClock clock) : base(options, logger, encoder, clock)
@@ -92,7 +94,8 @@ public class TokenAuthenticationSchemeHandler : AuthenticationHandler<TokenAuthe
         // Check that it's a valid session, depending on your implementation
         
         // If the session is valid, return success:
-        var principal = new ClaimsPrincipal(new ClaimsIdentity("Test"));
+        var claims = new[] { new Claim(ClaimTypes.Name, "Test") };
+        var principal = new ClaimsPrincipal(new ClaimsIdentity(claims, "Tokens"));
         var ticket = new AuthenticationTicket(principal, this.Scheme.Name);
         return AuthenticateResult.Success(ticket);
 
@@ -102,26 +105,26 @@ public class TokenAuthenticationSchemeHandler : AuthenticationHandler<TokenAuthe
 }
 ```
 
-If you run this code and then send an HTTP request to any controller/endpoint of your application, you'll notice that **the handler is not called**. Authentication is in fact **not enabled by default**. To enable it, there are two ways:
+If you run this code, put a breakpoint in the handler and then send an HTTP request to any controller/endpoint of your application, you'll notice that **the handler is automatically called at every request**.
 
-- setting a **default authentication scheme**
-- **enabling *authorization*** and specifying the authentication scheme to use
+>**NOTE**: this behavior only applies when we have one authentication scheme. In that case, ASP.NET Core 7.0 automatically selects the configured authentication scheme as the default.
+>
+>If you have more than one authentication scheme, [or use ASP.NET Core 6.0](https://docs.microsoft.com/en-us/dotnet/core/compatibility/aspnet-core/7.0/default-authentication-scheme) or earlier, authentication is **not enabled by default**. To enable it in those sistuations, there are two ways:
+>
+>- set a **default authentication scheme**
+>- **enable *authorization*** and specify the authentication scheme to use
+>
+>To set a default authentication scheme, simply pass its name to the `AddAuthentication()` method:
+>
+>```c#
+>builder.Services.AddAuthentication("SessionTokens") // <--
+>    .AddScheme<SessionTokenAuthenticationSchemeOptions, SessionTokenAuthenticationSchemeHandler>(
+>        "SessionTokens",
+>        opts => {}
+>    );
+>```
 
-To set a default authentication scheme, simply pass its name to the `AddAuthentication()` method:
-
-```c#
-builder.Services.AddAuthentication("Tokens") // <--
-    .AddScheme<TokenAuthenticationSchemeOptions, TokenAuthenticationSchemeHandler>(
-        "Tokens",
-        opts => {}
-    );
-```
-
->**NOTE**: this behavior [is going to change](https://docs.microsoft.com/en-us/dotnet/core/compatibility/aspnet-core/7.0/default-authentication-scheme) in ASP.NET Core 7.0, where if you add only one authentication scheme it will be selected as the default one automatically.
-
-If you run the code again and put a breakpoint in the handler you'll notice that the authentication handler is now indeed **called at every request**.
-
-However this is not enough: if you change the handler code to return a **failure result** you would expect an error to be returned, but instead the controller code is executed anyway, **ignoring the authentication outcome**.
+Adding an authentication scheme is however not enough: if you change the handler code to return a **failure result** you would expect an error to be returned, but instead the controller code is executed anyway, **ignoring the authentication outcome**.
 
 This is where **authorization** comes into play.
 
@@ -150,7 +153,7 @@ Using ASP.NET Core authorization is obviously a wiser choice. The simplest way t
 app.MapControllers().RequireAuthorization();
 ```
 
-Now, if the authentication handler returns a failure result, the client will get a `401 Unauthorized` error. If you wanted to change the response you could override the `HandleChallengeAsync` method in the handler or tweak error handling globally.
+Now, if the authentication handler returns a failure result, the client will get a `401 Unauthorized` error. If you want to change the error response you could override the `HandleChallengeAsync` method in the handler or tweak error handling globally.
 
 What if you wanted to **whitelist some specific controller or action**, e.g. for implementing the login endpoint?
 
@@ -184,15 +187,15 @@ public IActionResult KindaSecret()
 }
 ```
 
-Note that this works only because we've set the default authentication scheme in the `AddAuthentication()` call in the startup code. If we don't do it, we get an exception that explains the problem:
+Note that this works only because a default authentication scheme was selected, as mentioned above. If there is no default authentication scheme, we get an exception that explains the problem:
 
 >***System.InvalidOperationException**: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. [...]*
 
-We can however still use the `[Authorize]` attribute by simply specifying the authentication scheme we want to use, like this:
+When there isn't a default authentication scheme, we can still use the `[Authorize]` attribute and specify the authentication scheme we want to use, like this:
 
 ```c#
 [HttpGet("/secret")]
-[Authorize(AuthenticationSchemes = "Tokens")] // <--
+[Authorize(AuthenticationSchemes = "SessionTokens")] // <--
 public IActionResult Secret()
 {
     return Ok();
@@ -207,7 +210,7 @@ To avoid passing the authentication scheme every time we can make it the default
 builder.Services.AddAuthorization(options =>
 {
     options.DefaultPolicy = new AuthorizationPolicyBuilder()
-        .AddAuthenticationSchemes("Tokens")
+        .AddAuthenticationSchemes("SessionTokens")
         .RequireAuthenticatedUser()
         .Build();
 });
@@ -224,11 +227,11 @@ As you've seen there are many possible combinations of what you can do with the 
 Here's a few takeaways to summarize what we've seen:
 
 - you can define many authentication schemes, whose handlers contain the actual authentication code
-- if you choose a default authentication scheme...
+- if a default authentication scheme is set, either manually or automatically...
   - the authentication handler will be called at each request, no matter what
   - to actually enforce authorization, use `RequireAuthorization()` or `[Require]`
   - to selectively disable authorization where already enabled, use `[AllowAnonymous]`
-- if you don't set a default scheme...
+- if a default scheme is not set...
   - you must explicitly choose an authentication scheme when enabling authorization, with `[Require(AuthenticationSchemes = "...")]`
   - the authentication handler will then be run only where you enabled authorization
   - to simplify the syntax and simply use `[Authorize]`, define a default authorization policy at startup
