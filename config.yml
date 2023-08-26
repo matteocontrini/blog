@@ -11,7 +11,7 @@ languages:
     description: I'm Matteo, a backend developer from Italy. This is my personal blog.
     homeInfoParams:
       title: Hi there 👋
-      content: I'm Matteo and I'm from Italy. I recently graduated in Computer Science (master's degree) at the University of Trento. I write code (mostly backend), but I'm also interested in video streaming, compression technologies and live video production.<br><br>I currently work at an edtech startup. I've also founded [FibraClick](https://fibra.click) and built [TrackBot](https://trackbot.eu). This is my personal blog, where I post both in [English](/) and [Italian](/it/).
+      content: I'm Matteo and I'm from Italy. I recently graduated in Computer Science (master's degree) at the University of Trento. I write code (mostly backend), but I'm also interested in video streaming and compression technologies.<br><br>I'm currently working on a new project, [TrackBot Pro](https://trackbotpro.it/), while also being part of the team of an edtech startup. Previously, I founded [FibraClick](https://fibra.click) and built [TrackBot](https://trackbot.eu). This is my personal blog, where I post both in [English](/) and [Italian](/it/).
     menu:
       main:
         - identifier: archive
@@ -22,7 +22,7 @@ languages:
     description: Sono Matteo, uno sviluppatore backend. Questo è il mio blog personale.
     homeInfoParams:
       title: Ciao 👋
-      content: Mi chiamo Matteo e vivo in Italia. Mi sono recentemente laureato in Informatica (magistrale) presso l'Università di Trento. Mi piace scrivere codice (prevalentemente backend) ma sono anche interessato nelle tecnologie di streaming video, compressione e video e produzione video live.<br><br>Attualmente lavoro per una startup edtech. Ho anche fondato [FibraClick](https://fibra.click) e creato [TrackBot](https://trackbot.eu). Questo è il mio blog personale, dove scrivo sia in [inglese](/) che in [italiano](/it/).
+      content: Mi chiamo Matteo e sono laureato in Informatica (magistrale) presso l'Università di Trento. Mi occupo di sviluppo software e gestione di infrastruttura, ma sono anche interessato a tecnologie di streaming e compressione video.<br><br>Attualmente sto lavorando a un nuovo progetto, [TrackBot Pro](https://trackbotpro.it/) e faccio anche parte di una startup edtech. In passato ho fondato e sono stato amministratore di [FibraClick](https://fibra.click) e ho creato [TrackBot](https://trackbot.eu). Questo è il mio blog personale, dove scrivo sia in [inglese](/) che in [italiano](/it/).
     menu:
       main:
         - identifier: archive
