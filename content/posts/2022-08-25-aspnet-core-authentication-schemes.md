@@ -109,7 +109,7 @@ If you run this code, put a breakpoint in the handler and then send an HTTP requ
 
 >**NOTE**: this behavior only applies when we have one authentication scheme. In that case, ASP.NET Core 7.0 automatically selects the configured authentication scheme as the default.
 >
->If you have more than one authentication scheme, [or use ASP.NET Core 6.0](https://docs.microsoft.com/en-us/dotnet/core/compatibility/aspnet-core/7.0/default-authentication-scheme) or earlier, authentication is **not enabled by default**. To enable it in those sistuations, there are two ways:
+>If you have more than one authentication scheme, [or use ASP.NET Core 6.0](https://docs.microsoft.com/en-us/dotnet/core/compatibility/aspnet-core/7.0/default-authentication-scheme) or earlier, authentication is **not enabled by default**. To enable it in those situations, there are two ways:
 >
 >- set a **default authentication scheme**
 >- **enable *authorization*** and specify the authentication scheme to use
