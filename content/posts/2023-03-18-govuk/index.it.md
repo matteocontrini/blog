@@ -43,7 +43,7 @@ Questa è solo una piccola parte, ci sono **un'infinità** di altri argomenti.
 Cosa abbiamo di tutto questo in Italia?
 
 <video autoplay muted loop playsinline style="width: 60%; margin-left: 0">
-    <source src="https://thumbs.gfycat.com/PowerlessForcefulBrownbutterfly-mobile.mp4" type="video/mp4">
+    <source src="/meme/laugh-spit.mp4" type="video/mp4">
 </video>
 
 Quasi nulla. Quando va bene è tutto sparso tra i diversi siti della pubblica amministrazione. Ma nella maggior parte dei casi queste informazioni sono sotterrate nella normativa. A svolgere il compito del portale GOV.UK in Italia ci provano vari blog e siti web (gestiti da "privati"), che però chiaramente hanno i loro interessi magari non sempre allineati con l'esigenza di avere informazioni precise e aggiornate.
