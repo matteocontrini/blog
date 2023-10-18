@@ -133,7 +133,7 @@ Sette: Siti che promuovono o che offrono metodi, mezzi di istruzione o altre ris
 
 ## Il decreto legge del 2023
 
-Nel settembre del 2023 il governo ha approvato un [nuovo decreto legge (n. 123)](https://www.gazzettaufficiale.it/eli/id/2023/09/15/23G00135/sg) che introduce nuove regole per quanto riguarda il parental control.
+Nel settembre del 2023 il governo ha approvato un [nuovo decreto legge (n. 123)](https://www.gazzettaufficiale.it/eli/id/2023/09/15/23G00135/sg) che introduce altre regole per quanto riguarda il parental control.
 
 Questa volta le regole sono indirizzate prevalentemente ai **produttori di dispositivi** come smartphone, tablet, computer, tv, smartwatch, sistemi IoT, ecc., che dovranno **indicare sulla confezione o all'interno della confezione la possibilità di installare sistemi di controllo parentale** in modo gratuito.
 
