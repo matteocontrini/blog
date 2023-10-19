@@ -75,7 +75,7 @@ Il procedimento inizia [nel 2021](https://www.agcom.it/visualizza-documento/9530
 
 Il documento rimanda il problema di determinare quali siano i "contenuti inappropriati" a un altro momento e **si concentra invece sugli aspetti tecnici**: ma non passa molto che le soluzioni proposte vengono **[generalmente considerate](https://forum.fibra.click/d/28166-agcom-parental-control-tramite-dns-e-blocco-di-dot-e-doh) folli**: se applicate alla lettera porterebbero nella pratica al blocco generale del web.
 
-I due metodi di blocco dei contenuti proposti sono il **blocco tramite DNS** e il **blocco tramite IP**.
+I due metodi proposti per il blocco dei contenuti sono il **blocco tramite DNS** e il **blocco tramite IP**.
 
 Il **blocco tramite DNS** è il metodo classico, già in uso dagli operatori per rispettare gli obblighi imposti dai tribunali per il blocco di siti web illegali (come i servizi di streaming illegale o il gioco d'azzardo non autorizzato).
 
