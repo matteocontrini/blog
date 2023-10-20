@@ -1,7 +1,7 @@
 ---
 title: "Confronto registrar domini .IT"
 date: 2023-09-05T09:00:00+02:00
-lastmod: 2023-09-05T13:00:00+02:00
+lastmod: 2023-10-10T18:00:00+02:00
 slug: registrar
 summary: "Un confronto dettagliato tra alcuni registrar accreditati per i domini .IT."
 showtoc: true
@@ -66,12 +66,12 @@ Tutti i prezzi sono IVA esclusa.
 | DNS Anycast                              | ❌                              | ✅ F5                  | ❌                       | ✅                     | ❌                     | ❌                          | ❌                     | ❌                | +1,09€                | ❌                |
 | DNSSEC interno                           | ❌                              | ✅                     | ❌                       | ❌                     | ✅                     | ✅                          | ❌                     | ❌                | ✅                     | ❌                |
 | DNSSEC esterno                           | ❌                              | ✅                     | ❌                       | ❌                     | ❌                     | ✅                          | ❌                     | ❌                | ✅                     | ❌                |
-| ALIAS/CNAME apex                         | ❌                              | ❌ <sup>(6)</sup>      | ❌                       | ❌                     | ❌                     | ❌                          | ❌                     | ❌                | ❌                     | 🔸               |
+| ALIAS/CNAME apex                         | ❌                              | ❌                     | ❌                       | ❌                     | ❌                     | ❌                          | ❌                     | ❌                | ❌                     | 🔸               |
 | TTL record                               | ❌ <sup>min 1h</sup>            | ✅                     | ✅                       | ✅                     | ✅                     | ❌ <sup>min 1h</sup>        | ❌                     | ❌                | ✅                     | ❌                |
 | Wildcard record                          | ✅                              | ❌                     | ✅                       | ✅                     | ✅                     | ✅                          | ✅                     | 🔸               | ✅                    | 🔸               |
 | Statistiche DNS                          | ❌                              | ❌                     | ❌                       | ❌                     | ❌                     | ❌                          | ❌                     | ❌                | ❌                     | ❌                |
 | API gestione DNS                         | ❌                              | ❌                     | ❌                       | ❌                     | ❌                     | ✅                          | ❌                     | ❌                | ✅                     | ❌                |
-| Backup/esportazione DNS                  | CSV, TXT <sup>(7)</sup>        | TXT <sup>(7)</sup>    | ❌                       | JSON                  | CSV                   | BIND, Excel                | ❌                     | ❌                | BIND                  | ❌                |
+| Backup/esportazione DNS                  | CSV, TXT <sup>(7)</sup>        | CSV                    | ❌                       | JSON                  | CSV                   | BIND, Excel                | ❌                     | ❌                | BIND                  | ❌                |
 | Redirect                                 | ✅ <small>root</small>          | ✅ <small>path</small> | ✅ <small>path</small>   | ✅ <small>root</small> | ✅ <small>path</small> | ✅ <small>path</small>      | ✅ <small>root</small> | ❌                | ✅ <small>root</small> | ❌                |
 | Inoltro email                            | ❌                              | ❌                     | ✅                       | ❌                     | ✅                     | ❌                          | ✅                     | ❌                | ✅ <small>inbox 1GB</small>  | ❌            |
 | 2FA                                      | ❌                              | ✅                     | ✅                       | ❌                     | ✅                     | ✅                          | ❌                     | ❌                | ✅                     | ✅                |
@@ -91,10 +91,6 @@ Tutti i prezzi sono IVA esclusa.
 (4) a occhio, registrante e amministrativo sono sincronizzati, tecnico è il registrar
 
 (5) solo contatto amministrativo
-
-(6) il supporto non capisce la domanda, assumo non si possa
-
-(7) non è chiaro se l’esportazione TXT sia in formato BIND, da verificare
 
 </div>
 
