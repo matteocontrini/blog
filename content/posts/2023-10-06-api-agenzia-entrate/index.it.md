@@ -1,7 +1,7 @@
 ---
 title: "Le nuove API dell'Agenzia delle Entrate, forse"
 date: 2023-10-07T11:00:00+02:00
-lastmod: 2023-10-07T11:00:00+02:00
+lastmod: 2023-11-09T17:00:00+01:00
 slug: api-agenzia-entrate
 summary: "L'Agenzia delle Entrate sta preparando delle nuove API per la verifica di partite IVA e dei codici fiscali, ma la fase di sperimentazione non sta andando benissimo."
 ---
@@ -80,19 +80,24 @@ Piano premium
 
 Notate come uno dei piani si chiami "business": come se gli altri piani non fossero pensati per il business.
 
-Sembra che i piani vengano **assegnati automaticamente in base al numero di fatture emesse all'anno** (non si capisce bene se si intenda emesse l'anno prima o nell'anno corrente e in caso come il criterio tenga conto della crescita che auspicabilmente le aziende hanno nel corso del tempo, anche all'interno dello stesso anno).
+Secondo [un post](https://forum.italia.it/t/servizi-per-check-codice-fiscale-e-partita-iva/10732/195) pubblicato sul forum Italia.it che i piani vengono **assegnati automaticamente in base al numero di fatture emesse in media al giorno** dall'azienda, calcolate sul primo semestre del 2023. Ad esempio **il piano standard si applica a chi crea meno di 10.000 fatture al giorno**.
 
-Secondo [un post](https://forum.italia.it/t/servizi-per-check-codice-fiscale-e-partita-iva/10732/165) pubblicato sul forum Italia.it **il piano standard si applica a chi crea meno di 10.000 fatture all'anno**. Non sono di per sé poche: ipotizzando una distribuzione uniforme sarebbero quasi 30 fatture al giorno.
+<img src="ade5.png" alt="Informazioni aggiuntive sui criteri
+Il criterio per determinare il piano di utilizzo considera il numero di fatture inviate dal soggetto nel primo
+semestre 2023. Determinando:
+• La fascia Premium se il soggetto invia mediamente da 100.000 a 500.000 fatture giornaliere
+• La fascia Business se il soggetto invia mediamente da 10.000 a 100.000 fatture giornaliere
+• La fascia Standard se il soggetto invia mediamente un numero di fatture inferiore a 10.000">
 
-Quello che fa storcere il naso sono i **rate limit**: nel piano standard il limite di 500 richieste al giorno ci sta, ma lascia un po' perplessi il limite di **2 richieste al minuto**. Significa che se uno inserisce un numero di partita IVA in un form e sbaglia una cifra, al secondo tentativo **il limite è già raggiunto**.
+Quello che fa storcere il naso sono i **rate limit** associati ai piani: ad esempio nel piano standard il limite sarebbe di 500 richieste al giorno, a fronte di 10.000 fatture emesse. Lascia ancora più perplessi il limite di **2 richieste al minuto**: significa che se uno inserisce un numero di partita IVA in un form e sbaglia una cifra, al secondo tentativo **il limite è già raggiunto**.
 
-Per molti questo limite rendererà le API quasi inusabili nel mondo reale e non si capisce bene perché sia così basso:
+Per molti questi limiti renderanno le API quasi inusabili nel mondo reale e non si capisce bene perché i limiti, specialmente quello al minuto, siano così bassi:
 
 - se l'obiettivo è scongiurare l'estrazione massiva, a quello ci pensa già il limite giornaliero;
 
 - se l'obiettivo è limitare il carico, credo che i potenti sistemi di Sogei siano in grado di gestire ben più di due richieste al minuto. Non so quale architettura ci sia dietro queste API, ma un lookup di un numero in un database non è sicuramente tra le operazioni computazionalmente più impattanti che l'Agenzia delle Entrate esegue.
 
-Paradossalmente, lo strumento di verifica p. IVA/codice fiscale messo a disposizione online, quello con il CAPTCHA, non ha questo limite.
+Paradossalmente, lo strumento di verifica p. IVA/codice fiscale messo a disposizione online, quello con il CAPTCHA, non sembra avere questi limiti.
 
 **Le API stesse non sono dei capolavori di ingegneria**:
 
