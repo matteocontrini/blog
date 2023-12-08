@@ -1,9 +1,9 @@
 ---
-title: "Working with custom authentication schemes in ASP.NET Core 7.0"
+title: "Working with custom authentication schemes in ASP.NET Core 8.0"
 date: 2022-08-25T22:00:00+02:00
-lastmod: 2023-05-23T16:00:00+02:00
+lastmod: 2023-12-08T21:00:00+01:00
 slug: aspnet-core-authentication-schemes
-summary: "How to define custom authentication schemes in ASP.NET Core 7.0, and why they're not enough to actually enforce authentication for your web application."
+summary: "How to define custom authentication schemes in ASP.NET Core 8.0, and why they're not enough to actually enforce authentication for your web application."
 showtoc: true
 ---
 
@@ -34,14 +34,14 @@ Let's start with authentication. In ASP.NET Core authentication is achieved with
   - verifying that it's valid;
   - providing the framework with an authentication ticket that certifies that the user has been successfully authenticated;
   - alternatively, if the user cannot be authenticated with the cookie the scheme code returns a failure result
-- ASP.NET Core 7.0 ships with two authentication schemes:
+- two common authentication schemes that ASP.NET Core 8.0 ships with are:
   - the **cookie** authentication scheme
   - the **JWT token** authentication scheme
 - these two schemes are **configurable to some extent**, but are still quite opinionated
   - for example, the cookie scheme builds a cookie that is encrypted and contains the claims (the properties of the user), which is something that you may want to avoid since the cookie can become large
 - if you don't like how they work or if you have different requirements (e.g. using session tokens) **you can create a custom authentication scheme**
 
-There are a few more details about authentication schemes that you can read about in the [overview page](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/?view=aspnetcore-7.0) of the official docs.
+There are a few more details about authentication schemes that you can read about in the [overview page](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/?view=aspnetcore-8.0) of the official docs.
 
 ## Custom authentication schemes
 
@@ -83,8 +83,7 @@ public class SessionTokenAuthenticationSchemeHandler : AuthenticationHandler<Ses
     public SessionTokenAuthenticationSchemeHandler(
         IOptionsMonitor<SessionTokenAuthenticationSchemeOptions> options,
         ILoggerFactory logger,
-        UrlEncoder encoder,
-        ISystemClock clock) : base(options, logger, encoder, clock)
+        UrlEncoder encoder) : base(options, logger, encoder)
     {
     }
 
@@ -92,7 +91,7 @@ public class SessionTokenAuthenticationSchemeHandler : AuthenticationHandler<Ses
     {
         // Read the token from request headers/cookies
         // Check that it's a valid session, depending on your implementation
-        
+
         // If the session is valid, return success:
         var claims = new[] { new Claim(ClaimTypes.Name, "Test") };
         var principal = new ClaimsPrincipal(new ClaimsIdentity(claims, "Tokens"));
@@ -107,7 +106,7 @@ public class SessionTokenAuthenticationSchemeHandler : AuthenticationHandler<Ses
 
 If you run this code, put a breakpoint in the handler and then send an HTTP request to any controller/endpoint of your application, you'll notice that **the handler is automatically called at every request**.
 
->**NOTE**: this behavior only applies when we have one authentication scheme. In that case, ASP.NET Core 7.0 automatically selects the configured authentication scheme as the default.
+>**NOTE**: this behavior only applies when we have one authentication scheme. In that case, ASP.NET Core 7.0+ automatically selects the configured authentication scheme as the default.
 >
 >If you have more than one authentication scheme, [or use ASP.NET Core 6.0](https://docs.microsoft.com/en-us/dotnet/core/compatibility/aspnet-core/7.0/default-authentication-scheme) or earlier, authentication is **not enabled by default**. To enable it in those situations, there are two ways:
 >
