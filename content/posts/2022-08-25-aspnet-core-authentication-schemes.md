@@ -61,15 +61,15 @@ If you wanted to register a custom scheme, you would use exactly that `AddScheme
 
 ```c#
 builder.Services.AddAuthentication()
-    .AddScheme<SessionTokenAuthenticationSchemeOptions, SessionTokenAuthenticationSchemeHandler>(
+    .AddScheme<SessionTokenAuthSchemeOptions, SessionTokenAuthSchemeHandler>(
         "SessionTokens",
         opts => {}
     );
 ```
 
 As you can guess, when defining a new scheme you need to create:
-- an options class (`SessionTokenAuthenticationSchemeOptions` in the example) deriving from `AuthenticationSchemeOptions`. This class can be an empty class if you don't have any options
-- a handler that takes the authentication requests (`SessionTokenAuthenticationSchemeHandler` in the example). The handler must inherit from `AuthenticationHandler` or implement the `IAuthenticationHandler` interface. The first approach is a bit easier because the base abstract class provides a sensible default implementation for most methods. We'll see an example in a minute.
+- an options class (`SessionTokenAuthSchemeOptions` in the example) deriving from `AuthenticationSchemeOptions`. This class can be an empty class if you don't have any options
+- a handler that takes the authentication requests (`SessionTokenAuthSchemeHandler` in the example). The handler must inherit from `AuthenticationHandler` or implement the `IAuthenticationHandler` interface. The first approach is a bit easier because the base abstract class provides a sensible default implementation for most methods. We'll see an example in a minute.
 
 Other than specifying the **types of the options and of the handler** as generic types, the `AddScheme<TOptions, THandler>()` method takes the **name of the scheme** as the first argument. To avoid hardcoding it you would usually put it in a static class, but let's keep it simple.
 
@@ -78,10 +78,10 @@ The second argument allows you to assign the **options** of the scheme (defined 
 The authentication handler in its most basic form only implements the `HandleAuthenticateAsync` method, by overriding it. This method gets called automatically at every request to an endpoint (if authentication is enabled on the endpoint) through a middleware.
 
 ```c#
-public class SessionTokenAuthenticationSchemeHandler : AuthenticationHandler<SessionTokenAuthenticationSchemeOptions>
+public class SessionTokenAuthSchemeHandler : AuthenticationHandler<SessionTokenAuthSchemeOptions>
 {
-    public SessionTokenAuthenticationSchemeHandler(
-        IOptionsMonitor<SessionTokenAuthenticationSchemeOptions> options,
+    public SessionTokenAuthSchemeHandler(
+        IOptionsMonitor<SessionTokenAuthSchemeOptions> options,
         ILoggerFactory logger,
         UrlEncoder encoder) : base(options, logger, encoder)
     {
@@ -117,7 +117,7 @@ If you run this code, put a breakpoint in the handler and then send an HTTP requ
 >
 >```c#
 >builder.Services.AddAuthentication("SessionTokens") // <--
->    .AddScheme<SessionTokenAuthenticationSchemeOptions, SessionTokenAuthenticationSchemeHandler>(
+>    .AddScheme<SessionTokenAuthSchemeOptions, SessionTokenAuthSchemeHandler>(
 >        "SessionTokens",
 >        opts => {}
 >    );
@@ -175,7 +175,7 @@ public class AuthController : ControllerBase
 
 **An important detail**: even if you put the `[AllowAnonymous]` attribute, **the authentication handler will be executed anyway**. This is because `[AllowAnonymous]` indeed *allows* unauthenticated users but doesn't really care about authentication. In other words, the effect of `[AllowAnonymous]` is to **entirely bypass authorization** (in this case the one we've enabled with `RequireAuthorization()`) **without affecting authentication in any way**.
 
-An alternative approach to the global `RequireAuthorization()` is to use the `[Authorize]` endpoint, which you can put on specific controllers or actions, like this:
+An alternative approach to the global `RequireAuthorization()` is to use the `[Authorize]` attribute, which you can put on specific controllers or actions, like this:
 
 ```c#
 [HttpGet("/secret")]
