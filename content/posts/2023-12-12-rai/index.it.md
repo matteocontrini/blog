@@ -9,7 +9,7 @@ showtoc: true
 
 *70 Petabyte al mese, in carico a TIM e Fastweb almeno dal 2016, con dei bandi aggiudicati senza nessuna valutazione tecnica e spesso senza nessuna concorrenza.*
 
-*Le fragilità di come la Rai sceglie (senza scegliere) le CDN per Rai Play, la propria piattaforma digitale di punta, tra bandi, gare con un solo concorrente, ricorsi, tribunali che suggeriscono che le CDN non sono cambiate dagli anni novanta ad oggi, e il rischio che passi l'idea che una soluzione valga l'altra finché costa poco.*
+*Le fragilità di come la Rai sceglie (senza scegliere) le CDN per Rai Play, la propria piattaforma digitale di punta, tra bandi, gare con un solo concorrente, ricorsi, tribunali che suggeriscono che le CDN non sono cambiate dagli anni novanta ad oggi, e il rischio che passi l'idea che una soluzione valga l'altra, basta che costi poco.*
 
 ---
 
