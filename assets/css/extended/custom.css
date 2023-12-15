@@ -7,3 +7,42 @@
     display: block;
     margin: var(--content-gap) auto var(--content-gap) auto;
 }
+
+.post-content figure {
+    margin-bottom: calc(var(--content-gap) * 1.2);
+    img {
+        display: block;
+        margin: 0 0 8px 0;
+    }
+
+    figcaption {
+        margin: 0 .5rem .5rem;
+        font-size: .9rem;
+        text-align: left;
+        color: #686868;
+        font-weight: 400;
+    }
+
+    &.vertical {
+        img {
+            max-height: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        figcaption {
+            text-align: center;
+        }
+    }
+}
+
+.post-content table thead th {
+    font-size: 100%;
+}
+
+.post-content table td,
+.post-content table th {
+    border: 1px solid var(--border) !important;
+    padding: 8px 8px !important;
+    line-height: 1.4 !important;
+}

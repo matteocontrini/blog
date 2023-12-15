@@ -1,0 +1,15 @@
+<figure{{ if .Get "vertical" }} class="vertical"{{ end }}>
+  {{- if not (.Get "nolink") }}
+  <a href="{{ .Get "src" }}" target="_blank">
+  {{- end }}
+
+  <img src="{{ .Get "src" }}" loading="lazy" {{ with .Get "alt" }}alt="{{ . }}" {{ end }}>
+
+  {{- if not (.Get "nolink") }}
+  </a>
+  {{- end }}
+
+  <figcaption>
+    {{ .Get "caption" | .Page.RenderString }}
+  </figcaption>
+</figure>

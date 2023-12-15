@@ -35,15 +35,6 @@ Tutti i prezzi sono IVA esclusa.
         display: none;
     }
 }
-#table-container > table thead th {
-    font-size: 100%;
-}
-#table-container > table td,
-#table-container > table th {
-    border: 1px solid var(--border);
-    padding: 8px 8px;
-    line-height: 1.4;
-}
 #notes-container p {
     margin: 0;
 }
