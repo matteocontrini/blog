@@ -32,7 +32,7 @@ Grazie ai bandi regolarmente pubblicati si possono ottenere diverse informazioni
 - il **consumo di banda medio mensile** stimato per il 2022-2025 è di circa **70 PB**, quasi il doppio rispetto al triennio precedente
 - le CDN usate sono due: **Akamai** e **MainStreaming**, fornite rispettivamente da TIM e Fastweb. La Rai infatti non fa contratti direttamente con le CDN ma richiede al mercato di fornire un servizio di streaming delivery, che viene poi realizzato da CDN esterne (o così è stato finora)
 - il **criterio di selezione** delle CDN è **puramente economico** senza una valutazione della qualità o affidabilità delle soluzioni
-- l'azienda che si è classificata seconda nel 2019, la Mosai.co srl (con le CDN Lumen/LimenLight), ha fatto **ricorso** proprio per questo motivo: secondo l'azienda il test di carico non dimostrava che la soluzione offerta da Fastweb fosse tecnicamente idonea
+- l'azienda che si è classificata seconda nel 2019, la Mosai.co srl (con le CDN Lumen/LimeLight), ha fatto **ricorso** proprio per questo motivo: secondo l'azienda il test di carico non dimostrava che la soluzione offerta da Fastweb fosse tecnicamente idonea
 - un pasticcio che ha portato nel bando successivo a **rimuovere del tutto il test di carico**: a fronte di una capacità di picco richiesta in caso di eventi speciali di 12 Tbps, ora viene solo chiesto di mostrare un esempio di streaming realizzato in passato con capacità di almeno 2 Tbps
 - oltretutto, il lotto più grande di questi bandi viene assegnato dal 2016 a TIM, unica offerente senza concorrenti
 
