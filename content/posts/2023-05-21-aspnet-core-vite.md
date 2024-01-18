@@ -1,17 +1,19 @@
 ---
 title: "Using Vite to bundle JS/CSS in ASP.NET Core MVC"
 date: 2023-05-21T22:30:00+02:00
-lastmod: 2023-05-22T10:00:00+02:00
+lastmod: 2024-01-18T22:00:00+01:00
 slug: aspnet-core-vite
 summary: "Vite is a popular build tool for frontends. Here's how to integrate it in an ASP.NET Core MVC multi-page application."
 showtoc: true
 ---
 
-In this article we're going to explore how to integrate [**Vite**](https://vitejs.dev/) for building (and bundling) JavaScript/CSS files in an **ASP.NET Core application**.
+*Last update: 2024-01-18 for Vite 5 compatibility.*
+
+In this article we're going to explore how to integrate [**Vite 5**](https://vitejs.dev/) for building (and bundling) JavaScript/CSS files in an **ASP.NET Core application**.
 
 The following is what we're going to achieve in brief. If the setup you have in mind is different, you can probably still take inspiration from this.
 
-- We're creating a **Multi-Page Application** (MPA), not an SPA. This means we'll use Razor templates for HTML generation and Vite for JavaScript and CSS. This setup was tested with ASP.NET Core MVC (7.0) but it should work with Razor Pages too.
+- We're creating a **Multi-Page Application** (MPA), not an SPA. This means we'll use Razor templates for HTML generation and Vite for JavaScript and CSS. This setup was tested with ASP.NET Core MVC (8.0) but it should work with Razor Pages too.
 - We will be using the [`Vite.AspNetCore`](https://github.com/Eptagone/Vite.AspNetCore) library, which does a lot of things for us. Thanks to the author for making our lives simpler.
 - The solution will work differently depending on whether we're in a production environment:
   - In the **development** environment, we'll be proxying the requests for static files to the Vite dev server, which will be running in background in "watch" mode
@@ -53,7 +55,7 @@ Here are some important things to notice:
 
 - All the configuration files, like `package.json` and `vite.config.js`, will be placed in the root of the ASP.NET Core project (and not of the solution).
 - The source JavaScript/CSS files are going to be in the `Assets` directory
-- In production, the bundled output will be generated at build time and placed in the `dist` directory, together with the `manifest.json` that tells how to map each entry point to its output bundle. You don't need to create the `dist` directory manually.
+- In production, the bundled output will be generated at build time and placed in the `dist` directory, together with the `.vite/manifest.json` that tells how to map each entry point to its output bundle. You don't need to create the `dist` directory manually.
   - Note that we're not including the file hash in the output file names, since we'll use the fingerprinting feature provided by ASP.NET Core (which adds `?v=` as a query string parameter).
 - The classic web root `wwwroot` is still there and it's the place where you're going to put other static assets (images, icons, etc.) that are not processed by Vite.
   - Note that both `dist` and `wwwroot` are going to be web roots in our implementation.
@@ -108,11 +110,17 @@ You've probably noticed that there's no mention of CSS. That's because in Vite w
 import './main.css';
 ```
 
-The `main.css` can be an empty file for now.
+For the sake of the example, the `main.css` contains:
+
+```css
+body {
+    font-size: 16px;
+}
+```
 
 Note that this is not CSS-in-JS: the processed CSS will be output as a "normal" CSS file.
 
-At this point you can create the `package.json` and install Vite:
+At this point you can create the `package.json` and install Vite 5:
 
 ```sh
 # don't forget to cd to the project directory before running these commands
@@ -130,7 +138,7 @@ Modify the `package.json` and add the `dev` and `build` npm scripts:
     "build": "vite build"
   },
   "devDependencies": {
-    "vite": "^4.3.8"
+    "vite": "^5.0.11"
   }
 }
 ```
@@ -142,25 +150,21 @@ The output should tell you which output files were generated:
 ```sh
 ❯ npm run build
 
-> build
+> vite5@1.0.0 build
 > vite build
 
-vite v4.3.8 building for production...
+vite v5.0.11 building for production...
 ✓ 2 modules transformed.
-../dist/manifest.json  0.19 kB │ gzip: 0.10 kB
-../dist/main.css       4.98 kB │ gzip: 1.56 kB
-../dist/main.js        0.02 kB │ gzip: 0.04 kB
-✓ built in 278ms
+../dist/.vite/manifest.json  0.12 kB │ gzip: 0.09 kB
+../dist/main.css             0.02 kB │ gzip: 0.04 kB
+../dist/main.js              0.00 kB │ gzip: 0.02 kB
+✓ built in 22ms
 ```
 
-The `manifest.json` file will look like this:
+The `manifest.json` file contained in the `dist/.vite` directory will look like this:
 
 ```json
 {
-  "main.css": {
-    "file": "main.css",
-    "src": "main.css"
-  },
   "main.js": {
     "css": [
       "main.css"
@@ -198,7 +202,7 @@ Then add the middleware for the development server:
 ```csharp
 if (app.Environment.IsDevelopment())
 {
-    app.UseViteDevMiddleware();
+    app.UseViteDevelopmentServer(true);
 }
 ```
 
@@ -231,12 +235,19 @@ If you look at the generated HTML the two lines above should have been replaced 
 
 ```html
 <script type="module" src="/@vite/client"></script>
-<script type="module" src="/main.js?v=-URFENx0A-QQSd6xM_aJKqamPAVZGytZ5O5bI017vZk"></script>
+<script type="module" src="/main.js"></script>
 ```
 
-Which is the standard way of integrating Vite with custom backends in development.
+Which is [the standard way](https://vitejs.dev/guide/backend-integration.html) of integrating Vite with custom backends in development.
 
-If you want the development server to be run automatically when you start the application, `Vite.AspNetCore` [has an option](https://github.com/Eptagone/Vite.AspNetCore#configuration) for that.
+If you want the development server to be run automatically when you start the application, `Vite.AspNetCore` [has an option](https://github.com/Eptagone/Vite.AspNetCore#configuration) for that:
+
+```csharp
+builder.Services.AddViteServices(options =>
+{
+    options.Server.AutoRun = true;
+});
+```
 
 One further thing you can verify is that we're still able to refer static files from the `wwwroot` directory. For example, this line of code would work correctly and we'd still have the IDE autocomplete available:
 
