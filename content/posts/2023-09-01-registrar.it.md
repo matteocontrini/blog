@@ -1,7 +1,7 @@
 ---
 title: "Confronto registrar domini .IT"
 date: 2023-09-05T09:00:00+02:00
-lastmod: 2023-10-10T18:00:00+02:00
+lastmod: 2024-01-23T14:30:00+01:00
 slug: registrar
 summary: "Un confronto dettagliato tra alcuni registrar accreditati per i domini .IT."
 showtoc: true
@@ -46,12 +46,12 @@ Tutti i prezzi sono IVA esclusa.
 |------------------------------------------|--------------------------------|-----------------------|-------------------------|-----------------------|-----------------------|----------------------------|-----------------------|------------------|-----------------------|------------------|
 | Prezzo .it (1° anno)                     | 0,99€                          | 0€                    | 6,90€                   | 6€                    | 7,59€                 | 4,90€                      | 5,99€                 | 3,99€            | 2,99€                 | 6,25€            |
 | Prezzo .it (dal 2° anno)                 | 10,99€                         | 45,55€                | 7,90€                   | 6€                    | 7,59€                 | 9,99€                      | 5,99€                 | 3,99€            | 8,99€                 | 6,25€            |
-| Azienda italiana 🇮🇹                    | ✅                              | ✅                     | ✅                       | ✅                     | ✅                     | ✅                          | ✅                     | ✅                | ❌                     | ✅                |
-| Consenso whois                           | ✅                              | ✅                     | ❌ <small>ticket</small> | ✅                     | ✅                     | ✅ <small>sempre no</small> | ✅                     | ✅                | ✅                    | ✅                |
+| Azienda italiana 🇮🇹                      | ✅                              | ✅                     | ✅                       | ✅                     | ✅                     | ✅                          | ✅                     | ✅                | ❌                     | ✅                |
+| Consenso pubblicazione whois             | ✅                              | ✅                     | ❌ <sup>(5)</sup> | ✅                     | ✅                     | ✅ <small>sempre no</small> | ✅                     | ✅                | ✅                    | ✅                |
 | Nameserver custom                        | ✅                              | ✅                     | ✅                       | ✅                     | ✅                     | ✅                          | ❌                     | ✅                | ✅                     | ✅                |
 | Nameserver durante trasferimento         | ✅ <sup>(1)</sup>               | ✅ <sup>(1)</sup>      | ✅                       | ✅                     | ❌                     | ✅ <sup>(2)</sup>          | ❌                     | ✅ <sup>(1)</sup> | 🔸                    | ✅                |
-| Cambio registrante                       | 10€                            | 45,55€                | 9€                      | ✅ <sup>gratis</sup>   | ✅ <sup>gratis</sup>   | ✅ <sup>gratis</sup>        | ✅ <sup>gratis</sup>   | 🔸               | ✅ <sup>gratis</sup>   | ✅ <sup>gratis</sup> |
-| Cambio contatti amministrativo e tecnico | ✅ <sup>(3)</sup><sup>(4)</sup> | ✅ <sup>(5)</sup>      | ✅ <sup>(3)</sup>        | ✅ <sup>(5)</sup>      | ✅ <sup>(3)</sup>      | ✅                          | ✅ <sup>(4)</sup>      | ✅ <sup>(3)</sup> | ✅                    | ✅ <sup>(4)</sup> |
+| Costo cambio registrante                 | 10€                            | 45,55€                | 9€                      | ✅ <sup>gratis</sup>   | ✅ <sup>gratis</sup>   | ✅ <sup>gratis</sup>        | ✅ <sup>gratis</sup>   | 🔸               | ✅ <sup>gratis</sup>   | ✅ <sup>gratis</sup> |
+| Cambio contatti amministrativo e tecnico | ❌ <sup>(3)</sup>               | ❌ <sup>(4)</sup>      | ❌ <sup>(6)</sup>        | ❌ <sup>(4)</sup>      | ❌ <sup>(3)</sup>      | ✅                          | ❌ <sup>(4)</sup>      | ❌ <sup>(3)</sup> | ✅                    | ❌ <sup>(4)</sup> |
 | Redemption                               | +0€                            | ?                     | +5€                     | +10€                  | +0€                   | +10€?                      | +>0€?                 | 🔸               | 49,99€                | 19€              |
 | Domini geografici                        | ✅                              | ✅                     | ✅                       | ❌                     | ✅                     | ✅                          | ✅                     | ❌                | ✅                     | ✅                |
 | DNS Anycast                              | ❌                              | ✅ F5                  | ❌                       | ✅                     | ❌                     | ❌                          | ❌                     | ❌                | +1,09€                | ❌                |
@@ -77,11 +77,13 @@ Tutti i prezzi sono IVA esclusa.
 
 (2) l’assistenza dice di sì, io non ho trovato dove si fa ma evidentemente mi sono perso qualcosa
 
-(3) sembra che tutti i contatti siano sincronizzati con quelli del registrante
+(3) sembra che tutti i contatti siano sincronizzati in automatico con quelli del registrante
 
-(4) a occhio, registrante e amministrativo sono sincronizzati, tecnico è il registrar
+(4) sembra che registrant e contatto amministrativo siano sincronizzati, il contatto tecnico è il registrar
 
-(5) solo contatto amministrativo
+(5) il consenso alla pubblicazione dei dati di registrazione viene dato in automatico e bisogna aprire un ticket per negare il consenso
+
+(6) tutti i contatti corrispondono all'intestatario, scelto in fase di registrazione. Qualsiasi modifica (!) è a pagamento e non è nemmeno possibile vedere i dati attuali
 
 </div>
 
@@ -93,4 +95,4 @@ Alcune informazioni aggiuntive utili per valutare:
 - il cambio registrante/intestatario presso il registro .IT dovrebbe essere gratuito
 - con "redemption" si intende il recupero del dominio nei 30 giorni successivi alla cancellazione del dominio per mancato rinnovo. Il costo di recupero presso il registro è di 4,00€ + IVA
 
-Se hai notato errori, puoi segnalarli con un commento qua sotto. I dati sono stati raccolti a inizio settembre 2023.
+Se hai notato errori, puoi segnalarli con un commento qua sotto. I dati sono stati raccolti a inizio settembre 2023 con alcune integrazioni successive.
