@@ -47,11 +47,11 @@ Tutti i prezzi sono IVA esclusa.
 | Prezzo .it (1° anno)                     | 0,99€                          | 0€                    | 6,90€                   | 6€                    | 7,59€                 | 4,90€                      | 5,99€                 | 3,99€            | 2,99€                 | 6,25€            |
 | Prezzo .it (dal 2° anno)                 | 10,99€                         | 45,55€                | 7,90€                   | 6€                    | 7,59€                 | 9,99€                      | 5,99€                 | 3,99€            | 8,99€                 | 6,25€            |
 | Azienda italiana 🇮🇹                      | ✅                              | ✅                     | ✅                       | ✅                     | ✅                     | ✅                          | ✅                     | ✅                | ❌                     | ✅                |
-| Consenso pubblicazione whois             | ✅                              | ✅                     | ❌ <sup>(5)</sup> | ✅                     | ✅                     | ✅ <small>sempre no</small> | ✅                     | ✅                | ✅                    | ✅                |
+| Consenso pubblicazione whois             | ✅                              | ✅                     | ❌ <small>sempre sì</small>             | ✅                     | ✅                     | ✅ <small>sempre no</small> | ✅                     | ✅                | ✅                    | ✅                |
 | Nameserver custom                        | ✅                              | ✅                     | ✅                       | ✅                     | ✅                     | ✅                          | ❌                     | ✅                | ✅                     | ✅                |
 | Nameserver durante trasferimento         | ✅ <sup>(1)</sup>               | ✅ <sup>(1)</sup>      | ✅                       | ✅                     | ❌                     | ✅ <sup>(2)</sup>          | ❌                     | ✅ <sup>(1)</sup> | 🔸                    | ✅                |
 | Costo cambio registrante                 | 10€                            | 45,55€                | 9€                      | ✅ <sup>gratis</sup>   | ✅ <sup>gratis</sup>   | ✅ <sup>gratis</sup>        | ✅ <sup>gratis</sup>   | 🔸               | ✅ <sup>gratis</sup>   | ✅ <sup>gratis</sup> |
-| Cambio contatti amministrativo e tecnico | ❌ <sup>(3)</sup>               | ❌ <sup>(4)</sup>      | ❌ <sup>(6)</sup>        | ❌ <sup>(4)</sup>      | ❌ <sup>(3)</sup>      | ✅                          | ❌ <sup>(4)</sup>      | ❌ <sup>(3)</sup> | ✅                    | ❌ <sup>(4)</sup> |
+| Cambio contatti amministrativo e tecnico | ❌ <sup>(3)</sup>               | ❌ <sup>(4)</sup>      | ❌ <sup>(5)</sup>        | ❌ <sup>(4)</sup>      | ❌ <sup>(3)</sup>      | ✅                          | ❌ <sup>(4)</sup>      | ❌ <sup>(3)</sup> | ✅                    | ❌ <sup>(4)</sup> |
 | Redemption                               | +0€                            | ?                     | +5€                     | +10€                  | +0€                   | +10€?                      | +>0€?                 | 🔸               | 49,99€                | 19€              |
 | Domini geografici                        | ✅                              | ✅                     | ✅                       | ❌                     | ✅                     | ✅                          | ✅                     | ❌                | ✅                     | ✅                |
 | DNS Anycast                              | ❌                              | ✅ F5                  | ❌                       | ✅                     | ❌                     | ❌                          | ❌                     | ❌                | +1,09€                | ❌                |
@@ -81,9 +81,7 @@ Tutti i prezzi sono IVA esclusa.
 
 (4) sembra che registrant e contatto amministrativo siano sincronizzati, il contatto tecnico è il registrar
 
-(5) il consenso alla pubblicazione dei dati di registrazione viene dato in automatico e bisogna aprire un ticket per negare il consenso
-
-(6) tutti i contatti corrispondono all'intestatario, scelto in fase di registrazione. Qualsiasi modifica (!) è a pagamento e non è nemmeno possibile vedere i dati attuali
+(5) tutti i contatti corrispondono all'intestatario, scelto in fase di registrazione. Qualsiasi modifica (anche l'indirizzo email) è a pagamento e non è nemmeno possibile vedere i dati attuali
 
 </div>
 
