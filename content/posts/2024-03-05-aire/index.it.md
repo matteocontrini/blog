@@ -20,7 +20,7 @@ Prima di avviare la procedura di iscrizione l'eroe viene informato che al termin
 
 {{< fig src="aire2.webp" >}}
 
-Il messaggio è **tanto convincente quanto falso**: al termine della procedura non ci sarà nessun modulo in PDF.
+Il messaggio è **tanto persuasivo quanto falso**: al termine della procedura non ci sarà nessun modulo in PDF.
 
 Una menzione speciale va fatta alla pagina dove va scelta l'*occupation*, il mestiere:
 
