@@ -60,7 +60,7 @@ Firmato, U.C.A.S. (Ufficio Complicazione Affari Semplici).
     <source src="maurizio.mp4" type="video/mp4">
 </video>
 
-Questa email lascia senza risposta le domande più basilari: bisogna fare qualcosa? Bisogna contattare il comune? Cos'è la *tabella dei procedimenti ad istanza di parte*? È italiano? E il *potere sostitutivo*?
+Questa email lascia senza risposta le domande più basilari: bisogna fare qualcosa? dov'è il modulo in PDF? Bisogna contattare il comune? Cos'è la *tabella dei procedimenti ad istanza di parte*? È italiano? E il *potere sostitutivo*?
 
 Se mai qualcuno dovesse riuscire a parafrase con successo questa email non credo possano esserci altri esiti: **"qua in Italia abbiamo una missione: complicare le cose, farle male ed esserti ostili, è meglio se resti all'estero"**.
 
