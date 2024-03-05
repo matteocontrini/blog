@@ -6,9 +6,9 @@ slug: aire
 summary: "Un eroe dall'estero mi racconta la sua avventura per l'iscrizione all'AIRE, l'Anagrafe italiani residenti all'estero. Il solito servizio digitale fatto male."
 ---
 
-Un eroe dall'estero mi racconta la sua avventura per l'**iscrizione all'AIRE**, l'Anagrafe italiani residenti all'estero. È una procedura obbligatoria se si vive all'estero.
+Un eroe dall'estero mi racconta la sua avventura per l'**iscrizione all'AIRE**, l'Anagrafe italiani residenti all'estero. È una procedura obbligatoria se si ha la cittadinanza italiana ma si vive all'estero.
 
-L'iscrizione si fa tramite i "Servizi Consolari Online", di preciso tramite un'applicazione online chiamata "Fast It" (presumo volesse essere un gioco di parole perché non ha altrimenti senso).
+L'iscrizione si fa tramite i "Servizi Consolari Online", di preciso tramite un'applicazione web chiamata "Fast It" (presumo volesse essere un gioco di parole perché non ha altrimenti senso).
 
 La piattaforma è purtroppo il solito servizio digitale pubblico fatto male, ma questa volta al mix si aggiunge il fatto che il sito dovrebbe essere **multi-lingua**.
 
@@ -26,10 +26,10 @@ Una menzione speciale va fatta alla pagina dove va scelta l'*occupation*, il mes
 
 {{< fig src="aire3.webp" >}}
 
-Abbiamo, trascrivo con gli errori:
+Abbiamo (trascrivo con gli errori):
 - il *RESTAURANT WORJKER*
 - il *PREESCHOOLER*
-- il *TEACHING STAFF/NO TEACHING STAFF* (insieme che potrebbe comprendere l'intera popolazione)
+- il *TEACHING STAFF/NO TEACHING STAFF* (un insieme che potrebbe comprendere l'intera popolazione)
 - la *HOUSEWIFE* (se fai l'*househusband* non gli interessa)
 - il *RELIGIOUS* (che presumo voglia indicare i membri del clero)
 - l'*AGENT* (la spia?)
