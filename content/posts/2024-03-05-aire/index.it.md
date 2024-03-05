@@ -3,7 +3,7 @@ title: "Burocrazia is in the AIRE"
 date: 2024-03-05T16:18:29+01:00
 lastmod: 2024-03-05T16:18:29+01:00
 slug: aire
-summary: "Un eroe dall'estero mi racconta la sua avventura per l'iscrizione all'AIRE, l'Anagrafe italiani residenti all'estero. Il solito servizio digitale fatto male."
+summary: "Un eroe dall'estero mi racconta la sua avventura per l'iscrizione all'AIRE, l'Anagrafe italiani residenti all'estero. Tutti pronti per la tabella dei procedimenti ad istanza di parte?"
 ---
 
 Un eroe dall'estero mi racconta la sua avventura per l'**iscrizione all'AIRE**, l'Anagrafe italiani residenti all'estero. È una procedura obbligatoria se si ha la cittadinanza italiana ma si vive all'estero.
