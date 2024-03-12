@@ -52,7 +52,7 @@ Tutti i prezzi sono IVA esclusa.
 | Domini geografici                        | ✅                     | ✅                     | ❌                     | ✅                     | ✅                          | ✅                          | ✅                     | ❌                | ✅                          | ✅                   |
 | Consenso pubblicazione whois             | ✅                     | ✅                     | ✅                     | ✅                     | ✅ <small>sempre no</small> | ❌ <small>sempre sì</small> | ✅                     | ✅                | ✅                          | ✅                   |
 | Nameserver esterni                       | ✅                     | ✅                     | ✅                     | ✅                     | ✅                          | ✅                          | ❌                     | ✅                | ✅                          | ✅                   |
-| Nameserver durante trasferimento         | ✅ <sup>(1)</sup>      | ✅ <sup>(1)</sup>      | ✅                     | ❌                     | ✅ <sup>(2)</sup>           | ✅                          | ❌                     | ✅ <sup>(1)</sup> | 🔸                         | ✅                   |
+| Nameserver durante trasferimento         | ✅ <sup>(1)</sup>      | ✅ <sup>(1)</sup>      | ✅                     | ❌                     | ✅                          | ✅                          | ❌                     | ✅ <sup>(1)</sup> | 🔸                         | ✅                   |
 | Costo cambio proprietario                | 10€                    | 45,55€                 | ✅ <sup>gratis</sup>   | ✅ <sup>gratis</sup>   | ✅ <sup>gratis</sup>        | 9€                          | ✅ <sup>gratis</sup>   | 🔸               | ✅ <sup>gratis</sup>        | ✅ <sup>gratis</sup> |
 | Riepilogo contatti                       | 🔸                     | ✅                     | ✅                     | ❌                     | ✅                          | ❌                          | ✅                     | 🔸               | ✅                          | ✅                   |
 | Cambio contatti amministr. e tecnico     | ❌ <sup>(3)</sup>      | ❌ <sup>(4)</sup>      | ❌ <sup>(4)</sup>      | ❌ <sup>(3)</sup>      | ✅                          | ❌ <sup>(5)</sup>           | ❌ <sup>(4)</sup>      | ❌ <sup>(3)</sup> | ✅                          | ❌ <sup>(4)</sup>    |
@@ -77,8 +77,6 @@ Tutti i prezzi sono IVA esclusa.
 🔸 = non chiaro/da verificare
 
 (1) si possono solo mantenere i NS esistenti, non sceglierne di nuovi
-
-(2) l’assistenza dice di sì, io non ho trovato dove si fa ma evidentemente mi sono perso qualcosa
 
 (3) sembra che tutti i contatti siano sincronizzati in automatico con quelli del registrante
 
