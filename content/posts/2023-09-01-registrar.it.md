@@ -1,7 +1,7 @@
 ---
 title: "Confronto registrar domini .IT"
 date: 2023-09-05T09:00:00+02:00
-lastmod: 2024-02-06T22:00:00+01:00
+lastmod: 2024-03-21T14:00:00+01:00
 slug: registrar
 summary: "Un confronto dettagliato tra alcuni registrar accreditati per i domini .IT."
 showtoc: true
@@ -49,7 +49,7 @@ Tutti i prezzi sono IVA esclusa.
 | Prezzo .it (1° anno)                     | 0,99€                  | 0€                     | 6€                     | 7,59€                  | 4,90€                       | 9,90€                       | 5,99€                  | 3,99€             | 2,99€                       | 6,25€                |
 | Prezzo .it (dal 2° anno)                 | 10,99€                 | 45,55€                 | 6€                     | 7,59€                  | 9,99€                       | 9,90€                       | 5,99€                  | 3,99€             | 8,99€                       | 6,25€                |
 | Azienda italiana 🇮🇹                      | ✅                      | ✅                     | ✅                     | ✅                     | ✅                          | ✅                          | ✅                     | ✅                | ❌                          | ✅                   |
-| Domini geografici                        | ✅                     | ✅                     | ❌                     | ✅                     | ✅                          | ✅                          | ✅                     | ❌                | ✅                          | ✅                   |
+| Domini geografici                        | ✅                     | ✅                     | ✅                     | ✅                     | ✅                          | ✅                          | ✅                     | ❌                | ✅                          | ✅                   |
 | Consenso pubblicazione whois             | ✅                     | ✅                     | ✅                     | ✅                     | ✅ <small>sempre no</small> | ❌ <small>sempre sì</small> | ✅                     | ✅                | ✅                          | ✅                   |
 | Nameserver esterni                       | ✅                     | ✅                     | ✅                     | ✅                     | ✅                          | ✅                          | ❌                     | ✅                | ✅                          | ✅                   |
 | Nameserver durante trasferimento         | ✅ <sup>(1)</sup>      | ✅ <sup>(1)</sup>      | ✅                     | ❌                     | ✅                          | ✅                          | ❌                     | ✅ <sup>(1)</sup> | 🔸                         | ✅                   |
