@@ -1,7 +1,7 @@
 ---
 title: "Confronto registrar domini .IT"
 date: 2023-09-05T09:00:00+02:00
-lastmod: 2024-03-21T14:00:00+01:00
+lastmod: 2024-04-14T09:30:00+02:00
 slug: registrar
 summary: "Un confronto dettagliato tra alcuni registrar accreditati per i domini .IT."
 showtoc: true
@@ -54,7 +54,7 @@ Tutti i prezzi sono IVA esclusa.
 | Nameserver esterni                       | ✅                     | ✅                     | ✅                     | ✅                     | ✅                          | ✅                          | ❌                     | ✅                | ✅                          | ✅                   |
 | Nameserver durante trasferimento         | ✅ <sup>(1)</sup>      | ✅ <sup>(1)</sup>      | ✅                     | ❌                     | ✅                          | ✅                          | ❌                     | ✅ <sup>(1)</sup> | 🔸                         | ✅                   |
 | Costo cambio proprietario                | 10€                    | 45,55€                 | ✅ <sup>gratis</sup>   | ✅ <sup>gratis</sup>   | ✅ <sup>gratis</sup>        | 9€                          | ✅ <sup>gratis</sup>   | 🔸               | ✅ <sup>gratis</sup>        | ✅ <sup>gratis</sup> |
-| Riepilogo contatti                       | 🔸                     | ✅                     | ✅                     | ❌                     | ✅                          | ❌                          | ✅                     | 🔸               | ✅                          | ✅                   |
+| Riepilogo contatti                       | ✅                     | ✅                     | ✅                     | ❌                     | ✅                          | ❌                          | ✅                     | 🔸               | ✅                          | ✅                   |
 | Cambio contatti amministr. e tecnico     | ❌ <sup>(3)</sup>      | ❌ <sup>(4)</sup>      | ❌ <sup>(4)</sup>      | ❌ <sup>(3)</sup>      | ✅                          | ❌ <sup>(5)</sup>           | ❌ <sup>(4)</sup>      | ❌ <sup>(3)</sup> | ✅                          | ❌ <sup>(4)</sup>    |
 | Redemption                               | +0€                    | ?                      | +10€                   | +0€                    | +10€?                       | +5€                         | +>0€?                  | 🔸               | 49,99€                      | 19€                  |
 | DNS Anycast                              | ❌                     | ✅ (F5)                | ✅                     | ❌                     | ❌                          | ❌                          | ❌                     | ❌                | +1,09€                      | ❌                   |
