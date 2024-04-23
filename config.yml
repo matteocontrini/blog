@@ -11,7 +11,7 @@ languages:
     description: I'm Matteo, a backend developer from Italy. This is my personal blog.
     homeInfoParams:
       title: Hi there 👋
-      content: I'm Matteo and I'm from Italy. I recently graduated in Computer Science (master's degree) at the University of Trento. I write code (mostly backend), but I'm also interested in video streaming and compression technologies.<br><br>I'm currently working on a new project, [TrackBot Pro](https://trackbotpro.it/), while also being part of the team of an edtech startup. Previously, I founded [FibraClick](https://fibra.click) and built [TrackBot](https://trackbot.eu). This is my personal blog, where I post both in [English](/) and [Italian](/it/).
+      content: I'm Matteo and I'm from Italy. I recently graduated in Computer Science at the University of Trento. I write code (mostly backend) and I have experience in cloud infrastructure and video streaming technologies.<br><br>This is my personal blog. You can find more about me if you switch the language to [🇮🇹 Italian](/it/).
     menu:
       main:
         - identifier: archive
@@ -22,7 +22,7 @@ languages:
     description: Sono Matteo, uno sviluppatore backend. Questo è il mio blog personale.
     homeInfoParams:
       title: Ciao 👋
-      content: Mi chiamo Matteo e sono laureato in Informatica (magistrale) presso l'Università di Trento. Mi occupo di sviluppo software e gestione di infrastruttura, ma sono anche interessato a tecnologie di streaming e compressione video.<br><br>Attualmente sto lavorando a un nuovo progetto, [TrackBot Pro](https://trackbotpro.it/) e faccio anche parte di una startup edtech. In passato ho fondato e sono stato amministratore di [FibraClick](https://fibra.click) e ho creato [TrackBot](https://trackbot.eu). Questo è il mio blog personale, dove scrivo sia in [inglese](/) che in [italiano](/it/).
+      content: Mi chiamo Matteo e sono laureato in informatica all'Università di Trento. Mi occupo quotidianamente di sviluppo software e gestione di infrastrutture cloud, ma ho anche esperienza in tecnologie di streaming video.<br><br>Alcune cose che faccio:<br>- Scrivo la newsletter settimanale [Storie di bit](https://storiedibit.it/) su Internet, AI e digitale<br>- Ho co-fondato e gestisco [TrackBot](https://trackbot.eu) e [TrackBot Pro](https://trackbot.pro), servizi per il tracking delle spedizioni<br>- Collaboro con una startup edtech / AI<br>- In passato ho fondato e sono stato amministratore di [FibraClick](https://fibra.click)<br>- Mi trovi anche nel mio [canale Telegram](https://t.me/notedimatteo)<br><br>Questo è il mio blog personale, dove scrivo sia in [🇺🇸 inglese](/) che in [🇮🇹 italiano](/it/).
     menu:
       main:
         - identifier: archive
