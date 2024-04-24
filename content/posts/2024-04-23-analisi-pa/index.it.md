@@ -142,9 +142,11 @@ Nota: questa categorizzazione non è una scienza esatta e in alcuni casi è un p
 
 ---
 
-{{< center >}}
-*Leggi anche [**L'Italia dovrebbe copiare il portale GOV.UK**]({{< relref "/posts/2023-03-18-govuk/index.it.md" >}})*
-{{< /center >}}
+*Alcuni articoli che potrebbero interessarti:*
+- *[**L'Italia dovrebbe copiare il portale GOV.UK**]({{< relref "/posts/2023-03-18-govuk/index.it.md" >}})*
+- *[**Le nuove API dell'Agenzia delle Entrate, forse**]({{< relref "/posts/2023-10-06-api-agenzia-entrate/index.it.md" >}})*
+- *[**Burocrazia is in the AIRE**]({{< relref "/posts/2024-03-05-aire/index.it.md" >}})*
+- *[**La storia della CDN Rai Play, o come non scegliere una CDN**]({{< relref "/posts/2023-12-12-rai/index.it.md" >}})*
 
 ---
 
