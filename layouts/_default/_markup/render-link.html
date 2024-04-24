@@ -1,1 +1,1 @@
-<a href="{{ .Destination | safeURL }}" target="_blank" rel="noopener" {{ with .Title}} title="{{ . }}" {{ end }}>{{ .Text | safeHTML }}</a>
+<a href="{{ .Destination | safeURL }}" {{ with .Title}} title="{{ . }}" {{ end }}>{{ .Text | safeHTML }}</a>
