@@ -237,6 +237,10 @@ Non tutti se la cavano molto bene. Ad esempio:
 
 - `connetti.italia.it` blocca i motori di ricerca tramite il file `robots.txt`.
 
+## Curiosità
+
+- Molti siti che usano Akamai come nameserver usano in realtà `ammi{n}.finanze.it`, dove `n` va da 1 a 8, ma di solito sono impostati solo dal 2 al 7. Tranne l'1 e il 2 puntano tutti ad Akamai e a questi nameserver si affidano una decina di siti tra quelli analizzati.
+
 ## Chi si salva
 
 Se teniamo in considerazione l'intero insieme di criteri (discutibile ovviamente), **nessuno**.
