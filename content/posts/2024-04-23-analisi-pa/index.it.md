@@ -168,7 +168,7 @@ Nota: questa categorizzazione non è una scienza esatta e in alcuni casi è un p
   - anche `www.italiadomani.gov.it` passa da A ad A+, per un altro motivo che non ho identificato
   - `www.lavoro.gov.it`, `www.politicheagricole.it`, `www.ministeroturismo.gov.it`, `bandaultralarga.italia.it`, `www.impresainungiorno.gov.it` e `polostrategiconazionale.it` passano da B ad A (se usassero HSTS sarebbero A+)
   - `impresa.italia.it` infatti è passato da B ad A+
-- Il grado SSL Labs peggiora per un paio di siti:
+- Il grado SSL Labs peggiora per alcuni siti:
   - `www.esteri.it` perde inspiegabilmente HSTS e quindi il grado passa da A+ ad A
   - `www.salute.gov.it` da A+ a B perché hanno abilitato TLS 1.0/1.1 (vedi sopra)
   - dall'anno scorso nessun sito è più in grado C o inferiore
@@ -180,7 +180,7 @@ Nota: questa categorizzazione non è una scienza esatta e in alcuni casi è un p
 - Redirect e dintorni:
   - `www.politichegiovanili.gov.it` sente la vecchiaia. Era "perfetto" mentre ora è tutto spaccato: in HTTP non va più del tutto, mentre in HTTPS *solo* con il www
   - `www.mise.gov.it` ora è `www.mimit.gov.it`, funziona anche senza www ma il sito è "duplicato", non c'è una versione canonical
-  - `www.difesa.it` ha rifatto il sito e a quanto pare hanno rotto *tutti* i link vecchi. La pagina 404 dice infatti "i contenuti che stai cercando sono stati trasferiti sul nuovo portale www.difesa.it"
+  - su `www.difesa.it` il sito è stato rifatto e a quanto pare hanno rotto *tutti* i link vecchi. La pagina 404 dice infatti "i contenuti che stai cercando sono stati trasferiti sul nuovo portale www.difesa.it"
   - `www.prefettura.it` ora è accessibile in HTTPS, l'anno scorso faceva redirect alla versione HTTP (!)
   - `www.infratelitalia.it` non mostra più la pagina della CGIL senza www ma invece dà connection refused
   - `bandaultralarga.italia.it` ora è accessibile con il www ma senza redirect (sito duplicato)
