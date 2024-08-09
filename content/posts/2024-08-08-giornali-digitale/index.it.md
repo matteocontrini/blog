@@ -127,6 +127,18 @@ Il **Wall Street Journal** è pieno di grafici ogni volta che parla di economia:
 
 ---
 
+Ci sono anche ricostruzioni grafiche:
+
+{{< fig src="wsj_3.jpg" >}}
+
+---
+
+E audio interattivi. Siamo sul web, si può fare, e quindi si fa. No?
+
+{{< fig src="wsj_4.jpg" >}}
+
+---
+
 Sul **Guardian** invece sono le mappe ad essere molto curate. Fate caso al fatto che queste non sono immagini né *iframe* di servizi esterni: sono grafiche vettoriali native per il web (si intuisce siano state realizzate con Adobe Illustrator e poi [convertite](http://ai2html.org/)).
 
 {{< fig src="theguardian_1.jpg" >}}
