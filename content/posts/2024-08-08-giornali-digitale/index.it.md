@@ -210,6 +210,12 @@ Poi c'è il New York Times, che di solito supera tutti:
 
 ---
 
+{{< fig src="nyt_7.jpg" >}}
+
+*([fonte](https://www.nytimes.com/interactive/2024/us/elections/2024-election-calendar.html))*
+
+---
+
 Questi sono contenuti “digital-first”. Ci spiega cosa significa digital-first l’”Innovation Report” del 2014 (!):
 
 >Around the newsroom, this phrase often is used to refer to publishing articles on the web before putting them in print. But outside our walls, digital-first is an all-encompassing strategy.
