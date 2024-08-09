@@ -12,7 +12,7 @@ summary: "Un po' di appunti senza pretese su giornalismo e innovazione digitale:
 
 C’è stato un [momento di svolta](https://www.niemanlab.org/2014/05/the-leaked-new-york-times-innovation-report-is-one-of-the-key-documents-of-this-media-age/) nella storia dell’innovazione del New York Times, il giornale più grande e autorevole al mondo: nel 2014 il *leak* dell’[”Innovation Report”](https://nytco-assets.nytimes.com/2024/04/InnovationReport.pdf) ha mostrato a tutti le difficoltà nell’evolvere un business di giornalismo tradizionale in un business digitale.
 
-Uno dei problemi principali evidenziati nel rapporto era la **separazione rigida tra la newsroom, cioè i giornalisti, e la divisione "business", che includeva anche designer, sviluppatori e in generale esperti di “reader experience”**. La superazione di questa divisione è stata fondamentale per trasformare la versione online del New York Times nel prodotto di punta del giornale, tanto che nel 2020 i ricavi dal digitale hanno superato quelli della carta stampata.
+Uno dei problemi principali evidenziati nel rapporto era la **separazione rigida tra la newsroom, cioè i giornalisti, e la divisione "business", che includeva anche designer, sviluppatori e in generale esperti di “reader experience”**. Il superamento di questa divisione è stata fondamentale per trasformare la versione online del New York Times nel prodotto di punta del giornale, tanto che nel 2020 i ricavi dal digitale hanno superato quelli della carta stampata.
 
 Nel report di dieci anni fa si legge:
 
