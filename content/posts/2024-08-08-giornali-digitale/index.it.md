@@ -6,7 +6,7 @@ slug: giornali-digitale
 summary: "Un po' di appunti senza pretese su giornalismo e innovazione digitale: cosa significa diventare digital-first, chi ci è riuscito e chi non ci sta nemmeno provando."
 ---
 
-*Un po' di appunti senza pretese su giornalismo e innovazione digitale: cosa significa diventare "digital-first", chi sembra esserci riuscito e chi non ci sta nemmeno provando. La prendo un po' larga nell'introduzione ma seguiranno circa 40 esempi con immagini.*
+*Un po' di appunti senza pretese su giornalismo e innovazione digitale: cosa significa diventare "digital-first", chi sembra esserci riuscito e chi non ci sta nemmeno provando. La prendo un po' larga nell'introduzione ma seguiranno più di 40 esempi con immagini.*
 
 ---
 
@@ -185,9 +185,9 @@ Poi c'è il New York Times, che di solito supera tutti:
 
 ---
 
-{{< fig src="nyt_2.jpg" >}}
+{{< fig src="nyt_8.jpg" >}}
 
-*([fonte](https://www.nytimes.com/live/2024/07/27/world/olympics-paris-photos#noah-lyles-100-meters))*
+*([fonte](https://www.nytimes.com/2024/08/08/us/politics/trump-rally-shooting-bodycam-footage.html))*
 
 ---
 
@@ -213,6 +213,12 @@ Poi c'è il New York Times, che di solito supera tutti:
 {{< fig src="nyt_7.jpg" >}}
 
 *([fonte](https://www.nytimes.com/interactive/2024/us/elections/2024-election-calendar.html))*
+
+---
+
+{{< fig src="nyt_2.jpg" >}}
+
+*([fonte](https://www.nytimes.com/live/2024/07/27/world/olympics-paris-photos#noah-lyles-100-meters))*
 
 ---
 
