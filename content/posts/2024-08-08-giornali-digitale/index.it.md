@@ -141,7 +141,7 @@ E audio interattivi. Siamo sul web, si può fare, e quindi si fa. No?
 
 ---
 
-Sul **Guardian** invece sono le mappe ad essere molto curate. Fate caso al fatto che queste non sono immagini né *iframe* di servizi esterni: sono grafiche vettoriali native per il web (si intuisce siano state realizzate con Adobe Illustrator e poi [convertite](http://ai2html.org/)).
+Sul **Guardian** invece sono le mappe ad essere molto curate. Fate caso al fatto che queste non sono immagini né *iframe* di servizi esterni: sono grafiche vettoriali native per il web (si intuisce siano state realizzate con Adobe Illustrator e poi convertite con uno [strumento](https://github.com/newsdev/ai2html) realizzato dal NYT).
 
 {{< fig src="theguardian_1.jpg" >}}
 
