@@ -137,6 +137,8 @@ E audio interattivi. Siamo sul web, si può fare, e quindi si fa. No?
 
 {{< fig src="wsj_4.jpg" >}}
 
+*([fonte](https://www.wsj.com/us-news/videos-show-police-at-trump-rally-airing-frustration-with-secret-service-47c62e12))*
+
 ---
 
 Sul **Guardian** invece sono le mappe ad essere molto curate. Fate caso al fatto che queste non sono immagini né *iframe* di servizi esterni: sono grafiche vettoriali native per il web (si intuisce siano state realizzate con Adobe Illustrator e poi [convertite](http://ai2html.org/)).
