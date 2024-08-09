@@ -230,7 +230,7 @@ Questi sono contenuti “digital-first”. Ci spiega cosa significa digital-firs
 >
 >This transition requires rethinking staffing, structure and work processes from top to bottom.
 
-Ho già in mente l’obiezione: è un lavoraccio, è costoso. Può essere. Ma avendo un po’ di esperienza con il web so anche che **pubblicare le infografiche e le illustrazioni già fatte in un modo diverso dagli screenshot sgranati non è né costoso né un lavoraccio**.
+Ho già in mente l’obiezione: è un lavoraccio, è costoso. Può essere. Ma avendo un po’ di esperienza con il web so anche che **pubblicare le infografiche e le illustrazioni che già si producono in un modo diverso dagli screenshot sgranati non è né costoso né un lavoraccio**.
 
 E se buona parte del tuo lavoro è parlare del mondo, e sai che le **mappe** possono avere un ruolo importante, dopo un po’ ti attrezzi per realizzarle e pubblicarle con la giusta qualità. È il minimo che puoi fare, se non stai facendo un blog come hobby.
 
