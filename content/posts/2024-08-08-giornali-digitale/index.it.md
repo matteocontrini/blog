@@ -1,7 +1,7 @@
 ---
 title: "Giornali e digitale"
 date: 2024-08-09T09:00:00+02:00
-lastmod: 2024-08-09T09:00:00+02:00
+lastmod: 2024-08-20T09:00:00+02:00
 slug: giornali-digitale
 summary: "Un po' di appunti senza pretese su giornalismo e innovazione digitale: cosa significa diventare digital-first, chi ci è riuscito e chi non ci sta nemmeno provando."
 ---
@@ -141,7 +141,9 @@ E audio interattivi. Siamo sul web, si può fare, e quindi si fa. No?
 
 ---
 
-Sul **Guardian** invece sono le mappe ad essere molto curate. Fate caso al fatto che queste non sono immagini né *iframe* di servizi esterni: sono grafiche vettoriali native per il web (si intuisce siano state realizzate con Adobe Illustrator e poi convertite con uno [strumento](https://github.com/newsdev/ai2html) realizzato dal NYT).
+Sul **Guardian** invece sono le mappe ad essere molto curate.
+
+Fate caso al fatto che queste non sono immagini né *iframe* di servizi esterni: sono grafiche vettoriali native per il web (si intuisce siano state realizzate con Adobe Illustrator e poi convertite con uno [strumento](https://github.com/newsdev/ai2html) realizzato dal NYT).
 
 {{< fig src="theguardian_1.jpg" >}}
 
@@ -152,6 +154,12 @@ Sul **Guardian** invece sono le mappe ad essere molto curate. Fate caso al fatto
 {{< fig src="theguardian_2.jpg" >}}
 
 *([fonte](https://www.theguardian.com/world/article/2024/aug/08/ukraine-war-briefing-why-kursk-white-house-asks-as-putin-fumes-at-provocation ))*
+
+---
+
+{{< fig src="theguardian_5.jpg" >}}
+
+*([fonte](https://www.theguardian.com/world/article/2024/aug/19/yacht-sinks-off-sicily-in-storm ))*
 
 ---
 
