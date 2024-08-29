@@ -41,7 +41,7 @@ Below, the feature "rewrite" usually includes the ability to have a navigation f
 - ✅ Automatic hosted builds (CI/CD)
 - ✅ GitHub commit checks, environments/deployments
 - ✅ Rollbacks
-- ❓ Atomic deployments
+- ❓ Probably atomic deployments
 - ✅ Instant cache invalidation
 - ✅ Custom domain with HTTPS certificate and redirect
 - ✅ Branch/PR preview environments, also on custom domain
@@ -60,7 +60,7 @@ Below, the feature "rewrite" usually includes the ability to have a navigation f
 - ✅ GitHub commit checks
 - ❌ No GitHub environments/deployments support
 - ✅ Rollbacks
-- ❓ Atomic deployments
+- ❓ Probably atomic deployments
 - ✅ Instant cache invalidation
 - ✅ Custom domain with HTTPS certificate and redirect
 - ⚠️ Custom domain requires Cloudflare NS
@@ -81,7 +81,7 @@ Below, the feature "rewrite" usually includes the ability to have a navigation f
 - ✅ Automatic hosted builds (CI/CD)
 - ❓ GitHub commit checks, environments/deployments
 - ✅ Rollbacks
-- ❓ Atomic deployments
+- ❓ Probably atomic deployments
 - ✅ Instant cache invalidation
 - ✅ Custom domain with HTTPS certificate and redirect
 - ✅ PR (not branch) preview environments
