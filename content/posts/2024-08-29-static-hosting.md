@@ -76,7 +76,7 @@ Below, the feature "rewrite" usually includes the ability to have a navigation f
 
 ## [Render](https://render.com/)
 
-- ⚠️ CDN: unknown
+- ⚠️ CDN: unknown ("global CDN")
 - Bandwidth: 100 GB on the free plan, 500 GB or 1 TB on paid plans, then $300 / TB
 - ✅ Automatic hosted builds (CI/CD)
 - ❓ GitHub commit checks, environments/deployments
