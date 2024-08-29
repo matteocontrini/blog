@@ -65,7 +65,7 @@ Below, the feature "rewrite" usually includes the ability to have a navigation f
 - ✅ Custom domain with HTTPS certificate and redirect
 - ⚠️ Custom domain requires Cloudflare NS
 - ✅ Branch/PR preview deployments
-- ❌ Preview deployments on custom domain are manual
+- ❌ Preview deployments on custom domain must be configured manually
 - ✅ Rewrites/redirects
 - ❌ No proxied paths
 - ✅ Custom response headers
@@ -76,7 +76,7 @@ Below, the feature "rewrite" usually includes the ability to have a navigation f
 
 ## [Render](https://render.com/)
 
-- ⚠️ CDN: unknown ("global CDN")
+- ⚠️ CDN: no details available ("global CDN")
 - Bandwidth: 100 GB on the free plan, 500 GB or 1 TB on paid plans, then $300 / TB
 - ✅ Automatic hosted builds (CI/CD)
 - ❓ GitHub commit checks, environments/deployments
@@ -131,7 +131,7 @@ Below, the feature "rewrite" usually includes the ability to have a navigation f
 - ✅ Custom response headers
 - ❌ No DDoS/flood protection included
 - ✅ HTTP/2
-- ❌ HTTP/3
+- ❌ No HTTP/3
 - ✅ IPv6 (only with Front Door enabled)
 
 I left out some features, like access control, form submissions, analytics, etc., which are sometimes included.
