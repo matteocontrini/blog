@@ -11,7 +11,7 @@ Here's a comparison of the most popular static website hosting services.
 
 With static hosting I mean hosting of static HTML pages and their linked resources (CSS, JS, images, etc.).
 
-Other than serving the static content with a **global CDN**, these services usually also take care of things like **CI/CD builds**, **atomic deployments**, **instant cache validation** and **preview deployments**, which often aren't easy to achieve (or not achievable at all) with simple DYI storage+CDN solutions.
+Other than serving the static content with a **global CDN**, these services usually also take care of things like **CI/CD builds**, **atomic deployments**, **instant cache invalidation** and **preview deployments**, which often aren't easy to achieve (or not achievable at all) with simple DYI storage+CDN solutions.
 
 Below, the feature "rewrite" usually includes the ability to have a navigation fallback for single-page applications, and custom error pages.
 
