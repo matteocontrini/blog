@@ -94,7 +94,7 @@ Below, the feature "rewrite" usually includes the ability to have a navigation f
 - ✅ HTTP/3
 - ❌ No IPv6
 
-## AWS Amplify
+## [AWS Amplify Hosting](https://aws.amazon.com/amplify/hosting/)
 
 - ✅ CDN: full CloudFront network, 600+ PoPs in 100+ countries
 - Bandwidth: 5 GB on the free plan (12 months), then $150 / TB
@@ -114,7 +114,7 @@ Below, the feature "rewrite" usually includes the ability to have a navigation f
 - ✅ HTTP/3
 - ❌ No IPv6 (officially)
 
-## Azure Static Web Apps
+## [Azure Static Web Apps](https://learn.microsoft.com/en-us/azure/static-web-apps/overview)
 
 - ⚠️ CDN: limited locations by default, but on the paid plan you can enable the Front Door CDN (192 locations in 109 cities) for $17.52 / month
 - Bandwidth: 100 GB on the free plan, $200 / TB on the paid plan
