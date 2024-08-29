@@ -18,7 +18,7 @@ Below, the feature "rewrite" usually includes the ability to have a navigation f
 ## [Netlify](https://www.netlify.com/)
 
 - ⚠️ CDN: only 6 locations on free/Pro plans, 70+ locations with very expensive *High Performance Edge* (enterprise plan)
-- Bandwidth: 100 GB on free plan (then $550 / TB), 1 TB on Pro plan (then $550 / TB)
+- Bandwidth: 100 GB on the free plan (then $550 / TB), 1 TB on the Pro plan (then $550 / TB)
 - ✅ Automatic hosted builds (CI/CD)
 - ✅ GitHub commit checks
 - ❌ No GitHub environments/deployments support
@@ -37,7 +37,7 @@ Below, the feature "rewrite" usually includes the ability to have a navigation f
 ## [Vercel](https://vercel.com)
 
 - ✅ CDN: 100+ PoPs (all plans)
-- Bandwidth: 100 GB on the free plan, 1 TB on Pro plan (then $150+ / TB)
+- Bandwidth: 100 GB on the free plan, 1 TB on the Pro plan (then $150+ / TB)
 - ✅ Automatic hosted builds (CI/CD)
 - ✅ GitHub commit checks, environments/deployments
 - ✅ Rollbacks
