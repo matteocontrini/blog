@@ -1,7 +1,7 @@
 ---
 title: "Comparison of static website hosting services"
 date: 2024-08-29T14:27:59+02:00
-lastmod: 2024-08-29T14:27:59+02:00
+lastmod: 2024-08-30T10:30:00+02:00
 slug: static-website-hosting
 summary: "Here's a comparison of Netlify, Vercel, Cloudflare Pages, Render, AWS Amplify, Azure Static Web Apps and their main features."
 showtoc: true
@@ -14,6 +14,8 @@ With static hosting I mean hosting of static HTML pages and their linked resourc
 Other than serving the static content with a **global CDN**, these services usually also take care of things like **CI/CD builds**, **atomic deployments**, **instant cache invalidation** and **preview deployments**, which often aren't easy to achieve (or not achievable at all) with simpler DIY storage+CDN solutions.
 
 Below, the feature "rewrite" usually includes the ability to have a navigation fallback for single-page applications, and custom error pages.
+
+Server-side rendering or server functions were not considered in this comparison.
 
 ## [Netlify](https://www.netlify.com/)
 
