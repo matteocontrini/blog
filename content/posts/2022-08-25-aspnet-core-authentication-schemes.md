@@ -127,11 +127,7 @@ Adding an authentication scheme is however not enough: if you change the handler
 
 This is where **authorization** comes into play.
 
----
-
 {{< dmarcwise >}}
-
----
 
 ## Authorization
 
