@@ -178,6 +178,12 @@ The `manifest.json` file contained in the `dist/.vite` directory will look like 
 
 You can also check that `npm run dev` starts correctly without errors.
 
+---
+
+{{< dmarcwise >}}
+
+---
+
 ## Integrating Vite with ASP.NET Core
 
 The next step is to integrate the Vite build with the ASP.NET Core application.

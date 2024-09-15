@@ -127,6 +127,12 @@ Adding an authentication scheme is however not enough: if you change the handler
 
 This is where **authorization** comes into play.
 
+---
+
+{{< dmarcwise >}}
+
+---
+
 ## Authorization
 
 So far, we've implemented the authentication mechanism. Now we need to tell the framework **the rules that define which endpoints an authenticated user is authorized to access**.

@@ -1,48 +1,75 @@
 .post-content video {
-    display: block;
-    margin: var(--content-gap) auto var(--content-gap) auto;
+  display: block;
+  margin: var(--content-gap) auto var(--content-gap) auto;
 }
 
 .post-content img {
-    display: block;
-    margin: var(--content-gap) auto var(--content-gap) auto;
+  display: block;
+  margin: var(--content-gap) auto var(--content-gap) auto;
 }
 
 .post-content figure {
-    margin-bottom: calc(var(--content-gap) * 1.2);
+  margin-bottom: calc(var(--content-gap) * 1.2);
+
+  img {
+    display: block;
+    margin: 0 0 8px 0;
+  }
+
+  figcaption {
+    margin: 0 .5rem .5rem;
+    font-size: .9rem;
+    text-align: left;
+    color: #686868;
+    font-weight: 400;
+  }
+
+  &.vertical {
     img {
-        display: block;
-        margin: 0 0 8px 0;
+      max-height: 400px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     figcaption {
-        margin: 0 .5rem .5rem;
-        font-size: .9rem;
-        text-align: left;
-        color: #686868;
-        font-weight: 400;
+      text-align: center;
     }
-
-    &.vertical {
-        img {
-            max-height: 400px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        figcaption {
-            text-align: center;
-        }
-    }
+  }
 }
 
 .post-content table thead th {
-    font-size: 100%;
+  font-size: 100%;
 }
 
 .post-content table td,
 .post-content table th {
-    border: 1px solid var(--border) !important;
-    padding: 8px 8px !important;
-    line-height: 1.4 !important;
+  border: 1px solid var(--border) !important;
+  padding: 8px 8px !important;
+  line-height: 1.4 !important;
+}
+
+.dmarcwise {
+  background-color: #DBFCE7;
+  border-radius: 15px;
+  padding: 25px 35px;
+
+  a {
+    color: #14522D;
+    font-weight: 600;
+  }
+
+  .dmarcwise-title {
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  p {
+    margin: 10px 0 10px 0;
+    color: #14522D;
+    font-size: 18px;
+  }
+
+  .dmarcwise-cta {
+    margin-top: 20px;
+  }
 }

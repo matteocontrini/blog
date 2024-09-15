@@ -2,3 +2,4 @@ public/
 .hugo_build.lock
 hugo
 .DS_Store
+.idea/
