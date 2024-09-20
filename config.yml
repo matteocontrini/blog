@@ -29,6 +29,7 @@ params:
 
   profileMode:
     enabled: true
+    subtitle: Software Engineer. Building digital products.
     buttons:
     - name: Blog 🇮🇹
       url: "/it/blog/"
@@ -45,6 +46,8 @@ params:
       url: https://www.linkedin.com/in/matteo-contrini/
     - name: Telegram
       url: https://t.me/notedimatteo
+    - name: Email
+      url: mailto:matteo@contrini.it
 
 permalinks:
   posts: /:slug/

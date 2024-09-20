@@ -48,7 +48,7 @@ I pochi che leggono ancora i giornali cartacei avranno notato che le pagine stam
 
 I migliori quotidiani italiani come La Repubblica, Il Sole 24 Ore e il Corriere della Sera producono *ogni giorno* decine di ottime infografiche e mappe che danno un’impressione di qualità completamente diversa rispetto al semplice articolo testuale. Alcuni esempi:
 
-(*Se qualcuno volesse contestare il fair use di questi screenshot [mi scriva](mailto:matteo@contrini.it), prima di scomodare avvocati.*)
+(*Se qualcuno volesse contestare il fair use di questi screenshot mi scriva (l'email è sulla homepage), prima di scomodare avvocati.*)
 
 {{< fig src="repubblica_1.jpg" >}}
 

@@ -1,3 +1,7 @@
+.profile .social-icons {
+  padding-top: 30px;
+}
+
 .post-content video {
   display: block;
   margin: var(--content-gap) auto var(--content-gap) auto;
