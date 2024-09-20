@@ -12,7 +12,7 @@ summary: "Venti mesi dopo, cosa è cambiato? Con qualche riflessione sull'uso de
     }
 </style>
 
-La [prima parte](/it/trentino-trasporti-digitale) di questa serie non era stata presa benissimo da tutti, come si può intuire scorrendo l'articolo.
+La [prima parte](/it/trentino-trasporti-digitale) di questa serie non era stata presa benissimo da tutti, come si può intuire scorrendola.
 
 Purtroppo non è servita nemmeno come stimolo per fare meglio: in questi 20 mesi non ci sono stati progressi osservabili e tutto quello che ruota attorno ai servizi digitali è rimasto com'era. (Non è un segreto che il 9 settembre, primo giorno di scuola nonché giorno di sciopero, l'app per vedere i ritardi in tempo reale non funzionava.)
 
