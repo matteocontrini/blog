@@ -97,7 +97,7 @@ Mi è bastata mezz'ora per realizzare un **prototipo di visualizzatore di questi
 
 ---
 
-È strana e per me incomprensibile questa difficoltà nel realizzare servizi **pensandoli in modo che siano effettivamente comodi e utili** per le persone che dovranno usarli.
+È strana e per me incomprensibile questa difficoltà nel realizzare servizi digitali **pensandoli in modo che siano effettivamente comodi e utili** per le persone che dovranno usarli.
 
 Quei codici QR alle fermate dovrebbero essere chiaramente evidenziati indicando **"Orari in tempo reale"**, dandogli priorità sul resto. Dovrebbero portare a una pagina web dove, per prima cosa, senza premere nulla e senza scaricare nulla, si veda un sommario dei problemi sulla linea, le prossime corse in arrivo con i minuti di attesa tenendo in considerazione i ritardi.
 
