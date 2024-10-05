@@ -1,7 +1,7 @@
 ---
 title: "Confronto registrar domini .IT"
 date: 2023-09-05T09:00:00+02:00
-lastmod: 2024-04-14T09:30:00+02:00
+lastmod: 2024-10-05T09:30:00+02:00
 slug: registrar
 summary: "Un confronto dettagliato tra alcuni registrar accreditati per i domini .IT."
 showtoc: true
@@ -62,7 +62,7 @@ Tutti i prezzi sono IVA esclusa.
 | DNSSEC esterno                           | ❌                     | ✅                     | ❌                     | ❌                     | ✅                          | ❌                          | ❌                     | ❌                | ✅                          | ❌                   |
 | ALIAS/CNAME apex                         | ❌                     | ❌                     | ❌                     | ❌                     | ❌                          | ❌                          | ❌                     | ❌                | ❌                          | 🔸                  |
 | TTL per singolo record                   | ❌ <sup>min 1h</sup>   | ✅                     | ✅                     | ✅                     | ❌ <sup>min 1h</sup>        | ✅                          | ❌                     | ❌                | ✅                          | ❌                   |
-| Wildcard record                          | ✅                     | ❌                     | ✅                     | ✅                     | ✅                          | ✅                          | ✅                     | 🔸               | ✅                          | 🔸                  |
+| Wildcard record                          | ✅                     | ❌                     | ✅                     | ✅                     | ✅                          | ✅                          | ✅                     | ✅               | ✅                          | 🔸                  |
 | Statistiche DNS                          | ❌                     | ❌                     | ❌                     | ❌                     | ❌                          | ❌                          | ❌                     | ❌                | ❌                          | ❌                   |
 | API gestione DNS                         | ❌                     | ❌                     | ❌                     | ❌                     | ✅                          | ❌                          | ❌                     | ❌                | ✅                          | ❌                   |
 | Backup/esportazione DNS                  | CSV, TXT               | CSV                    | JSON                   | CSV                    | BIND, Excel                 | ❌                          | ❌                     | ❌                | BIND                        | ❌                   |
