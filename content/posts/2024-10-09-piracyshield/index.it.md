@@ -141,9 +141,9 @@ La deputata Pastorella ha fatto presente il problema al presidente di AGCOM:
 
 In risposta, il presidente ha dichiarato che è stata «predisposta la possibilità di interrogazione del sito dell'autorità che prevede che si possa immettere un indirizzo IP e ottenere la risposta». Non è vero: non esiste nulla del genere sul sito dell'AGCOM.
 
-Anche nel caso in cui si riuscisse a capire come vanno inviati questi reclami (e si riesca a farlo entro i termini), l'AGCOM ha formalmente chiarito che non intende né divulgare alcuna informazione sui blocchi (nemmeno quelli errati) né garantire che chi ha provocato il danno si assuma la responsabilità.
+Anche nel caso in cui si riuscisse a capire come vanno inviati questi reclami (e si riesca a farlo entro i termini), l'AGCOM ha formalmente chiarito che non intende né divulgare alcuna informazione sui blocchi (nemmeno quelli erronei) né garantire che chi ha provocato il danno si assuma la responsabilità.
 
-In risposta a una istanza di accesso civico l'AGCOM ha infatti [detto](https://twitter.com/ernytech/status/1772969422891647229) che la richiesta è stata «negata per motivata opposizione dei soggetti controinteressati». E cioè: le aziende e le associazioni come DAZN e la Lega Serie A hanno il **potere di bloccare senza verifica qualsiasi risorsa su Internet**, ma se sbagliano possono poi **opporsi a qualsiasi richiesta di trasparenza o assunzione di responsabilità** e per l'Autorità Garante per le Comunicazioni va bene così.
+In risposta a una istanza di accesso civico l'AGCOM ha infatti [detto](https://twitter.com/ernytech/status/1772969422891647229) che la richiesta è stata «negata per motivata opposizione dei soggetti controinteressati». E cioè: le aziende e le associazioni come DAZN e la Lega Serie A hanno il **potere di bloccare senza verifica qualsiasi risorsa su Internet**, e se sbagliano possono poi **opporsi a qualsiasi richiesta di trasparenza o assunzione di responsabilità** e per l'Autorità Garante per le Comunicazioni (!) va bene così.
 
 {{< fig src="agcom4.png" >}}
 
@@ -161,7 +161,7 @@ In teoria quindi **anche i servizi DNS pubblici** come Google Public DNS e Cloud
 
 È ovviamente impensabile che i servizi VPN basati all'estero e il cui scopo è precisamente fornire strumenti per aggirare le censure si adegueranno. Ma c'è il rischio che alcune VPN decidano di **uscire dal mercato italiano**, come è già avvenuto con [AirVPN](https://airvpn.org/forums/topic/57256-termination-of-service-in-italy/), uno dei servizi più sicuri e affidabili.
 
-Anche ipotizzando che altri servizi possano seguire la strada di AirVPN, è comunque irrealistico pensare che tutti i servizi VPN esistenti al mondo seguano questa strada. Ci sarà quindi sempre un modo per aggirare i blocchi. (A meno che, naturalmente, non si inizi a bloccare persino l'accesso alle VPN (!) dall'Italia, o a sanzionare chi le usa, un'eventualità piuttosto distopica che per ora fortunatamente non sembra sia stata proposta da nessuno.)
+Anche ipotizzando che altri servizi seguano la strada di AirVPN, è comunque irrealistico pensare che lo facciano tutti i servizi VPN esistenti al mondo. Ci sarà quindi sempre un modo per aggirare i blocchi. (A meno che, naturalmente, non si inizi a bloccare persino l'accesso alle VPN (!) dall'Italia, o a sanzionare chi le usa, un'eventualità piuttosto distopica che per ora fortunatamente non sembra sia stata proposta da nessuno.)
 
 ## Segnali, o vai in carcere
 
@@ -171,9 +171,9 @@ La lista di soggetti coinvolti è molto estesa: ci sono gli ISP (gli operatori),
 
 Non è al momento completamente chiaro cosa si intenda di preciso con «condotte penalmente rilevanti», ma dato che solo la diffusione abusiva di contenuti protetti da copyright è reato non dovrebbe rientrare la fruizione illegale (cioè ad esempio guardare una partita in streaming, nel cui caso è prevista "solo" una sanzione fino a 5.000 €). Potrebbe però rientrare l'uso del protocollo BitTorrent, dato che in quel caso lo scambio dei dati è quasi sempre bidirezionale.
 
-Gli operatori, ecc. che vengono a conoscenza di questo tipo di attività illegale sono obbligati a «segnalare immediatamente», e se non lo fanno **la pena è «la reclusione fino ad un anno»** (non è chiaro per chi, di preciso).
+Gli operatori, ecc. che vengono a conoscenza di questo tipo di attività illegale sono obbligati a «segnalare immediatamente», e se non lo fanno **la pena è «la reclusione fino ad un anno»** (non è chiaro di chi, di preciso).
 
-Al momento non si sa nemmeno cosa si intenda con "venire a conoscenza" di queste situazioni, frase [contestata](https://x.com/matteosonoioo/status/1841061292544553083) anche al Senato dall'opposizione, in particolare dal senatore Antonio Nicita (PD). Crea qualche dubbio anche il fatto che andrebbero segnalate condotte illegali anche solo «tentate», ma non si capisce bene quale sia il confine.
+Al momento non si sa nemmeno cosa si intenda con "venire a conoscenza", frase [contestata](https://x.com/matteosonoioo/status/1841061292544553083) anche al Senato dall'opposizione, in particolare dal senatore Antonio Nicita (PD). Crea qualche dubbio anche il fatto che andrebbero segnalate condotte illegali anche solo «tentate» e non compiute: il confine è insomma molto fumoso.
 
 L'obbligo di segnalazione vale in teoria non solo per chi si trova in Italia ma per tutto il mondo: i soggetti menzionati sopra che si trovano fuori dall'Unione Europea dovrebbero quindi incaricare un rappresentante locale e comunicarlo all'Autorità.
 
@@ -183,7 +183,7 @@ Questa parte della legge sta ricevendo molte critiche perché è **molto vaga e 
 
 ## 24mila blocchi dopo...
 
-Secondo una stima citata da TorrentFreak, [si stima](https://torrentfreak.com/10k-pirate-sites-blocked-in-60-days-piracy-shield-triggers-italian-kool-aid-crisis-240409/) che in Europa esistano circa 5mila siti che diffondono abusivamente contenuti sportivi in streaming. A ottobre 2024 Piracy Shield aveva bloccato quasi 24mila risorse tra domini e indirizzi IP, eppure, stranamente, il problema della pirateria non era ancora risolto.
+Secondo un dato riportato da TorrentFreak, [si stima](https://torrentfreak.com/10k-pirate-sites-blocked-in-60-days-piracy-shield-triggers-italian-kool-aid-crisis-240409/) che in Europa esistano circa 5mila siti che diffondono abusivamente contenuti sportivi in streaming. A ottobre 2024 Piracy Shield aveva bloccato quasi 24mila risorse tra domini e indirizzi IP, eppure, stranamente, il problema della pirateria non era ancora risolto.
 
 Stride anche il fatto che [secondo l'AGCOM](https://www.agendadigitale.eu/mercati-digitali/capitanio-agcom-piracy-shield-funziona-smontiamo-le-critiche/) la piattaforma «funziona troppo bene» ed è un successo «mostruoso che meriterebbe titoli ad otto colonne» mentre per il senatore Lotito la legge ha avuto «scarsa applicazione» e per questo è stata modificata.
 
