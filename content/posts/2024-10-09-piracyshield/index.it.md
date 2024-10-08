@@ -15,11 +15,15 @@ Dal punto di vista tecnico la legge e la sua implementazione sono universalmente
 
 Il funzionamento di base prevede infatti che alcune **aziende e associazioni private**, come DAZN e la Lega Serie A, siano incaricate di inserire in una apposita piattaforma le **richieste di blocco dei siti web** che distribuiscono illegalmente contenuti sportivi protetti dal diritto d'autore. Questi blocchi devono poi essere **eseguiti entro 30 minuti**.
 
+{{< fig src="agcom5.jpg" >}}
+
 Non esiste però **nessuna verifica** né approvazione da parte di un'autorità: poche e sconosciute persone in Italia (non si sa con precisione chi siano i soggetti considerati «attendibili») hanno il **potere di bloccare in modo sostanzialmente istantaneo qualsiasi risorsa di Internet**, con effetti potenzialmente catastrofici, senza nessun obbligo di trasparenza o assunzione di responsabilità in caso di errori (che ci sono già stati). La legge stessa specifica esplicitamente che tutto il processo può avvenire **«senza contraddittorio»**.
 
 È molto controverso anche il contesto in cui la legge è nata: è stata infatti scritta **su [forte spinta](https://www.key4biz.it/serie-a-e-telco-devono-cooperare-a-difesa-della-legalita-de-siervo-lega-serie-a-blocco-siti-pirata-entro-30-minuti/436090/) della Lega Serie A**, che ha persino realizzato la piattaforma informatica per il blocco dei contenuti illegali, quella a cui ora ci riferiamo con **Piracy Shield** e il cui codice sorgente è tra l'altro stato illecitamente diffuso online (è ancora online nel momento in cui scrivo, dopo più di 6 mesi).
 
-E nonostante formalmente la legge interessi non solo il calcio ma in generale i «contenuti trasmessi in diretta», è addirittura l'Autorità Garante per le Comunicazioni (AGCOM), responsabile del coordinamento di Piracy Shield, a [scrivere](https://www.agcom.it/competenze/antipirateria-e-piracy-shield/piattaforma-piracy-shield) che la piattaforma riguarda «gli eventi sportivi live». Stando alle [scarsissime informazioni](https://www.dday.it/redazione/48808/piracy-shield-blocchi-indesiderati-vpn-multe-e-trasparenza-cosa-e-uscito-dalintervento-di-agcom-in-commissione) disponibili, per ora il sistema sembra in effetti limitato agli eventi sportivi, e in prevalenza le partite di calcio della Serie A trasmesse da DAZN.
+E nonostante formalmente la legge interessi non solo il calcio ma in generale i «contenuti trasmessi in diretta», è addirittura l'Autorità Garante per le Comunicazioni (AGCOM), responsabile del coordinamento di Piracy Shield, a [scrivere](https://www.agcom.it/competenze/antipirateria-e-piracy-shield/piattaforma-piracy-shield) che la piattaforma riguarda «gli eventi sportivi live». (E, guarda caso, l'immagine scelta per la pagina del sito è quella di un campo da calcio).
+
+Stando alle [scarsissime informazioni](https://www.dday.it/redazione/48808/piracy-shield-blocchi-indesiderati-vpn-multe-e-trasparenza-cosa-e-uscito-dalintervento-di-agcom-in-commissione) disponibili, per ora il sistema sembra in effetti limitato agli eventi sportivi, e in prevalenza alle partite di calcio della Serie A trasmesse da DAZN.
 
 {{< fig src="agcom1.png" >}}
 
