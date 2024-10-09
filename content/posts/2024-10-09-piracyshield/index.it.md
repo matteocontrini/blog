@@ -1,7 +1,7 @@
 ---
 title: "La pericolosa legge antipirateria, spiegata semplice"
-date: 2024-10-09T11:00:00+02:00
-lastmod: 2024-10-09T11:00:00+02:00
+date: 2024-10-09T17:00:00+02:00
+lastmod: 2024-10-09T17:00:00+02:00
 slug: piracyshield
 summary: "Come funziona Piracy Shield, cosa è cambiato con le modifiche del 2024 e perché sta danneggiando Internet in Italia."
 showtoc: true
@@ -215,7 +215,7 @@ L'Italia è tra l'altro il secondo paese con meno accessi pro capite alla pirate
 
 Il settore in cui la pirateria si è ridotta maggiormente a livello europeo è quello della musica, dove è stata stimata una riduzione degli accessi illegali dell'81% tra il 2017 e il 2020.
 
-Uno dei motivi più citati è che la diffusione dei servizi in abbonamento come Spotify ha reso l'ascolto legale persino più comodo e conveniente della pirateria. Secondo un [sondaggio](https://www.statista.com/forecasts/1000834/drivers-of-digital-video-or-audio-content-purchases-in-italy) pubblicato da Statista, il primo motivo per cui le persone in Italia acquistano contenuti video e audio legalmente è "per accederci in qualsiasi momento" e il secondo è proprio la convenienza economica.
+Uno dei motivi più citati è che la diffusione dei servizi in abbonamento come Spotify ha reso l'ascolto legale più comodo e persino più conveniente della pirateria. Secondo un [sondaggio](https://www.statista.com/forecasts/1000834/drivers-of-digital-video-or-audio-content-purchases-in-italy) pubblicato da Statista, il primo motivo per cui le persone in Italia acquistano contenuti video e audio legalmente è "per accederci in qualsiasi momento" e il secondo è proprio la convenienza economica.
 
 Si può dire qualcosa di simile anche per il mercato dei film, delle serie tv e dei libri, ma difficilmente per lo sport in streaming, dove ad esempio **nel caso di DAZN i prezzi [continuano ad aumentare](https://www.ilpost.it/2024/05/17/dazn-aumenti-prezzi-2024-2025/)** a fronte di lamentele [ancora frequenti](https://www.digital-forum.it/threads/dazn-qualit%C3%A0-del-servizio-e-segnalazione-problemi.211543/page-568) per la **scarsa qualità del servizio**.
 
