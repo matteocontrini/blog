@@ -189,7 +189,7 @@ Ad esempio, il presidente di AIIP ha dichiarato che questa è una «iniziativa i
 
 Secondo un dato riportato da TorrentFreak, [si stima](https://torrentfreak.com/10k-pirate-sites-blocked-in-60-days-piracy-shield-triggers-italian-kool-aid-crisis-240409/) che in Europa esistano circa 5mila siti che diffondono abusivamente contenuti sportivi in streaming. A ottobre 2024 Piracy Shield aveva bloccato quasi 24mila risorse tra domini e indirizzi IP, eppure, stranamente, il problema della pirateria non era ancora risolto.
 
-Stride anche il fatto che [secondo l'AGCOM](https://www.agendadigitale.eu/mercati-digitali/capitanio-agcom-piracy-shield-funziona-smontiamo-le-critiche/) la piattaforma «funziona troppo bene» ed è un successo «mostruoso che meriterebbe titoli ad otto colonne» mentre per il senatore Lotito la legge ha avuto «scarsa applicazione» e per questo è stata modificata. In più, si sta anche [studiando](https://www.wired.it/article/piracy-shield-campionato-siti-ricorso-costi-concerti-film/) una nuova versione della piattaforma Piracy Shield perché la prima era a quanto pare inadeguata.
+Stride anche il fatto che [secondo l'AGCOM](https://www.agendadigitale.eu/mercati-digitali/capitanio-agcom-piracy-shield-funziona-smontiamo-le-critiche/) la piattaforma «funziona troppo bene» ed è un successo «mostruoso che meriterebbe titoli ad otto colonne» mentre per il senatore Lotito la legge ha avuto «scarsa applicazione» e per questo è stata modificata. In più, si sta anche [studiando](https://www.wired.it/article/piracy-shield-campionato-siti-ricorso-costi-concerti-film/) una nuova versione della piattaforma Piracy Shield, visto che la prima era tecnicamente inadeguata, a quanto pare.
 
 Non c'è al momento **nessun dato pubblicamente disponibile** che dimostri l'impatto che la legge antipirateria avrebbe avuto sulla pirateria, e soprattutto per ora **nulla suggerisce che la legge sia servita a spingere gli utenti ad abbonarsi ai servizi ufficiali**.
 
@@ -205,7 +205,7 @@ Anche in Italia:
 
 {{< fig src="grafico2.png" >}}
 
-E lo certifica anche la FAPAV, un'associazione per la tutela dell'industria audiovisiva i cui studi sono spesso presi come riferimento per giustificare la necessità di Piracy Shield, che [misura](https://fapav.it/wp-content/uploads/2018/11/FAPAV_Ricerca-sulla-pirateria-audiovisiva-2023.pdf) un -52%:
+Lo certifica anche la FAPAV, un'associazione per la tutela dell'industria audiovisiva i cui studi sono spesso presi come riferimento per giustificare la necessità di Piracy Shield, che [misura](https://fapav.it/wp-content/uploads/2018/11/FAPAV_Ricerca-sulla-pirateria-audiovisiva-2023.pdf) un -52%:
 
 {{< fig src="grafico5.png" >}}
 
@@ -231,7 +231,7 @@ Non seguendo il calcio mi viene in aiuto Fanpage nello [spiegare](https://www.fa
 >
 > Questo spinge le emittenti ad alzare le cifre da far pagare poi per gli abbonamenti, con le conseguenze del tutto dunque che ricadono direttamente sugli appassionati.
 
-A conferma di ciò c'è ad esempio il fatto che **DAZN paga la Lega Serie A ben [700 milioni di euro all'anno](https://www.milanofinanza.it/news/serie-a-diritti-tv-assegnati-a-dazn-e-sky-fino-al-2029-ai-club-vanno-900-milioni-l-anno-202310231516514546)** per i diritti di trasmissione, un importo molto elevato che l'azienda non sta riuscendo a sostenere con gli abbonamenti, con conseguente [riduzione dei costi](https://www.ilpost.it/2024/07/19/dazn-strategia-2025-esuberi-tagli/), e quindi della copertura giornalistica degli eventi, e aumento dei prezzi del servizio, visto che i circa 2 milioni di abbonati sembrano a malapena sufficienti per sostenere il costo dei diritti di trasmissione.
+A conferma di ciò c'è ad esempio il fatto che **DAZN paga la Lega Serie A ben [700 milioni di euro all'anno](https://www.milanofinanza.it/news/serie-a-diritti-tv-assegnati-a-dazn-e-sky-fino-al-2029-ai-club-vanno-900-milioni-l-anno-202310231516514546)** per i diritti di trasmissione, un importo molto elevato che l'azienda non sta riuscendo a sostenere con gli abbonamenti, con conseguente [riduzione dei costi di produzione](https://www.ilpost.it/2024/07/19/dazn-strategia-2025-esuberi-tagli/), e quindi della copertura giornalistica degli eventi, e aumento dei prezzi del servizio, visto che i circa 2 milioni di abbonati sembrano a malapena sufficienti per sostenere il costo dei diritti di trasmissione.
 
 Come scrive Fanpage, con un modello di business migliore «ne avrebbero giovato tutti, con maggiori introiti per i club, e prezzi più accessibili ai tifosi che al momento hanno sulle spalle anche il sostentamento dei club, attraverso gli abbonamenti TV».
 
