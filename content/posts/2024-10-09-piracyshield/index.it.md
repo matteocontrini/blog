@@ -115,11 +115,11 @@ E implica che un indirizzo IP bloccato perché diffondeva streaming illegali **i
 
 Al momento **gli indirizzi IP bloccati sono 5841** e di questo passo si finirebbe per bloccare **decine di migliaia di indirizzi IP in pochi anni**. Gli indirizzi IP sono tra l'altro una risorsa scarsa e **si eroderebbe così gradualmente e inutilmente lo spazio di indirizzamento utilizzabile**.
 
-La legge dice esplicitamente che non possono essere previsti limiti ai blocchi, salvo poi specificare che vanno considerati i limiti tecnici dei sistemi di blocco degli operatori, per cui non è al momento chiaro se un limite può esserci oppure no (articolo 7-bis).
+Tra l'altro, con le modifiche del 2024 la legge specifica esplicitamente che **non possono essere previsti limiti ai blocchi**, salvo poi contraddirsi una riga sotto imponendo che vengano considerati i limiti tecnici dei sistemi di blocco degli operatori, per cui non è al momento chiaro se un limite possa esserci oppure no (articolo 7-bis).
 
-Le modifiche del 2024 introducono una leggera miglioria su questo aspetto: una volta passati **6 mesi dall'inizio di un blocco** l'AGCOM dovrà ordinare la **riabilitazione** del dominio o dell'indirizzo IP, apparentemente a prescindere dal fatto che questi siano ancora usati per scopi illegali (articolo 7-bis).
+Nello stesso articolo c'è però una leggera miglioria su questo aspetto: una volta passati **6 mesi dall'inizio di un blocco** l'AGCOM dovrà ordinare la **riabilitazione** del dominio o dell'indirizzo IP, apparentemente a prescindere dal fatto che questi siano ancora usati per scopi illegali.
 
-È stato inserito anche un nuovo articolo, il 5-bis, che dal punto di vista tecnico è insensato: richiede infatti ai «servizi di assegnazione di indirizzi IP» e ai registri dei domini di riabilitare i siti bloccati dopo «almeno sei mesi». La cosa strana è che questi soggetti non sono coinvolti in Piracy Shield e non sono mai menzionati altrove nella legge, per cui non è chiaro perché e come dovrebbero avere il potere di sbloccare le risorse.
+È stato inserito un altro nuovo articolo, il 5-bis, che dal punto di vista tecnico è insensato: richiede infatti ai «servizi di assegnazione di indirizzi IP» e ai registri dei domini di riabilitare i siti bloccati dopo «almeno sei mesi». La cosa strana è che questi soggetti non sono coinvolti in Piracy Shield e non sono mai menzionati altrove nella legge, per cui non è chiaro perché e come dovrebbero avere il potere di sbloccare le risorse.
 
 ## I reclami impossibili
 
