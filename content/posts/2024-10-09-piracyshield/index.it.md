@@ -231,9 +231,15 @@ Non seguendo il calcio mi viene in aiuto Fanpage nello [spiegare](https://www.fa
 >
 > Questo spinge le emittenti ad alzare le cifre da far pagare poi per gli abbonamenti, con le conseguenze del tutto dunque che ricadono direttamente sugli appassionati.
 
-A conferma di ciò c'è ad esempio il fatto che **DAZN paga la Lega Serie A ben [700 milioni di euro all'anno](https://www.milanofinanza.it/news/serie-a-diritti-tv-assegnati-a-dazn-e-sky-fino-al-2029-ai-club-vanno-900-milioni-l-anno-202310231516514546)** per i diritti di trasmissione, un importo molto elevato che l'azienda non sta riuscendo a sostenere con gli abbonamenti, con conseguente [riduzione dei costi di produzione](https://www.ilpost.it/2024/07/19/dazn-strategia-2025-esuberi-tagli/), e quindi della copertura giornalistica degli eventi, e aumento dei prezzi del servizio, visto che i circa 2 milioni di abbonati sembrano a malapena sufficienti per sostenere il costo dei diritti di trasmissione. (Va anche considerato che gli spettatori del calcio in TV sono [in continua diminuzione](https://www.dday.it/redazione/50722/calcio-in-tv-gli-ascolti-crollano-il-dieci-anni-persi-la-meta-degli-spettatori).)
+A conferma di ciò c'è ad esempio il fatto che **DAZN paga la Lega Serie A ben [700 milioni di euro all'anno](https://www.milanofinanza.it/news/serie-a-diritti-tv-assegnati-a-dazn-e-sky-fino-al-2029-ai-club-vanno-900-milioni-l-anno-202310231516514546)** per i diritti di trasmissione, un importo molto elevato che l'azienda non sta riuscendo a sostenere con gli abbonamenti, con conseguente [riduzione dei costi di produzione](https://www.ilpost.it/2024/07/19/dazn-strategia-2025-esuberi-tagli/), e quindi della copertura giornalistica degli eventi, e aumento dei prezzi del servizio, visto che i circa 2 milioni di abbonati sembrano a malapena sufficienti per sostenere il costo dei diritti di trasmissione.
 
 Come scrive Fanpage, con un modello di business migliore «ne avrebbero giovato tutti, con maggiori introiti per i club, e prezzi più accessibili ai tifosi che al momento hanno sulle spalle anche il sostentamento dei club, attraverso gli abbonamenti TV».
+
+Va poi considerato che gli spettatori del calcio in TV sono [in continua diminuzione](https://www.dday.it/redazione/50722/calcio-in-tv-gli-ascolti-crollano-il-dieci-anni-persi-la-meta-degli-spettatori), e questo dovrebbe indurre a qualche riflessione. Scrive DDay:
+
+> Se il prodotto non appassiona più, e deve essere così altrimenti gli ascolti non sarebbero calati così vertiginosamente, si preferisce spendere in altro.
+>
+> La Lega di Serie A, che chiede ogni tot di anni sempre più soldi portando inevitabilmente all'aumento dei prezzi degli abbonamenti, dovrebbe farsi qualche domanda.
 
 E così forse non ci sarebbe nemmeno il bisogno di interferire con il funzionamento di Internet per tentare di proteggere, probabilmente con scarsi risultati, l'industria del calcio.
 
