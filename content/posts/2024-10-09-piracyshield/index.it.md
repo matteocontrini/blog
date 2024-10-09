@@ -63,7 +63,7 @@ Secondo una delle [stime](https://blog.cloudflare.com/consequences-of-ip-blockin
 
 Per **bloccare un nome di dominio** bisogna agire sul processo di risoluzione dei nomi, manomettendo il sistema per fare in modo che il risolutore DNS restituisca non più l'indirizzo IP corretto ma uno fasullo o irraggiungibile, impedendo così di accedere al sito web richiesto.
 
-Questo sistema è facilmente aggirabile semplicemente affidandosi a dei **servizi DNS pubblico** diversi da quelli decisi dal proprio operatore, ad esempio quelli di Google o di Cloudflare, che non applicano blocchi. Per questo motivo la legge antipirateria prevede che si possano **bloccare anche gli indirizzi IP direttamente**.
+Questo sistema è facilmente aggirabile semplicemente affidandosi a dei **servizi DNS pubblici** diversi da quelli decisi dal proprio operatore, ad esempio quelli di Google o di Cloudflare, che non applicano blocchi. Per questo motivo la legge antipirateria prevede che si possano **bloccare anche gli indirizzi IP direttamente**.
 
 Il blocco di un indirizzo IP viene applicato dal proprio fornitore di accesso a Internet (bloccando l'instradamento del traffico) e il modo più comune per aggirarlo è **utilizzare una VPN**, uno strumento che creando un **tunnel virtuale** fa in modo che tutto il traffico venga cifrato, trasportato di solito all'estero e quindi fatto "uscire", aggirando le limitazioni locali.
 
@@ -109,9 +109,9 @@ Nel caso dei domini questo ha comportato che in pochissimi mesi si raggiungesse 
 
 Se per i domini tutto sommato un numero così alto di blocchi non crea grossi problemi, per gli indirizzi IP la storia è diversa.
 
-Va infatti considerato che **un indirizzo IP "bruciato"** molto probabilmente smetterà di essere utilizzato dai criminali che diffondono contenuti abusivamente e **tornerà quindi nella disponibilità del fornitore cloud** da cui l'IP è stato affittato. Questo meccanismo "elastico" è la normalità nella maggior parte dei servizi cloud.
+Va infatti considerato che **un indirizzo IP "bruciato"** molto probabilmente smetterà di essere utilizzato dai criminali che diffondono contenuti abusivamente e **tornerà quindi nella disponibilità del fornitore cloud** da cui l'IP è stato affittato.
 
-E implica che un indirizzo IP bloccato perché diffondeva streaming illegali **il giorno dopo potrebbe essere già stato riassegnato a un altro cliente**, non necessariamente italiano, ignaro del fatto che il proprio server non sarà raggiungibile dall'Italia. (C'è almeno un caso di questo tipo che è stato reso noto [pubblicamente](https://twitter.com/infinitybofh/status/1772933997988872578) da un utente, anche se non mi risulta sia stato poi verificato da altri.)
+Questo meccanismo "elastico" è la normalità nella maggior parte dei servizi cloud, e implica che un indirizzo IP bloccato perché diffondeva streaming illegali **il giorno dopo potrebbe essere già stato riassegnato a un altro cliente "legittimo"**, non necessariamente italiano, ignaro del fatto che il proprio server non sarà raggiungibile dall'Italia. (C'è almeno un caso di questo tipo che è stato reso noto [pubblicamente](https://twitter.com/infinitybofh/status/1772933997988872578) da un utente, anche se non mi risulta sia stato poi verificato da altri.)
 
 Al momento **gli indirizzi IP bloccati sono 5841** e di questo passo si finirebbe per bloccare **decine di migliaia di indirizzi IP in pochi anni**. Gli indirizzi IP sono tra l'altro una risorsa scarsa e **si eroderebbe così gradualmente e inutilmente lo spazio di indirizzamento utilizzabile**.
 
@@ -183,7 +183,7 @@ Questa parte della legge sta ricevendo molte critiche perché è **molto vaga e 
 
 Si stanno lamentando anche **moltissime associazioni** che rappresentano gli operatori Internet e il mondo dell'informatica, tra cui [AIIP](https://www.aiip.it/legge-antipirateria-il-senato-tira-dritto-e-approva-gli-emendamenti-concordemente-contestati-da-tutti-gli-internet-provider-italiani/), [Assoprovider](https://assoprovider.it/tlc-assoprovider-allarme-per-il-rischio-carcere-agli-isp-nel-dl-omnibus-sulla-pirateria/), [Asstel-Assotelecomunicazioni](https://www.asstel.it/dl-omnibus-responsabilizzare-a-livello-penale-gli-operatori-di-telecomunicazioni-non-e-utile-a-contrastare-la-pirateria/) e [Anitec-Assinform](https://www.primaonline.it/2024/10/02/420890/dl-omnibus-e-pirateria-online-anitec-assinform-responsabilita-penale-sproporzionata-e-inefficace/).
 
-Ad esempio, il presidente di AIIP ha dichiarato che questa è una «iniziativa irresponsabile che, nel solo interesse della lobby del calcio, calpesta gli operatori, l'Autorità e l'ecosistema Internet». Altri hanno fatto presente che questa nuova norma genererà ulteriori **nuovi costi per gli operatori**, costi che finora sono stati sostenuti in prima persona dagli operatori, oltre a **sovraccaricare l'autorità giudiziaria** con il rischio di generare un gran numero di ricorsi.
+Ad esempio, il presidente di AIIP ha dichiarato che questa è una «iniziativa irresponsabile che, nel solo interesse della lobby del calcio, calpesta gli operatori, l'Autorità e l'ecosistema Internet». Altri hanno fatto presente che questa nuova norma genererà ulteriori **nuovi costi per gli operatori**, costi che finora sono stati sostenuti in prima persona dagli operatori, oltre a **sovraccaricare l'autorità giudiziaria** con il rischio di generare anche un gran numero di ricorsi.
 
 ## 24mila blocchi dopo...
 
@@ -205,7 +205,7 @@ Anche in Italia:
 
 {{< fig src="grafico2.png" >}}
 
-Lo certifica anche la FAPAV, un'associazione per la tutela dell'industria audiovisiva i cui studi sono spesso presi come riferimento per giustificare la necessità di Piracy Shield, che [misura](https://fapav.it/wp-content/uploads/2018/11/FAPAV_Ricerca-sulla-pirateria-audiovisiva-2023.pdf) un -52%:
+Lo certifica anche la FAPAV, un'associazione per la tutela dell'industria audiovisiva i cui studi sono spesso presi come riferimento per giustificare la necessità di Piracy Shield, [misurando](https://fapav.it/wp-content/uploads/2018/11/FAPAV_Ricerca-sulla-pirateria-audiovisiva-2023.pdf) un -52%:
 
 {{< fig src="grafico5.png" >}}
 
