@@ -1,7 +1,7 @@
 ---
 title: "La pericolosa legge antipirateria, spiegata semplice"
 date: 2024-10-09T17:00:00+02:00
-lastmod: 2024-10-09T17:00:00+02:00
+lastmod: 2024-10-10T12:00:00+02:00
 slug: piracyshield
 summary: "Come funziona Piracy Shield, cosa è cambiato con le modifiche del 2024 e perché sta danneggiando Internet in Italia."
 showtoc: true
@@ -197,7 +197,7 @@ La realtà, in fondo nota a tutti, è che **la repressione non risolve il proble
 
 I sistemi di blocco sono inoltre facilmente aggirabile con una VPN: chi non vuole pagare per un contenuto sportivo o artistico non cambierà improvvisamente idea dopo aver letto che c'è una nuova legge più mirata. Se mai, si ingegnerà più di prima per aggirare i blocchi e i controlli.
 
-A guardar bene poi il fenomeno della pirateria è già di suo [in costante declino](https://www.euipo.europa.eu/it/publications/online-copyright-infringement-in-eu-2023) da molti anni: **tra il 2017 e il 2020 è dimezzato**, per poi crescere leggermente durante la pandemia e poi stabilizzarsi.
+A guardar bene poi il fenomeno della pirateria è già di suo [in costante declino](https://www.euipo.europa.eu/it/publications/online-copyright-infringement-in-eu-2023) da molti anni: **in Europa tra il 2017 e il 2020 è dimezzato**, per poi crescere leggermente durante la pandemia e poi stabilizzarsi.
 
 {{< fig src="grafico1.png" >}}
 
@@ -217,9 +217,9 @@ Il settore in cui la pirateria si è ridotta maggiormente a livello europeo è q
 
 Uno dei motivi più citati è che la diffusione dei servizi in abbonamento come Spotify ha reso l'ascolto legale più comodo e persino più conveniente della pirateria. Secondo un [sondaggio](https://www.statista.com/forecasts/1000834/drivers-of-digital-video-or-audio-content-purchases-in-italy) pubblicato da Statista, il primo motivo per cui le persone in Italia acquistano contenuti video e audio legalmente è "per accederci in qualsiasi momento" e il secondo è proprio la convenienza economica.
 
-Si può dire qualcosa di simile anche per il mercato dei film, delle serie tv e dei libri, ma difficilmente per lo sport in streaming, dove ad esempio **nel caso di DAZN i prezzi [continuano ad aumentare](https://www.ilpost.it/2024/05/17/dazn-aumenti-prezzi-2024-2025/)** a fronte di lamentele [ancora frequenti](https://www.digital-forum.it/threads/dazn-qualit%C3%A0-del-servizio-e-segnalazione-problemi.211543/page-568) per la **scarsa qualità del servizio**.
+Si può dire qualcosa di simile anche per il mercato dei film, delle serie tv e dei libri, ma difficilmente per lo sport in diretta, dove ad esempio **nel caso di DAZN i prezzi [continuano ad aumentare](https://www.ilpost.it/2024/05/17/dazn-aumenti-prezzi-2024-2025/)** a fronte di lamentele [ancora frequenti](https://www.digital-forum.it/threads/dazn-qualit%C3%A0-del-servizio-e-segnalazione-problemi.211543/page-568) per la **scarsa qualità del servizio**.
 
-E a conferma del fatto che a differenza delle altre categorie di contenuti lo sport in streaming non è considerato appetibile per i consumatori c'è il fatto che il consumo illegale di eventi sportivi è cresciuto negli ultimi anni (paradossalmente però è diminuito nel 2023, prima dell'entrata in servizio di Piracy Shield), anziché diminuire come per le altre categorie:
+E a conferma del fatto che a differenza delle altre categorie di contenuti le piattaforme per vedere sport in diretta non sono considerate appetibili per i consumatori c'è il fatto che il consumo illegale di eventi sportivi è cresciuto negli ultimi anni (paradossalmente però è diminuito nel 2023, prima dell'entrata in servizio di Piracy Shield), anziché diminuire come per le altre categorie:
 
 {{< fig src="grafico6.png" >}}
 
@@ -235,13 +235,13 @@ A conferma di ciò c'è ad esempio il fatto che **DAZN paga la Lega Serie A ben 
 
 Come scrive Fanpage, con un modello di business migliore «ne avrebbero giovato tutti, con maggiori introiti per i club, e prezzi più accessibili ai tifosi che al momento hanno sulle spalle anche il sostentamento dei club, attraverso gli abbonamenti TV».
 
-Va poi considerato che gli spettatori del calcio in TV sono [in continua diminuzione](https://www.dday.it/redazione/50722/calcio-in-tv-gli-ascolti-crollano-il-dieci-anni-persi-la-meta-degli-spettatori), e questo dovrebbe indurre a qualche riflessione. Scrive DDay:
+Va anche considerato che gli spettatori del calcio in TV sono [in continua diminuzione](https://www.dday.it/redazione/50722/calcio-in-tv-gli-ascolti-crollano-il-dieci-anni-persi-la-meta-degli-spettatori), e questo dovrebbe indurre a qualche riflessione. Scrive DDay:
 
 > Se il prodotto non appassiona più, e deve essere così altrimenti gli ascolti non sarebbero calati così vertiginosamente, si preferisce spendere in altro.
 >
 > La Lega di Serie A, che chiede ogni tot di anni sempre più soldi portando inevitabilmente all'aumento dei prezzi degli abbonamenti, dovrebbe farsi qualche domanda.
 
-E così forse non ci sarebbe nemmeno il bisogno di interferire con il funzionamento di Internet per tentare di proteggere, probabilmente con scarsi risultati, l'industria del calcio.
+E forse poi non ci sarebbe nemmeno il bisogno di interferire con il funzionamento di Internet per tentare di proteggere, probabilmente con scarsi risultati, l'industria del calcio.
 
 ---
 
