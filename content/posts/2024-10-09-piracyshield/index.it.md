@@ -1,10 +1,14 @@
 ---
 title: "La pericolosa legge antipirateria, spiegata semplice"
 date: 2024-10-09T17:00:00+02:00
-lastmod: 2024-10-10T12:00:00+02:00
+lastmod: 2024-10-29T14:00:00+01:00
 slug: piracyshield
 summary: "Come funziona Piracy Shield, cosa è cambiato con le modifiche del 2024 e perché sta danneggiando Internet in Italia."
 showtoc: true
+---
+
+*L'articolo è stato aggiornato il 29 ottobre 2024 e include ora due nuove sezioni, riguardanti il blocco dei servizi Google avvenuto per errore il 19 ottobre e i costi di Piracy Shield.*
+
 ---
 
 L'8 ottobre 2024 sono entrate in vigore le **modifiche alla legge antipirateria**, che cambiano in modo controverso alcuni aspetti già prima molto criticati.
@@ -19,9 +23,9 @@ Il funzionamento di base prevede infatti che alcune **aziende e associazioni pri
 
 Non esiste però **nessuna verifica** né approvazione da parte di un'autorità: poche e per lo più sconosciute persone in Italia (non c'è una lista aggiornata dei soggetti considerati «attendibili») hanno il **potere di bloccare in modo sostanzialmente istantaneo qualsiasi risorsa di Internet**, con effetti potenzialmente catastrofici, senza nessun obbligo di trasparenza o assunzione di responsabilità in caso di errori (che ci sono già stati). La legge stessa specifica esplicitamente che tutto il processo può avvenire **«senza contraddittorio»**.
 
-È molto controverso anche il contesto in cui la legge è nata: è stata infatti scritta **su [forte spinta](https://www.key4biz.it/serie-a-e-telco-devono-cooperare-a-difesa-della-legalita-de-siervo-lega-serie-a-blocco-siti-pirata-entro-30-minuti/436090/) della Lega Serie A**, che non solo ha realizzato la piattaforma informatica per il blocco dei contenuti illegali, quella a cui ora ci riferiamo con **Piracy Shield** e il cui codice sorgente è tra l'altro stato illecitamente diffuso online (è ancora online nel momento in cui scrivo, dopo più di 6 mesi), ma l'ha persino realizzata [prima dell'approvazione](https://www.agcom.it/provvedimenti/delibera-190-23-cons) della legge che istituisce la piattaforma.
+È molto controverso anche il contesto in cui la legge è nata, cioè **su [forte spinta e influenza](https://www.key4biz.it/serie-a-e-telco-devono-cooperare-a-difesa-della-legalita-de-siervo-lega-serie-a-blocco-siti-pirata-entro-30-minuti/436090/) da parte della Lega Serie A**. È stata proprio la Lega Serie A a realizzare la piattaforma informatica per il blocco dei contenuti illegali, quella a cui ora ci riferiamo con **Piracy Shield**, persino **prima dell'approvazione della legge che l'avrebbe istituita**. (Il codice sorgente è tra l'altro stato illecitamente diffuso online ed è ancora online nel momento in cui scrivo, dopo più di 6 mesi.)
 
-E nonostante formalmente la legge interessi non solo il calcio ma in generale i «contenuti trasmessi in diretta», è addirittura l'Autorità Garante per le Comunicazioni (AGCOM), responsabile del coordinamento di Piracy Shield, a [scrivere](https://www.agcom.it/competenze/antipirateria-e-piracy-shield/piattaforma-piracy-shield) che la piattaforma riguarda «gli eventi sportivi live». (E, guarda caso, l'immagine scelta per la pagina del sito è quella di un campo da calcio.)
+E nonostante formalmente la legge interessi non solo il calcio ma in generale i «contenuti trasmessi in diretta», è addirittura l'Autorità per le Garanzie nelle Comunicazioni (AGCOM), responsabile del coordinamento di Piracy Shield, a [scrivere](https://www.agcom.it/competenze/antipirateria-e-piracy-shield/piattaforma-piracy-shield) che la piattaforma riguarda «gli eventi sportivi live». (E, guarda caso, l'immagine scelta per la pagina del sito è quella di un campo da calcio.)
 
 Stando alle [scarsissime informazioni](https://www.dday.it/redazione/48808/piracy-shield-blocchi-indesiderati-vpn-multe-e-trasparenza-cosa-e-uscito-dalintervento-di-agcom-in-commissione) disponibili, per ora il sistema sembra in effetti limitato agli eventi sportivi, e in prevalenza alle partite di calcio della Serie A trasmesse da DAZN.
 
@@ -83,27 +87,65 @@ Questo fatto è stato evidenziato anche durante una [audizione](https://www.yout
 
 Nella nuova versione della legge **la parola «univocamente» è stata sostituita da «prevalentemente»**: significa che ora **si potranno bloccare anche indirizzi IP** che non sono dedicati esclusivamente alla diffusione di contenuti illegali ma **che ospitano anche altri contenuti legittimi**.
 
-Non è chiaro di preciso cosa si intenda con "prevalenza" (la legge non lo specifica) e non è quindi chiaro nemmeno quali saranno le implicazioni pratiche di questa modifica. Sicuramente però non si renderanno i blocchi più precisi di prima.
+Non è chiaro di preciso cosa si intenda con **"prevalenza"** (la legge non lo specifica) e non è quindi chiaro nemmeno quali saranno le implicazioni pratiche di questa modifica.
+
+Sicuramente però non si renderanno i blocchi più precisi di prima e **sarà più difficile contestare** il blocco di un sito web legittimo, visto che la possibilità di avere degli effetti collaterali è ora prevista dalla legge.
 
 ## Bloccati per errore
 
-La conseguenza ovvia di una legge tecnicamente inapplicabile è che i blocchi tendano ad essere più estesi del dovuto.
+La conseguenza ovvia di una legge di difficile applicazione tecnica è che i blocchi tendano ad essere più estesi del dovuto.
 
-Il caso più eclatante si è verificato a meno di un mese dall'entrata in servizio di Piracy Shield (1° febbraio 2024), quando **è stato [bloccato](https://twitter.com/handymenny/status/1761421069561282743) per errore un indirizzo IP di Cloudflare**, una CDN molto popolare che ospita decine di milioni di siti web.
+Un caso eclatante si è verificato a meno di un mese dall'entrata in servizio di Piracy Shield (1° febbraio 2024), quando **è stato [bloccato](https://twitter.com/handymenny/status/1761421069561282743) per errore un indirizzo IP di Cloudflare**, una CDN molto popolare che ospita decine di milioni di siti web.
 
 {{< fig src="cloudflare1.png" >}}
 
 Cloudflare ha [stimato](https://t.me/notedimatteo/763) che in questo caso il problema abbia riguardato **decine di migliaia di siti web**, che sono rimasti irraggiungibili dall'Italia per diverso tempo. Tra questi [c'era anche](https://twitter.com/handymenny/status/1761480886174757168) il sito web di un (piccolo) operatore telefonico italiano.
 
-Secondo l'AGCOM il problema è durato meno di mezz'ora, ma è falso: è [provato](https://twitter.com/handymenny/status/1762061176609939779) che **i problemi si siano protratti per almeno 40 ore** e il motivo è che, incredibilmente, la piattaforma Piracy Shield al momento **non prevede il concetto di "sblocco"**. E cioè i blocchi vanno eseguiti per legge entro 30 minuti, mentre gli sblocchi possono richiedere anche giorni.
+Secondo l'AGCOM il problema è durato meno di mezz'ora, ma è falso: è [provato](https://twitter.com/handymenny/status/1762061176609939779) che **i problemi si siano protratti per almeno 40 ore** e il motivo è che, incredibilmente, la piattaforma Piracy Shield al momento **non prevede una procedura formale di "sblocco"**. E cioè i blocchi vanno eseguiti per legge entro 30 minuti, mentre gli sblocchi possono richiedere anche giorni.
 
 {{< fig src="cloudflare2.png" >}}
 
-Dai dati pubblicati da AGCOM risulta che in 4 casi sono stati bloccati indirizzi IP che poi hanno richiesto uno sblocco. Un altro caso meno grave ma che [ha fatto discutere](https://www.dday.it/redazione/48464/piracy-shield-sta-censurando-siti-che-non-hanno-nulla-a-che-fare-con-la-pirateria-ed-e-un-problema-serio) è quello della CDN **Zenlayer**, che risulta tutt'ora parzialmente bloccata.
+Dalle [informazioni che si è riusciti a raccogliere](https://www.youtube.com/live/2CUzcZZQZSs?t=1928), sembra che l'AGCOM si sia resa conto del blocco dell'IP Cloudflare dopo una **segnalazione fatta via SMS da Stefano Quintarelli**, noto imprenditore informatico, ideatore di SPID ed ex deputato, ma senza alcun coinvolgimento nel sistema antipirateria, a conferma del fatto che non esiste una procedura formale per rendersi conto degli errori.
+
+Anche Giovanni Zorzoni, presidente dell'Associazione Italiana Internet Provider (AIIP), ha [spiegato](https://twitter.com/matteosonoioo/status/1848386081143640317) in un'intervista che, nonostante gli operatori avessero richiesto un canale di comunicazione diretto attivo 24 ore su 24 ore, al momento **le comunicazioni urgenti di eventuali problemi avvengono via WhatsApp**. A complicare la situazione c'è il fatto che gran parte dei blocchi avviene **fuori dagli orari lavorativi di AGCOM**, e non sembra esistere un presidio continuo del sistema da parte dell'autorità.
+
+Dai dati pubblicati da AGCOM risulta che in 4 casi sono stati bloccati indirizzi IP che poi hanno richiesto uno sblocco, ma il dato è sbagliato: [da un'altra fonte](https://twitter.com/relationsatwork/status/1850451803525038103) generalmente affidabile si è scoperto che gli **indirizzi IP riabilitati** nei primi nove mesi di funzionamento sono stati ben **78**.
+
+Oltre al caso Cloudflare e al blocco dei servizi Google, di cui parleremo sotto, ci sono stati altri blocchi erronei che hanno fatto discutere: sempre a febbraio 2024 sono stati [bloccati](https://www.dday.it/redazione/48464/piracy-shield-sta-censurando-siti-che-non-hanno-nulla-a-che-fare-con-la-pirateria-ed-e-un-problema-serio) degli indirizzi IP del servizio CDN **Zenlayer**, che risulta tutt'ora parzialmente bloccato. A ottobre 2024 sono invece stati [bloccati](https://twitter.com/matteosonoioo/status/1848271841061748845) degli IP di **Imperva**, un servizio di protezione dei siti web usato da moltissime banche e assicurazioni in Italia. Anche in questo caso gli indirizzi IP risultano ancora bloccati.
+
+La situazione più surreale si è però venuta a creare ad agosto 2024, quando Piracy Shield [ha bloccato](https://twitter.com/matteosonoioo/status/1849536016765550955) **gli indirizzi IP che ospitano le pagine di avviso dei blocchi di TIM e Tiscali**. Significa che quando un sito web viene bloccato non può essere mostrata mostrata la pagina che informa del blocco perché la pagina stessa è bloccata dal sistema antipirateria. Al 29 ottobre 2024, due mesi dopo, l'IP Tiscali risulta ancora bloccato, a conferma del fatto che non vengono fatte verifiche serie sulle risorse bloccate e che la cosiddetta "prova forense" che dovrebbe essere allegata a ciascuna segnalazione come prova delle motivazioni del blocco è irrilevante.
+
+{{< fig src="agcom6.png" >}}
+
+## Il blocco dei servizi Google
+
+Alle 18:56 del 19 ottobre è stato inserito [da parte di DAZN](https://www.agcom.it/comunicazione/comunicati-stampa/comunicato-stampa-2) il **blocco di un dominio e di un indirizzo IP appartenenti a Google**.
+
+Il nome di dominio bloccato era `drive.usercontent.google.com`, utilizzato per i download da Google Drive. L'ipotesi più probabile è che un file su Google Drive venisse usato per distribuire una lista di siti web o in generale di URL per lo streaming di partite di calcio e che per questo l'intero dominio sia stato bloccato.
+
+Per come funziona Piracy Shield il blocco è stato applicato dagli operatori immediatamente, e perciò chiunque provasse a scaricare file da Google Drive [otteneva un errore](https://twitter.com/146comp/status/1847728497101279493). (Il blocco del dominio non ha riguardato chi usava un resolver DNS diverso da quello del proprio operatore, come ad esempio i resolver DNS pubblici di Google e di Cloudflare, che non applicano blocchi.)
+
+{{< fig src="drive1.png" >}}
+
+Oltre al dominio è stato bloccato anche l'indirizzo IP `142.250.180.129`, uno dei tanti indirizzi IP usati dalla CDN di Google per fornire i propri servizi web. A causa di questo blocco sono stati segnalati disservizi non solo di Google Drive ma **[anche di YouTube](https://twitter.com/handymenny/status/1847776702790861022) e [di Google Traduttore](https://twitter.com/handymenny/status/1847968588075778126)**.
+
+Non esiste una conferma ufficiale, ma [sembra che](https://www.dday.it/redazione/50824/piracy-shield-fuori-controllo-bloccata-per-6-ore-una-cdn-di-google-urge-una-riforma) il blocco sia stato revocato poco dopo la mezzanotte del 20 ottobre, cioè **più di 5 ore dopo**. I problemi si sono comunque protratti anche per [diverse ore dopo](https://twitter.com/g_bonfiglio/status/1847873197552668937) lo sblocco, in certi casi [anche per un'intera giornata](https://twitter.com/handymenny/status/1848049051859648939) (fortunatamente festiva).
+
+Il presidente di AIIP Zorzoni ha [detto](https://twitter.com/matteosonoioo/status/1847973167806988593) in un'intervista che nemmeno agli operatori sono stati forniti dettagli su quanto avvenuto e che non si sa quindi né quale sia stata la reale motivazione del blocco né perché ci sono volute così tante ore per rendersene conto.
+
+**L'AGCOM ha inizialmente minimizzato l'evento**, [parlando di](https://www.youtube.com/watch?v=2CUzcZZQZSs) semplice «disattenzione», evidenziando che nessuna trasparenza era dovuta («chi ha effettuato il blocco è irrilevante») e che la piattaforma restava **«geniale, anche se un po' esplosiva»**, per poi invece pubblicare un [comunicato stampa](https://www.agcom.it/comunicazione/comunicati-stampa/comunicato-stampa-2) in cui accusava DAZN dell'errore.
+
+In risposta a un'[interrogazione parlamentare](https://aic.camera.it/aic/scheda.html?numero=3/01513&ramo=CAMERA&leg=19) il Ministro delle imprese e del made in Italy Adolfo Urso (in Italia al momento non c'è un ministro per il digitale) ha invece [detto](https://twitter.com/matteosonoioo/status/1849096493463929171) che la causa del problema è Google, che non si era fatta inserire nella "whitelist", cioè la [lista delle risorse non bloccabili](https://www.wired.it/article/piracy-shield-white-list-come-funziona-domini/). Non risulta però esistere una procedura per farsi inserire in questa lista, che al momento evidentemente non include nemmeno Google, il sito web più visitato in Italia.
+
+{{< fig src="interrogazione1.jpg" >}}
+
+L'errore ha insomma evidenziato ancora una volta l'inadeguatezza del sistema ma ha anche esposto delle **spaccature all'interno di AGCOM**.
+
+Il commissario Antonello Giacomelli, uno dei cinque membri del consiglio dell'AGCOM, ha [chiesto](https://www.fanpage.it/innovazione/tecnologia/piracy-shield-resta-in-funzione-il-commissario-agcom-cosi-non-va-andava-sospesa/) di **sospendere Piracy Shield** per permettere di ridefinire le responsabilità, revisionare le procedure e reingegnerizzare la piattaforma. Anche la commissaria Elisa Giomi ha chiesto la sospensione del sistema [esponendosi pubblicamente](https://www.linkedin.com/feed/update/urn:li:activity:7255158083138572290/) ed evidenziando **conflitti di interesse, mancanza di trasparenza e frettolosità**, problemi che avrebbe fatto notare dal principio ricevendo però spesso in risposta «reazioni virulente dei colleghi».
 
 ## Blocchi permanenti
 
-Prima delle recenti modifiche **i blocchi di domini e indirizzi IP erano pensati per essere permanenti**, cioè una volta inseriti non era prevista una procedura per annullarli nel caso in cui non fossero più necessari.
+Prima delle recenti modifiche alla legge **i blocchi di domini e indirizzi IP erano pensati per essere permanenti**, cioè una volta inseriti non era prevista ufficialmente una procedura per annullarli nel caso in cui non fossero più necessari.
 
 Nel caso dei domini questo ha comportato che in pochissimi mesi si raggiungesse la quantità di **17mila domini bloccati**, un numero che rischiava di crescere ancora e che ha [costretto](https://www.wired.it/article/piracy-shield-limite-blocco-domini-governo-sblocco-indirizzi-ip/) l'autorità a pensare allo sblocco di alcuni di questi (ad oggi sono comunque quasi 18mila).
 
@@ -123,9 +165,11 @@ Nello stesso articolo c'è però una leggera miglioria su questo aspetto: una vo
 
 ## I reclami impossibili
 
-Durante l'audizione alla Camera menzionata sopra il presidente di AGCOM ha voluto minimizzare il problema del blocco di Cloudflare, dicendo:
+Durante l'audizione alla Camera di marzo 2024, richiesta proprio in seguito al blocco per errore di Cloudflare, il presidente di AGCOM ha voluto minimizzare il problema:
 
 > A noi non sono arrivati reclami, quindi questo fenomeno che è stato anche enfatizzato da taluni sul web in fondo non ha avuto una ricaduta in termini di specifici reclami. Non sono stati buttati giù siti che ospitavano anche altre cose.
+
+Della stessa opinione era il commissario AGCOM Massimiliano Capitanio, che in un'intervista [aveva detto](https://tg24.sky.it/tecnologia/2024/02/21/piracy-shield-piattaforma-antipirateria) che si trattava di **«notizie assolutamente infondate e fasulle»** e che la procedura è «talmente rigorosa» che nessuna «pubblica amministrazione, ospedale, cantante, influencer» (sic) si sono lamentati.
 
 Il blocco ha in realtà riguardato **decine di migliaia di siti web** e secondo delle indiscrezioni pubblicate dai giornali l'AGCOM [avrebbe ricevuto](https://twitter.com/matteosonoioo/status/1794763568266776938) (su stimolo di Cloudflare) circa **2.000 email di segnalazione**. Ci sono poi testimonianze di reclami formali inviati [tramite PEC](https://twitter.com/ernytech/status/1761723775169519688), difficilmente negabili proprio per il loro carattere "certificato".
 
@@ -137,17 +181,39 @@ La cosa più dettagliata che si trova [sul sito AGCOM](https://www.agcom.it/comp
 
 {{< fig src="agcom3.png" >}}
 
+A molti questo sembra un sistema appositamente pensato per disincentivare i reclami.
+
 La deputata Pastorella ha fatto presente il problema al presidente di AGCOM:
 
 > Come può qualcuno fare un reclamo se non sa che il proprio sito è stato oscurato a causa di questa normativa? La domanda è se i proprietari dei siti che vengono oscurati ricevono una notifica che fa riferimento a questa norma e quindi l'eventuale reclamo può avvenire sulla base di quella conoscenza, perché se semplicemente il mio sito web risulta oscurato ci possono essere mille motivi per cui questo succede, anche tecnici o di altra natura.
 
-In risposta, il presidente ha dichiarato che è stata «predisposta la possibilità di interrogazione del sito dell'autorità che prevede che si possa immettere un indirizzo IP e ottenere la risposta». Non è vero: non esiste nulla del genere sul sito dell'AGCOM.
+In risposta, il presidente ha dichiarato che è stata «predisposta la **possibilità di interrogazione** del sito dell'autorità che prevede che si possa immettere un indirizzo IP e ottenere la risposta». **Non è vero**: non esiste nulla del genere sul sito dell'AGCOM.
 
 Anche nel caso in cui si riuscisse a capire come vanno inviati questi reclami (e si riesca a farlo entro i termini), l'AGCOM ha formalmente chiarito che non intende né divulgare alcuna informazione sui blocchi (nemmeno quelli erronei) né garantire che chi ha provocato il danno si assuma la responsabilità.
 
-In risposta a una istanza di accesso civico l'AGCOM ha infatti [detto](https://twitter.com/ernytech/status/1772969422891647229) che la richiesta è stata «negata per motivata opposizione dei soggetti controinteressati». E cioè: le aziende e le associazioni come DAZN e la Lega Serie A hanno il **potere di bloccare senza verifica qualsiasi risorsa su Internet**, e se sbagliano possono poi **opporsi a qualsiasi richiesta di trasparenza o assunzione di responsabilità** e per l'Autorità Garante per le Comunicazioni (!) va bene così.
+In risposta a una istanza di accesso civico l'AGCOM ha infatti [detto](https://twitter.com/ernytech/status/1772969422891647229) che la richiesta è stata «negata per motivata opposizione dei soggetti controinteressati». E cioè: le aziende e le associazioni come DAZN e la Lega Serie A hanno il **potere di bloccare senza verifica qualsiasi risorsa su Internet**, e se sbagliano possono poi **opporsi a qualsiasi richiesta di trasparenza o assunzione di responsabilità** e per l'Autorità per le Garanzie nelle Comunicazioni (!) va bene così.
 
 {{< fig src="agcom4.png" >}}
+
+L'AGCOM non ha mai corretto queste affermazioni false né ha chiarito l'influenza che i segnalatori sembrano avere sui processi interni dell'autorità, le cui attività [dovrebbero essere caratterizzate](https://www.agcom.it/istituzione) da «indipendenza e autonomia» con lo scopo di «tutelare i consumi di libertà fondamentali degli utenti».
+
+## La piattaforma, e i costi
+
+Un altro aspetto che ha suscitato dei dubbi è **l'opacità del processo** con cui **l'implementazione tecnica** della piattaforma Piracy Shield è avvenuta.
+
+Il sistema risulta infatti [donato](https://www.agcom.it/provvedimenti/delibera-190-23-cons) ad AGCOM dalla Lega Serie A, che è anche uno dei soggetti segnalatori, e realizzato da SP Tech srl, startup innovativa "spin-off" dello studio Previti che si occupa tra il resto di contrasto alla pirateria online.
+
+Una delle cose che fa storcere il naso è che la piattaforma sia stata **realizzata prima dell'approvazione della legge**: la legge è del 14 luglio 2023 e una settimana dopo la piattaforma era già pronta:
+
+{{< fig src="agcom7.png" >}}
+
+Seppur Piracy Shield sia stato donato, [risultano già](https://aic.camera.it/aic/scheda.html?numero=4/03300&ramo=CAMERA&leg=19) **66mila € di costi di manutenzione**. Secondo altre fonti l'impegno sarebbe invece di 58.500 € e farebbe parte di un **contratto di manutenzione** con la startup SP Tech srl. Un'[interrogazione parlamentare](https://aic.camera.it/aic/scheda.html?numero=4/03300&ramo=CAMERA&leg=19) ha però evidenziato come non risultino procedure pubbliche di affidamento per la piattaforma o per la sua manutenzione e l'associazione Assoprovider ha [presentato](https://assoprovider.it/piracy-shield-assoprovider-corte-dei-conti/) un esposto alla Corte dei Conti per **danno erariale**.
+
+Dopo solo 4 mesi dall'entrata in funzione della piattaforma il commissario Capitanio ha [annunciato](https://www.calcioefinanza.it/2024/06/09/capitanio-agcom-nuova-piattaforma-antipirateria/) che è in sviluppo una nuova versione di Piracy Shield in grado di accogliere più operatori. Capitanio ha infatti dichiarato che il sistema «era pensato per 60/70 operatori» ma se ne sarebbero accreditati 300. (L'iscrizione a Piracy Shield è obbligatoria per tutti gli operatori, per cui AGCOM dovrebbe sapere quanti sono.)
+
+Secondo indiscrezioni [riportate da Repubblica](https://www.repubblica.it/economia/2024/06/18/news/pezzotto_pirateria_agcom_dazn-423247121/) il costo della nuova versione di Piracy Shield sarebbe di ben **2 milioni di euro all'anno**, e infatti il commissario Giacomelli ha detto che i costi di gestione sono già andati [oltre quanto preventivato](https://www.repubblica.it/economia/2024/10/23/news/dazn_google_drive_piracy_shield_agcom_diffida-423573427/).
+
+In ogni caso, al momento è opinione diffusa che la piattaforma sia tecnicamente inadeguata: [si sono verificati](https://www.dday.it/redazione/48422/piracy-shield-nel-weekend-centinaia-di-blocchi-troppi-per-la-piattaforma-che-va-in-tilt) da subito problemi di stabilità del sistema e in generale il modello con cui è stato concepito scarica sugli operatori la responsabilità [e i costi](https://www.punto-informatico.it/piracy-shield-la-piattaforma-regalata-dalla-serie-a-costa-66-mila-euro/) per l'integrazione (particolarmente impattanti per gli operatori più piccoli).
 
 ## I DNS pubblici e le VPN
 
