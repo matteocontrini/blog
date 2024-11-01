@@ -45,7 +45,7 @@ La riforma del 2024 è stata invece inserita frettolosamente con un paio di emen
 
 Per arrivare a questa specie di riforma [non sono stati acquisiti](https://www.senato.it/leg/19/BGT/Schede/Ddliter/documenti/58480_documenti.htm) pareri tecnici da esperti della materia né si è svolta una discussione sugli articoli specifici, perché l'approvazione è avvenuta con la "fiducia", cioè tutto in blocco, e gli articoli in questione sono stati formulati nella loro versione finale solo il giorno prima dell'inizio della discussione in Parlamento, [di domenica](https://www.senato.it/japp/bgt/showdoc/frame.jsp?tipodoc=SommComm&leg=19&id=1428972&part=doc_dc).
 
-Uno dei relatori, sia del [disegno di legge](https://www.senato.it/leg/19/BGT/Schede/Ddliter/58480.htm) del 2024 che della legge originale, era **Claudio Lotito**, senatore di Forza Italia in forte conflitto di interessi per il fatto che è presidente della squadra di calcio Lazio. (Durante la [discussione in Senato](https://twitter.com/matteosonoioo/status/1841061289558196629) si è detto sicuro che questa legge «porterà dei ricavi importanti».)
+Uno degli autori, sia del [disegno di legge](https://www.senato.it/leg/19/BGT/Schede/Ddliter/58480.htm) del 2024 che della legge originale, era **Claudio Lotito**, senatore di Forza Italia in forte conflitto di interessi per il fatto che è presidente della squadra di calcio Lazio. (Durante la [discussione in Senato](https://twitter.com/matteosonoioo/status/1841061289558196629) si è detto sicuro che questa legge «porterà dei ricavi importanti».)
 
 ## Internet, in un minuto
 
