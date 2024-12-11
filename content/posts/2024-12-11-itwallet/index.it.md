@@ -13,7 +13,7 @@ Ho notato che **c'è una grande confusione online**, specialmente attorno alla p
 
 Non è vera né una né l'altra cosa, quindi facciamo un po' di ordine.
 
-*Mega disclaimer: il sistema IT Wallet, così come EUDI Wallet, è un sistema molto complesso di cui ho una comprensione parziale. Commenti e precisazioni sono apprezzati.*
+*Mega disclaimer: IT Wallet e EUDI Wallet sono sistemi molto complessi di cui ho una comprensione parziale. Commenti e precisazioni sono apprezzati.*
 
 {{< fig src="documenti-su-io.jpg" >}}
 
@@ -37,9 +37,9 @@ L'architettura di un wallet europeo è a prima vista piuttosto complessa:
 In sintesi:
 
 - L'utente installa un'app EUDI Wallet (*EUDI Wallet Instance* nello schema). In Italia è **l'app IO**.
-- Andando verso sinistra, l'app si interfaccia con diversi possibili provider di documenti digitali. Ad esempio il **PID Provider** fornisce la carta d'identità digitale, mentre il **QEAA Provider**, che sta per *Qualified Electronic Attestation of Attributes*, fornisce documenti di altro tipo ma riconosciuti dalla legge, come la patente digitale. Nel caso italiano al momento l'unico *QEAA Provider* è **l'Istituto Poligrafico e Zecca dello Stato (IPZS)**, che emette le versioni digitali dei documenti. La carta d'identità non fa ancora parte del sistema ma anche la carta d'identità elettronica (CIE) è emessa dall'IPZS.
+- Andando verso sinistra, l'app si interfaccia con diversi possibili provider di documenti digitali. Ad esempio il **PID Provider** fornisce la carta d'identità digitale, mentre il **QEAA Provider**, che sta per *Qualified Electronic Attestation of Attributes*, fornisce documenti di altro tipo ma riconosciuti dalla legge, come la patente digitale. Nel caso italiano al momento l'unico *QEAA Provider* è **l'Istituto Poligrafico e Zecca dello Stato (IPZS)**, che emette le versioni digitali dei documenti. La carta d'identità non è ancora supportata ma è anch'essa emessa dall'IPZS nel caso della CIE.
 - Ciascun provider si affida a delle sorgenti (*Authentic Source*) per ottenere i dati. Ad esempio per la patente è **la motorizzazione civile**, che fa capo al Ministero dell'Interno.
-- Infine i *PID* (la carta d'identità) e le *QEAA* (le attestazioni di altri documenti come la patente) possono essere esposti per la verifica a una *Relying Party*, cioè ad altri enti (pubblici o privati) che possono voler accedere ai documenti digitali, sia in presenza che in remoto. Questa fase richiede sempre una conferma interattiva da parte dell'utente.
+- Infine, i *PID* (le carte d'identità) e le *QEAA* (le attestazioni di altri documenti come la patente) possono essere esposti per la verifica a una *Relying Party*, cioè ad altri enti (pubblici o privati) che possono voler accedere ai documenti digitali, sia in presenza che in remoto. Questa fase richiede sempre una conferma interattiva da parte dell'utente.
 
 ### IT Wallet nelle more 😋
 
