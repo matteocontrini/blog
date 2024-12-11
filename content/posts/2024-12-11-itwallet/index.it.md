@@ -9,7 +9,7 @@ showtoc: true
 
 Da dicembre 2024 nell'app IO è possibile creare la **versione digitale** di documenti come **la patente, la tessera sanitaria** e la carta europea della disabilità, un primo passo verso l'implementazione del sistema **IT Wallet** e la relativa interoperabilità con gli altri paesi europei tramite il progetto EUDI Wallet.
 
-Ho notato che **c'è una grande confusione online**, specialmente attorno alla patente digitale: molti pensano che la patente digitale sia l'immagine della patente mostrata nell'app, altri pensano che la patente sia qualcosa di verificabile tramite il QR code mostrato nell'app e che quindi il QR vada mostrato alle forze dell'ordine per le verifiche.
+Ho notato che **c'è una grande confusione online**, specialmente attorno alla patente digitale: molti pensano che la patente digitale sia l'immagine della patente mostrata nell'app, altri pensano che la patente sia qualcosa di verificabile tramite il codice QR mostrato nell'app e che quindi il QR vada mostrato alle forze dell'ordine per le verifiche.
 
 Non è vera né una né l'altra cosa, quindi facciamo un po' di ordine.
 
@@ -21,7 +21,7 @@ Per cominciare, alcune cose che **IT Wallet non è o non fa**, attualmente:
 
 - Il documento digitale non è un'immagine: la rappresentazione della patente che vedete nell'app IO è appunto solo una rappresentazione grafica del documento digitale.
 - Il "certificato di autenticità" offerto come codice QR nell'app IO non contiene i dati della patente o del documento digitale.
-- La validazione del documento digitale non avviene con la scansione di questo QR.
+- La validazione del documento digitale al momento non avviene con la scansione del codice QR.
 
 Cos'è invece IT Wallet:
 
@@ -90,7 +90,7 @@ Come si vede, non ci sono i dati della patente, ma soltanto:
 - Il **numero del documento**, [offuscato](https://github.com/pagopa/io-react-native-wallet/blob/3d801ea6162aab4d06510c56eb42d0113be42a15/src/utils/string.ts) dall'app (ho modificato soltanto le cifre, gli asterischi c'erano già).
 - Il momento in cui il JWT è stato generato e la relativa scadenza (2 minuti dopo).
 
-Il campo `iss` contiene un altro JWT firmato che [attesta](https://github.com/pagopa/io-react-native-wallet/blob/3d801ea6162aab4d06510c56eb42d0113be42a15/src/credential/trustmark/get-credential-trustmark.ts#L103) la validità e l'integrità della Wallet Instance, cioè l'installazione dell'app, con un complesso formato documentato [qua](https://italia.github.io/eudi-wallet-it-docs/versione-corrente/en/wallet-attestation.html).
+Il campo `iss` contiene un altro JWT firmato che [attesta](https://github.com/pagopa/io-react-native-wallet/blob/3d801ea6162aab4d06510c56eb42d0113be42a15/src/credential/trustmark/get-credential-trustmark.ts#L103) la validità e l'integrità della *Wallet Instance*, cioè l'installazione dell'app, con un complesso formato documentato [qua](https://italia.github.io/eudi-wallet-it-docs/versione-corrente/en/wallet-attestation.html).
 
 Questo sistema è chiamato [Trust Mark](https://github.com/pagopa/io-react-native-wallet/tree/3d801ea6162aab4d06510c56eb42d0113be42a15/src/credential/trustmark) e l'IPZS [spiega](https://verify.wallet.ipzs.it/condizioni_generali.html) che «ha come finalità esclusiva quella di offrire agli utenti informazioni in merito all’autenticità del documento digitale [...] e all’emissione dello stesso ad opera della medesima Società». Certifica cioè che il documento è stato effettivamente emesso dall'Istituto Poligrafico e che è legato alla specifica installazione dell'app, ma non è un modo per trasmettere in modo sicuro i dati del documento.
 
@@ -109,9 +109,9 @@ Il secondo sistema, chiamato ***proximity flow***, è quello che permetterà (ev
 
 1. L'utente mostra un apposito **codice QR al verificatore**, che lo scansiona tramite un'apposita app.
 2. Tramite i dati contenuti nel codice QR (tra cui ci sono delle chiavi crittografiche da cui derivare una chiave di sessione condivisa e temporanea) viene stabilita una connessione sicura tramite **Bluetooth Low Energy** tra il dispositivo del verificatore e lo smartphone dell'utente. Il dispositivo verificatore trasmette quindi tramite Bluetooth una richiesta di accesso al documento digitale, e le sue chiavi crittografiche.
-3. L'utente revisiona i dati per i quali è stato richiesto l'accesso e **conferma la condivisione**. I dati vengono quindi trasmessi in modo cifrato al verificatore e la sessione viene subito dopo chiusa.
+3. L'utente revisiona i dati per i quali è stato richiesto l'accesso e **conferma la condivisione**. I dati vengono quindi trasmessi in modo cifrato al verificatore e la sessione viene chiusa subito dopo.
 
-La fase più critica è probabilmente quella che richiede una connessione Bluetooth, che sarà comunque completamente automatica e trasparente. Lo standard che definisce la procedura è ISO/IEC 18013-5, che purtroppo come tutti gli standard ISO è consultabile solo a pagamento. Dalle bozze che si trovano online si legge però che il dispositivo verificatore deve poter agire sia da server che da client nella connessione Bluetooth ed è identificato da un UUID fisso per tutti i dispositivi verificatori. Non c'è comunque il rischio di inviare i dati al dispositivo errato grazie al flusso con doppio scambio di chiavi descritto sopra.
+La fase più critica è probabilmente quella che richiede una connessione Bluetooth, che sarà comunque completamente automatizzata e trasparente. Lo standard che definisce la procedura è ISO/IEC 18013-5, che purtroppo come tutti gli standard ISO è consultabile solo a pagamento. Dalle bozze che si trovano online si legge però che il dispositivo verificatore deve poter agire sia da server che da client nella connessione Bluetooth ed è identificato da un UUID fisso per tutti i dispositivi verificatori. Non c'è comunque il rischio di inviare i dati al dispositivo errato grazie al flusso con doppio scambio di chiavi descritto sopra.
 
 Ipotizzo che il sistema sia così complesso perché deve supportare non solo lo scenario di fornire i documenti a un'autorità pubblica ma anche ad enti privati, supportando documenti digitali di vario tipo. C'è quindi la necessità che i documenti siano trasmessi solo **dopo esplicita autorizzazione, in modo non intercettabile, non replicabile e anche in assenza di connettività**.
 
