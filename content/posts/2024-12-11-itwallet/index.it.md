@@ -3,7 +3,7 @@ title: "Come funzionerà IT Wallet"
 date: 2024-12-11T16:43:03+01:00
 lastmod: 2024-12-11T16:43:03+01:00
 slug: it-wallet
-summary: ""
+summary: "Sono arrivati i documenti digitali nell'app IO, ma manca ancora un pezzo perché IT Wallet sia conforme a EUDI Wallet."
 showtoc: true
 ---
 
