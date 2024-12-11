@@ -107,7 +107,7 @@ In entrambi i casi i dati sono scambiati tramite un formato standard internazion
 
 Il secondo sistema, chiamato ***proximity flow***, è quello che permetterà (eventualmente) alle forze dell'ordine di ottenere la versione digitale della patente su un dispositivo di verifica. Nella versione italiana dovrebbe funzionare così:
 
-1. L'utente mostra un apposito **codice QR al verificatore**, che lo scansiona.
+1. L'utente mostra un apposito **codice QR al verificatore**, che lo scansiona tramite un'apposita app.
 2. Tramite i dati contenuti nel codice QR (tra cui ci sono delle chiavi crittografiche da cui derivare una chiave di sessione condivisa e temporanea) viene stabilita una connessione sicura tramite **Bluetooth Low Energy** tra il dispositivo del verificatore e lo smartphone dell'utente. Il dispositivo verificatore trasmette quindi tramite Bluetooth una richiesta di accesso al documento digitale, e le sue chiavi crittografiche.
 3. L'utente revisiona i dati per i quali è stato richiesto l'accesso e **conferma la condivisione**. I dati vengono quindi trasmessi in modo crittografato al verificatore e la sessione viene subito dopo chiusa.
 
