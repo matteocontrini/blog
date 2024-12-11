@@ -13,15 +13,15 @@ Ho notato che **c'è una grande confusione online**, specialmente attorno alla p
 
 Non è vera né una né l'altra cosa, quindi facciamo un po' di ordine.
 
-*Mega disclaimer: il sistema IT Wallet, così come EUDI Wallet, sono sistemi molto complessi di cui ho una comprensione parziale. Se qualcuno ne sa di più, commenti e precisazioni sono apprezzati.*
+*Mega disclaimer: il sistema IT Wallet, così come EUDI Wallet, è un sistema molto complesso di cui ho una comprensione parziale. Commenti e precisazioni sono apprezzati.*
 
 {{< fig src="documenti-su-io.jpg" >}}
 
-Intanto, alcune cose che **IT Wallet non è o non fa**, attualmente:
+Per cominciare, alcune cose che **IT Wallet non è o non fa**, attualmente:
 
 - Il documento digitale non è un'immagine: la rappresentazione della patente che vedete nell'app IO è appunto solo una rappresentazione grafica del documento digitale.
 - Il "certificato di autenticità" offerto come codice QR nell'app IO non contiene i dati della patente o del documento digitale.
-- La validazione del documento digitale non avviene con la scansione del QR.
+- La validazione del documento digitale non avviene con la scansione di questo QR.
 
 Cos'è invece IT Wallet:
 
@@ -109,7 +109,7 @@ Il secondo sistema, chiamato ***proximity flow***, è quello che permetterà (ev
 
 1. L'utente mostra un apposito **codice QR al verificatore**, che lo scansiona tramite un'apposita app.
 2. Tramite i dati contenuti nel codice QR (tra cui ci sono delle chiavi crittografiche da cui derivare una chiave di sessione condivisa e temporanea) viene stabilita una connessione sicura tramite **Bluetooth Low Energy** tra il dispositivo del verificatore e lo smartphone dell'utente. Il dispositivo verificatore trasmette quindi tramite Bluetooth una richiesta di accesso al documento digitale, e le sue chiavi crittografiche.
-3. L'utente revisiona i dati per i quali è stato richiesto l'accesso e **conferma la condivisione**. I dati vengono quindi trasmessi in modo crittografato al verificatore e la sessione viene subito dopo chiusa.
+3. L'utente revisiona i dati per i quali è stato richiesto l'accesso e **conferma la condivisione**. I dati vengono quindi trasmessi in modo cifrato al verificatore e la sessione viene subito dopo chiusa.
 
 La fase più critica è probabilmente quella che richiede una connessione Bluetooth, che sarà comunque completamente automatica e trasparente. Lo standard che definisce la procedura è ISO/IEC 18013-5, che purtroppo come tutti gli standard ISO è consultabile solo a pagamento. Dalle bozze che si trovano online si legge però che il dispositivo verificatore deve poter agire sia da server che da client nella connessione Bluetooth ed è identificato da un UUID fisso per tutti i dispositivi verificatori. Non c'è comunque il rischio di inviare i dati al dispositivo errato grazie al flusso con doppio scambio di chiavi descritto sopra.
 
