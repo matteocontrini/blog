@@ -1,5 +1,5 @@
 ---
-title: "Cos'è davvero IT Wallet"
+title: "Come funzionerà IT Wallet"
 date: 2024-12-11T16:43:03+01:00
 lastmod: 2024-12-11T16:43:03+01:00
 slug: it-wallet
