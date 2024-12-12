@@ -117,6 +117,8 @@ La fase più critica è probabilmente quella che richiede una connessione Blueto
 
 Ipotizzo che il sistema sia così complesso perché deve supportare non solo lo scenario di fornire i documenti a un'autorità pubblica ma anche ad enti privati, supportando documenti digitali di vario tipo. C'è quindi la necessità che i documenti siano trasmessi solo **dopo esplicita autorizzazione, in modo non intercettabile, non replicabile e anche in assenza di connettività**.
 
+Lo standard per la verifica dei documenti di persona è tra l'altro già supportato anche da **Google Wallet** e **Apple Wallet**, per cui almeno in linea teorica l'app IO potrà permettere di salvare i documenti digitali all'interno di questi wallet e di utilizzarli senza aprire IO.
+
 ---
 
 Per ora questo è quello che sono riuscito a ricavare. Nei prossimi mesi si dovrebbe sapere di più su come si evolverà IT Wallet nell'app IO: dovrebbero arrivare la verifica dei documenti con il sistema descritto sopra, il funzionamento offline e la carta d'identità.
