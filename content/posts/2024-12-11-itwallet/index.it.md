@@ -1,9 +1,9 @@
 ---
 title: "Come funzionerà IT Wallet"
-date: 2024-12-11T16:43:03+01:00
-lastmod: 2024-12-11T16:43:03+01:00
+date: 2024-12-12T09:00:00+01:00
+lastmod: 2024-12-12T09:00:00+01:00
 slug: it-wallet
-summary: "Sono arrivati i documenti digitali nell'app IO, ma manca ancora un pezzo perché IT Wallet sia conforme a EUDI Wallet."
+summary: "Sono arrivati i documenti digitali nell'app IO, un primo passo verso IT Wallet e l'interoperabilità con EUDI Wallet."
 showtoc: true
 ---
 
@@ -59,7 +59,7 @@ Questa versione è confermata anche da una [circolare](http://www.patente.it/nor
 
 Non c'è quindi da mostrare (per ora) nessun codice QR. Ognuno poi valuti la scomodità di dover (probabilmente) consegnare il proprio smartphone agli agenti di turno per la verifica, dato che devono trascrivere i dati necessari per la ricerca nei sistemi.
 
-### Ma quindi il codice QR?
+### A cosa serve il codice QR?
 
 Il codice QR, che l'app chiama "certificato di autenticità" senza spiegare molto bene cosa sia, contiene un URL fatto così:
 
