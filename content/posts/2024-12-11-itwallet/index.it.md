@@ -45,7 +45,7 @@ In sintesi:
 
 IT Wallet al momento **implementa solo i primi tre punti**, e cioè l'app IO si interfaccia con l'Istituto Poligrafico e Zecca dello Stato per generare i documenti digitali, i cui dati vengono importati dal ministero o dall'ente di turno e poi **firmati digitalmente** in modo da garantirne la validità e l'integrità a livello crittografico.
 
-Manca però [ancora](https://github.com/pagopa/io-react-native-wallet/tree/3d801ea6162aab4d06510c56eb42d0113be42a15/src/credential/presentation) l'ultimo pezzo, cioè la possibilità per l'app IO di trasmettere le attestazioni dei documenti in modo digitale, sicuro e certificato.
+Manca però [ancora](https://github.com/pagopa/io-react-native-wallet/tree/3d801ea6162aab4d06510c56eb42d0113be42a15/src/credential/presentation) l'ultimo pezzo, cioè la possibilità per l'app IO di presentare/trasmettere le attestazioni dei documenti in modo digitale, sicuro e certificato.
 
 Si legge infatti nell'articolo 64-quater del Codice dell'Amministrazione Digitale che le versioni digitali dei documenti sono esposte dall'app IO **«nelle more della piena funzionalità del Sistema IT-Wallet»**, cioè in modo transitorio in attesa che si completi l'implementazione.
 
@@ -99,9 +99,9 @@ Questo sistema è chiamato [Trust Mark](https://github.com/pagopa/io-react-nativ
 A regime, il sistema permetterà la trasmissione e la verifica dei documenti digitali [tramite due sistemi](https://italia.github.io/eudi-wallet-it-docs/versione-corrente/en/relying-party-solution.html):
 
 - **In remoto**: l'utente potrà ad esempio scansionare un codice QR e autorizzare la trasmissione dei dati a un servizio online terzo (sia pubblico che privato), oppure in modo analogo tramite un protocollo apposito se si è sullo stesso dispositivo.
-- **In presenza**: le attestazioni dei documenti sono scambiate in modo sicuro tramite una combinazione di tecnologie di prossimità, ad esempio codici QR a breve durata, NFC o Bluetooth, anche in assenza di connettività.
+- **In presenza**: le attestazioni dei documenti saranno scambiate in modo sicuro tramite una combinazione di tecnologie di prossimità, ad esempio codici QR a breve durata, NFC o Bluetooth, anche in assenza di connettività.
 
-In entrambi i casi i dati sono scambiati tramite un formato standard internazionale che permetterà l'interoperabilità con gli altri wallet europei.
+In entrambi i casi i dati saranno scambiati tramite un formato standard internazionale che permetterà l'interoperabilità con gli altri wallet europei.
 
 {{< fig src="remote-flow.png" >}}
 
