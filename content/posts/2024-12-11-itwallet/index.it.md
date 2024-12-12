@@ -45,7 +45,7 @@ In sintesi:
 
 IT Wallet al momento **implementa solo i primi tre punti**, e cioè l'app IO si interfaccia con l'Istituto Poligrafico e Zecca dello Stato per generare i documenti digitali, i cui dati vengono importati dal ministero o dall'ente di turno e poi **firmati digitalmente** in modo da garantirne la validità e l'integrità a livello crittografico.
 
-Manca però ancora l'ultimo pezzo, cioè la possibilità per l'app IO di trasmettere le attestazioni dei documenti in modo digitale, sicuro e certificato.
+Manca però [ancora](https://github.com/pagopa/io-react-native-wallet/tree/3d801ea6162aab4d06510c56eb42d0113be42a15/src/credential/presentation) l'ultimo pezzo, cioè la possibilità per l'app IO di trasmettere le attestazioni dei documenti in modo digitale, sicuro e certificato.
 
 Si legge infatti nell'articolo 64-quater del Codice dell'Amministrazione Digitale che le versioni digitali dei documenti sono esposte dall'app IO **«nelle more della piena funzionalità del Sistema IT-Wallet»**, cioè in modo transitorio in attesa che si completi l'implementazione.
 
@@ -103,13 +103,15 @@ A regime, il sistema permetterà la trasmissione e la verifica dei documenti dig
 
 In entrambi i casi i dati sono scambiati tramite un formato standard internazionale che permetterà l'interoperabilità con gli altri wallet europei.
 
-{{< fig src="proximity-flow.svg" >}}
+{{< fig src="remote-flow.png" >}}
 
 Il secondo sistema, chiamato ***proximity flow***, è quello che permetterà (eventualmente) alle forze dell'ordine di ottenere la versione digitale della patente su un dispositivo di verifica. Nella versione italiana dovrebbe funzionare così:
 
 1. L'utente mostra un apposito **codice QR al verificatore**, che lo scansiona tramite un'apposita app certificata.
 2. Tramite i dati contenuti nel codice QR (tra cui ci sono delle chiavi crittografiche da cui derivare una chiave di sessione condivisa e temporanea) viene stabilita una connessione sicura tramite **Bluetooth Low Energy** tra il dispositivo del verificatore e lo smartphone dell'utente. Il dispositivo verificatore trasmette quindi tramite Bluetooth una richiesta di accesso al documento digitale, e le sue chiavi crittografiche.
 3. L'utente revisiona i dati per i quali è stato richiesto l'accesso e **conferma la condivisione**. I dati vengono quindi trasmessi in modo cifrato al verificatore e la sessione viene chiusa subito dopo.
+
+{{< fig src="proximity-flow.svg" >}}
 
 La fase più critica è probabilmente quella che richiede una connessione Bluetooth, che sarà comunque completamente automatizzata, trasparente e idealmente istantanea. Lo standard che definisce la procedura è ISO/IEC 18013-5, che purtroppo come tutti gli standard ISO è consultabile solo a pagamento. Dalle bozze che si trovano online si legge però che il dispositivo verificatore deve poter agire sia da server che da client nella connessione Bluetooth ed è identificato da un UUID fisso per tutti i dispositivi verificatori. Non c'è comunque il rischio di inviare i dati al dispositivo errato grazie al flusso con doppio scambio di chiavi descritto sopra.
 
