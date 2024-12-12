@@ -21,7 +21,7 @@ Per cominciare, alcune cose che **IT Wallet non è o non fa**, attualmente:
 
 - Il documento digitale non è un'immagine: la rappresentazione della patente che vedete nell'app IO è appunto solo una rappresentazione grafica del documento digitale.
 - Il "certificato di autenticità" offerto come codice QR nell'app IO non contiene i dati della patente o del documento digitale.
-- La validazione del documento digitale al momento non avviene con la scansione del codice QR.
+- La presentazione del documento digitale per la verifica al momento non avviene con la scansione del codice QR.
 
 Cos'è invece IT Wallet:
 
