@@ -23,6 +23,12 @@ Specifically:
 - The application **instance** that generated the ID.
 - A **sequence** to allow for multiple IDs in the same millisecond.
 
+An example of a Snowflake ID generated on 24 December 2024:
+
+```
+129996446076932098
+```
+
 This design is especially suitable for distributed systems because it allows for up to 1024 instances generating IDs independently and concurrently, with the guarantee that they're not going to conflict. But it's also fine in simpler systems where you have few (or even one) instances of the application.
 
 You still need a way to assign unique instance IDs, something that Twitter solved with a centralized service (Apache ZooKeeper), but we'll see a much simpler solution later.
