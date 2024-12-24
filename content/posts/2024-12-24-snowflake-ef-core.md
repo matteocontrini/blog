@@ -9,7 +9,7 @@ showtoc: true
 
 When designing a database, the most common choice for primary keys and IDs has historically been **auto-incrementing numeric values**.
 
-There are several reasons why you may want to not use that strategy: for example, avoiding leaking records count information (and the rate of new records) when IDs are exposed in URLs, avoiding the penalty of locks for generating the next number, or supporting distributed systems scenarios.
+There are several reasons why you may want to avoid that strategy: for example, avoiding leaking records count information (and the rate of new records) when IDs are exposed in URLs, avoiding the penalty of locks for generating the next number, or supporting distributed systems scenarios.
 
 Alternative solutions involve masquerading IDs (e.g. [with Sqids](https://sqids.org/)), using **UUIDs** (which have their own set of problems, like possible suboptimal performance, long string representation, etc.) or **Snowflake IDs** and their variants.
 
