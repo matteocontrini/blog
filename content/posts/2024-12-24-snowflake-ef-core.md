@@ -23,7 +23,7 @@ Specifically:
 - The application **instance** that generated the ID.
 - A **sequence** to allow for multiple IDs in the same millisecond.
 
-An example of a Snowflake ID generated on 24 December 2024:
+An example of a Snowflake ID generated on 24 December 2024 (generator 937 and sequence 2):
 
 ```
 129996446076932098
