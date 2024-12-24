@@ -13,7 +13,7 @@ There are several reasons why you may want to avoid that strategy: for example, 
 
 Alternative solutions involve masquerading IDs (e.g. [with Sqids](https://sqids.org/)), using **UUIDs** (which have their own set of problems, like possible suboptimal performance, long string representation, etc.) or **Snowflake IDs** and their variants.
 
-The original version of Snowflake was designed [by Twitter](https://blog.x.com/engineering/en_us/a/2010/announcing-snowflake) in 2010 ([for tweets](https://ws-dl.blogspot.com/2019/08/2019-08-03-tweetedat-finding-tweet.html)) and consisted in a system to generate unique 64 bit numbers in the following format:
+The original version of Snowflake was designed [by Twitter](https://blog.x.com/engineering/en_us/a/2010/announcing-snowflake) in 2010 ([for tweet IDs](https://ws-dl.blogspot.com/2019/08/2019-08-03-tweetedat-finding-tweet.html)) and consisted in a system to generate unique 64 bit numbers in the following format:
 
 {{< fig src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Snowflake-identifier.png" caption="Wikimedia Commons. CC BY-SA 3.0" >}}
 
