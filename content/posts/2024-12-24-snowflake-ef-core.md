@@ -76,7 +76,7 @@ With an epoch of January 2024, this configuration will generate valid IDs until 
 
 ## Generating a unique instance ID
 
-With Snowflake, it's your responsibility to make sure that the instance ID (called **generator ID** by NewId) is uniquely assigned to only one application instance at any given time.
+With Snowflake, it's your responsibility to make sure that the instance ID (called **generator ID** in NewId) is uniquely assigned to only one application instance at any given time.
 
 It turns out you can use the database itself to assign generator IDs. The basic idea is that you store the last assigned generator ID in a database table and increment it when a new application instance boots.
 
@@ -100,7 +100,7 @@ The table in the database must have only one row, which can be created with EF C
 
 ```csharp
 builder.Entity<SnowflakeGeneratorEntity>()
-  		 .HasData(new SnowflakeGeneratorEntity { Id = 1, Value = 0 });
+  .HasData(new SnowflakeGeneratorEntity { Id = 1, Value = 0 });
 ```
 
 When the application starts, **I extract the current generator value, increment it and save it to the database**. If the generator ID exceeds the maximum allowed value, I reset the generator ID to zero.
@@ -177,14 +177,14 @@ public static class Snowflake
 }
 ```
 
-Entity Framework will generate the following SQL query when saving the updated value:
+Entity Framework will generate an SQL command that looks like the following when saving the updated value:
 
 ```sql
-UPDATE "SnowflakeGenerators" SET "Value" = @newValue
-WHERE "Id" = 1 AND "Value" = @oldValue;
+UPDATE "SnowflakeGenerators" SET "Value" = 112
+WHERE "Id" = 1 AND "Value" = 111;
 ```
 
-If the value field was changed by another process while it was incremented, this query won't do anything (no rows affected), EF Core will detect the concurrency issue and throw an exception.
+If the value field was changed by another process while being incremented, this query won't do anything (no rows affected), EF Core will detect the concurrency issue and throw an exception.
 
 This approach removes the need of a centralized "ticketing" system like in the original Twitter implementation based on ZooKeeper.
 
