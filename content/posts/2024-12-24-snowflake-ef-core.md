@@ -19,7 +19,7 @@ The original version of Snowflake was designed [by Twitter](https://blog.x.com/e
 
 Specifically:
 
-- The **timestamp** is the number of milliseconds since the chosen epoch. This allows for encoding almost 70 years of IDs.
+- The **timestamp** is the number of milliseconds since the chosen epoch. This allows to encode almost 70 years of IDs.
 - The application **instance** that generated the ID.
 - A **sequence** to allow for multiple IDs in the same millisecond.
 
