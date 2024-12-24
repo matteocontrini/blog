@@ -27,6 +27,8 @@ This design is especially suitable for distributed systems because it allows for
 
 You still need a way to assign unique instance IDs, something that Twitter solved with a centralized service (Apache ZooKeeper), but we'll see a much simpler solution later.
 
+Another important benefit of using Snowflakes is that they're [nearly-sorted](https://en.wikipedia.org/wiki/K-sorted_sequence) and therefore work well with all database indexes. They can also be used for quick filtering and ordering of objects because they contain the timestamp.
+
 The Snowflake format has been adapted and used by several other social networks, like [Discord](https://discord.com/developers/docs/reference#snowflakes), [Instagram](https://instagram-engineering.com/sharding-ids-at-instagram-1cf5a71e5a5c), and [Mastodon](https://github.com/mastodon/mastodon/blob/877090518682b6c77ba9bdfa0231afd56daec44d/lib/mastodon/snowflake.rb).
 
 The structure of the ID can in fact be changed depending on specific needs. For example, you could use microseconds instead of milliseconds, assigning more bits to the timestamp part. Or, if you need to be able to generate more than 4k IDs per second per instance you could add more bits to the sequence part, and so on.
