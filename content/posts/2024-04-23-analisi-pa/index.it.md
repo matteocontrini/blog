@@ -37,14 +37,6 @@ Rispetto all'anno scorso ho rimosso il punteggio Lighthouse (un indice delle pre
 
 I dati sono stati raccolti il 21 e 22 aprile 2024, in parte con l'aiuto [di uno script](https://github.com/matteocontrini/analisi-siti-web-pa) e in parte manualmente (non tutto è facilmente automatizzabile). Potrebbero in entrambi i casi esserci degli errori.
 
----
-
-{{< center >}}
-*Ti interessa restare aggiornato su **digitalizzazione, Internet, AI**?<br>Ogni settimana scrivo la newsletter [Storie di bit](https://storiedibit.it/?ref=blog), con le dieci storie più interessanti della settimana. È gratis, niente spam :)*
-{{< /center >}}
-
----
-
 ## Parametri di valutazione
 
 *Se non ti interessano le spiegazioni, puoi saltare questa sezione e andare direttamente a [Le novità: cosa migliora e cosa peggiora](#le-novità-cosa-migliora-e-cosa-peggiora).*
@@ -264,11 +256,3 @@ Sarebbe poi utile che queste raccomandazioni venissero estese ad altri aspetti: 
 Non mi sembra invece ci sia traccia del Polo Strategico Nazionale, il "cloud della pubblica amministrazione", oppure è indistinguibile rispetto a quello che si faceva prima.
 
 All'anno prossimo!
-
----
-
-{{< center >}}
-*Ti interessa restare aggiornato su **digitalizzazione, Internet, AI**?<br>Ogni settimana scrivo la newsletter [Storie di bit](https://storiedibit.it/?ref=blog), con le dieci storie più interessanti della settimana. È gratis, niente spam :)*
-{{< /center >}}
-
----
