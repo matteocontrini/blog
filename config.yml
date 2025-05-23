@@ -8,10 +8,10 @@ defaultContentLanguage: en
 languages:
   en:
     languageName: English
-    description: I'm Matteo, a software engineer and cloud infrastructure admininistrator from Italy.
+    description: I'm Matteo, a software engineer from Italy.
   it:
     languageName: Italiano
-    description: Sono Matteo, uno sviluppatore software e amministratore di infrastruttura cloud.
+    description: Sono Matteo, uno sviluppatore software.
 
 menu:
   main:
@@ -29,7 +29,7 @@ params:
 
   profileMode:
     enabled: true
-    subtitle: Software Engineer. Building digital products.
+    subtitle: Software engineer. Building digital products.
     buttons:
     - name: Blog 🇮🇹
       url: "/it/blog/"
