@@ -47,13 +47,13 @@ Come doveva essere:
 
 <img src="faq-bici2.png" loading="lazy" alt="Quanto costa il biglietto per il trasporto bicicletta? Per tutti i servizi di trasporto pubblico di Trentino Trasporti (escluso il servizio urbano) il pagamento della tariffa ordinaria bicicletta è  pari a € 2,00.">
 
-Il pagamento è pari a € 2,00, ma forse voleva dire "il costo". Suppongo poi che i 2 € siano in aggiunta al costo del biglietto personale (non lo so, non c'è scritto da nessuna parte).
+Scopriamo che "il pagamento della tariffa ordinaria bicicletta è pari a € 2,00". Suppongo volesse dire che la tariffa è di 2 €. Esiste una tariffa non ordinaria? Boh. I 2 € sono in aggiunta al costo del biglietto passeggero? Boh (presumo di sì, ma non c'è scritto da nessuna parte).
 
 In italiano si direbbe così:
 
 >**Quanto costa trasportare la mia bicicletta?**
 >
->Il trasporto della bicicletta costa 2 €, da pagare in aggiunta al costo del biglietto/abbonamento passeggero, ma se sei un turista è spesso gratis. [Verifica qui] i dettagli.
+>Il trasporto della bicicletta costa 2 € (per bici), da pagare in aggiunta al costo del biglietto/abbonamento passeggero, ma se sei un turista è spesso gratis. [Verifica qui] i dettagli.
 >
 >**Attenzione:** il trasporto delle bici non è sempre ammesso e dipende dallo spazio disponibile. [Leggi qui] per i dettagli.
 
