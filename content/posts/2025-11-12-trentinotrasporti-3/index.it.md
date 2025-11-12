@@ -61,7 +61,7 @@ In italiano si direbbe così:
 
 <img src="faq-orari.png" loading="lazy" alt="Quando escono i nuovi orari? Gli orari si suddividono in orari estivi e orari invernali. Orari estivi: sono attivi indicativamente il giorno successivo al termine dell'anno scolastico; nel periodo precedente al cambio, circa 15 giorni, vengono sempre esposti entrambi. Orari invernali: sono attivi indicativamente il primo giorno di scuola del nuovo anno scolastico; nel periodo precedente al cambio, circa 15 giorni, vengono sempre esposti entrambi.">
 
-A prima vista sembra accettabile, ma non lasciamoci confondere. Gli orari "escono"? Si "suddividono"? Perché mi fai risolvere un rebus anziché dirmi le date? Come dovrei riuscire ad applicare una regola con dentro "indicativamente"? E perché metà testo è ripetuto due volte?
+A prima vista sembra accettabile, ma non lasciamoci confondere. Gli orari "escono"? Si "suddividono"? Perché mi fai risolvere un rebus anziché dirmi le date? Come dovrei riuscire ad applicare una regola con dentro "indicativamente"? "Vengono sempre esposti entrambi"... dove? E perché una frase è ripetuta due volte?
 
 Questa FAQ sarebbe utile se fosse scritta così:
 
