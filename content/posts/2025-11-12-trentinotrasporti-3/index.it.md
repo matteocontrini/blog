@@ -61,7 +61,7 @@ In italiano si direbbe così:
 
 <img src="faq-orari.png" loading="lazy" alt="Quando escono i nuovi orari? Gli orari si suddividono in orari estivi e orari invernali. Orari estivi: sono attivi indicativamente il giorno successivo al termine dell'anno scolastico; nel periodo precedente al cambio, circa 15 giorni, vengono sempre esposti entrambi. Orari invernali: sono attivi indicativamente il primo giorno di scuola del nuovo anno scolastico; nel periodo precedente al cambio, circa 15 giorni, vengono sempre esposti entrambi.">
 
-A prima vista sembra accettabile, ma non lasciamoci confondere. Gli orari "escono"? Si "suddividono"? Perché mi fai risolvere un rebus anziché dirmi le date? E perché metà testo è ripetuto due volte?
+A prima vista sembra accettabile, ma non lasciamoci confondere. Gli orari "escono"? Si "suddividono"? Perché mi fai risolvere un rebus anziché dirmi le date? Come dovrei riuscire ad applicare una regola con dentro "indicativamente"? E perché metà testo è ripetuto due volte?
 
 Questa FAQ sarebbe utile se fosse scritta così:
 
@@ -72,6 +72,8 @@ Questa FAQ sarebbe utile se fosse scritta così:
 >☀️ L'**orario estivo** inizierà il giorno dopo, giovedì 11 giugno, e terminerà con l'inizio della scuola (la data non è ancora stata decisa).
 >
 >Nelle due settimane prima del cambio orario troverai affissi alle fermate sia l'orario estivo che invernale.
+
+Aggiornare la risposta due volte all'anno non credo sia uno sforzo eccessivo.
 
 ---
 
@@ -87,7 +89,7 @@ Qui non saprei da dove cominciare per commentare, quindi passiamo direttamente a
 >
 >🚏 **Alle fermate**: presso tutte le fermate della linea deviata troverai affisso un cartello con le informazioni sulla deviazione.
 >
->🪧 **Sul nostro sito**: [in questa pagina] trovi la lista delle deviazioni di autobus attualmente attive.
+>🛜 **Sul nostro sito**: [in questa pagina] trovi la lista delle deviazioni di autobus attualmente attive.
 >
 >📱 **Nell'app**: installa l'app Muoversi in Trentino per accedere rapidamente alla lista delle deviazioni per la linea o la fermata di cui hai bisogno.
 
@@ -113,7 +115,7 @@ Rivoluzioniamo:
 
 Più chiaro no?
 
-Bonus: **cosa c'è scritto sui cartelli alle fermate?** Che il sovrapprezzo è di 2 € (quello abolito!). Anche in questo caso con una sbrodolata di testo per lo più inutile e incomprensibile (la frase "nessuna giustificazione potrà essere addotta avverso la contestazione" si capisce solo a sentimento):
+Bonus: **cosa c'è scritto sui cartelli alle fermate?** Che il sovrapprezzo è di 2 € (quello abolito!). Anche in questo caso con una sbrodolata di testo per lo più inutile e incomprensibile (la frase "nessuna giustificazione potrà essere addotta avverso la contestazione" sarà anche italiano ma si capisce solo a sentimento):
 
 <img src="sovrapprezzo-bus-cartello.jpg" loading="lazy" style="width: 100%" alt="AVVISO. Servizio Urbano Trento. ACQUISTO BIGLIETTO A BORDO AUTOBUS. DA LUNEDI 11 SETTEMBRE,2017 E' POSSIBILE ACQUISTARE UN BIGLIETTO DI CORSA SEMPLICE, VALIDO FINO A FINE CORSA E NON RIUTILIZZABILE, A TARIFFA FISSA DI € 2,00, A BORDO DELL'AUTOBUS, SU TUTTE LE LINEE DELLA RETE URBANA. L'OPPORTUNITA' E' OFFEFTA ALL'UTENTE CHE NON ABBIA PROVVEDUTO A DOTARSI PREVENTIVAMENTE DI UNO DEI TITOLI DI VIAGGIO PIU' DIFFUSI, DISPONIBILI A PREZZI PIU' CONVENIENTI E A CONDIZIONI DI MAGGIOR FAVORE (ABBONAMENTO, SMART-CARD, APP SU SMARTPHONES, BIGLIETTO CARTACEO). E' QUINDI DA CONSIDERARSI L'ULTIMA POSSIBILITA' DI TRANSAZIONE OFFERTA PER L'UTILIZZO DEL SERVIZIO, INDIPENDENTE ANCHE DALLE LIMITAZIONI DELL'ORARIO DI APERTURA DI BIGLIETTERIE E RIVENDITE CONVENZIONATE, EVITANDO IL RISCHIO DI INCORRERE NELLE SANZIONI PREVISTE IN CASO DI CONTROLLO. PER QUESTE RAGIONI E PER LE FINALITA' DEL PROVVEDIMENTO, IL FONDO CASSA IN DOTAZIONE ALL'AUTISTA NON PUO' ESSERE ILLIMITATO. A TALE PROPOSITO, INVITANDO SEMPRE L'UTENTE A DOTARSI IN ANTICIPO DI UNA DELLE TIPOLOGIE DI TITOLO DI VIAGGIO PIU' DIFFUSE E CONVENIENTI E A CONSIDERARE LA POSSIBILITA' DI ACQUISTO IMMEDIATO A BORDO COME SOLUZIONE CERTAMENTE UTILE MA DI EMERGENZA, SI RACCOMANDA DI MUNIRSI, PER L'ACQUISTO, DI DENARO CONTATO ED EVENTUALMENTE DI BANCONOTE DI TAGLIO PROPORZIONATO ALL'ENTITA' DELL'IMPORTO. SI PRECISA CHE, IN CASO DI CONTROLLO, NESSUNA GIUSTIFICAZIONE POTRA' ESSERE ADDOTTA, AVVERSO LA CONTESTAZIONE E LA RELATIVA SANZIONE PER IRREGOLARITA' TARIFFARIA, DALL'UTENTE SPROVVISTO DI BIGLIETTO, CHE NON SIA STATO IN GRADO DI CONCLUDERE LA TRANSAZIONE A BORDO PER DIFFICOLTA' DI CAMBIO BANCONOTE DI GROSSO TAGLIO. Trento, 25 settembre 2017">
 
