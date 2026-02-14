@@ -3,7 +3,7 @@ title: "Il digitale secondo Trentino Trasporti (parte 4 - edizione olimpica)"
 date: 2026-02-14T00:00:00+01:00
 lastmod: 2026-02-14T00:00:00+01:00
 slug: trentino-trasporti-digitale-4
-summary: "La pessima figura di Trentino Trasporti per le Olimpiadi invernali del 2026"
+summary: "Le Olimpiadi invernali arrivano in Trentino con linee e corse speciali. Come se la cava il nuovo sito Trentino Trasporti? Eh..."
 ---
 
 <style>
@@ -17,7 +17,7 @@ summary: "La pessima figura di Trentino Trasporti per le Olimpiadi invernali del
 
 Sono in corso le **Olimpiadi invernali Milano-Cortina**, che si svolgono in parte anche in Trentino, a Tesero e Predazzo (val di Fiemme). Per l'occasione sono stati finanziati diversi interventi legati al trasporto pubblico, tra cui il rinnovamento della stazione ferroviaria di Trento e il nuovo [hub intermodale di Cavalese](https://www.trentinotrasporti.it/it/news/inaugurazione-centro-intermodale-cavalese-per-il-progetto-brt) (bello).
 
-**Trentino Trasporti** ha poi pubblicato una [sezione dedicata del sito](https://www.trentinotrasporti.it/it/viaggia-con-noi/olimpiadi-2026) per illustrare le linee di autobus che si possono usare per raggiungere i luoghi delle gare.
+**Trentino Trasporti** ha poi pubblicato una [sezione dedicata del sito](https://www.trentinotrasporti.it/it/viaggia-con-noi/olimpiadi-2026), tra l'altro rinnovato da poco, per illustrare le linee di autobus che si possono usare per raggiungere i luoghi delle gare.
 
 Come se la sono cavata? Eh...
 
