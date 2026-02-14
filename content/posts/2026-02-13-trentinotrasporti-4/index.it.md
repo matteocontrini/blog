@@ -125,4 +125,4 @@ Ma queste sono le Olimpiadi. In Trentino. Capiterà ancora in questo secolo? Chi
 
 ---
 
-*Grazie a Sandro per la segnalazione. La parte 5 riguarderà la nuova piattaforma software (NPTT) ed è già in fase di studio...*
+*Grazie a Sandro per la segnalazione. La parte 5 riguarderà la nuova piattaforma software (NPTT), stay tuned...*
