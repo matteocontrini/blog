@@ -67,7 +67,7 @@ Segue l'orario della linea circolare:
 
 <img src="olimpiadi-08.png" loading="lazy" alt="">
 
-C'è una novità: partenza e arrivo ora si chiamano **"start"** e **"finish"**. Saetta McQueen.
+C'è una novità: partenza e arrivo ora si chiamano **"START"** e **"FINISH"**. Saetta McQueen.
 
 <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaW9rcmQyaHJ6c3VuY3JraDlvNXVhMGxweG11bzRiNjdtYmVqZm1vcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/g9ibUdbOCcw6c/giphy.gif" loading="lazy" alt="">
 
