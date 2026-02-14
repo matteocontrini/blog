@@ -121,8 +121,10 @@ La pagina con la lista dei parcheggi invece si presenta così. Pure multilingua.
 
 Forse non ci si poteva aspettare tanto di più, visti i capitoli precedenti di questa serie.
 
-Ma queste sono le Olimpiadi. In Trentino. Capiterà ancora in questo secolo? Chi lo sa. Gli orari in Excel, le mappe pasticciate su PowerPoint, le tabelle incomprensibili, i link rotti e le traduzioni maccheroniche... Quand'è che si è smesso di [fare le cose bene](https://web.archive.org/web/20091218055902/http://mappery.com/map-of/Trento-Bus-Route-Map-Italian)?
+Ma queste sono le Olimpiadi. In Trentino. Capiterà ancora in questo secolo? Chi lo sa. Gli orari in Excel, le mappe pasticciate su PowerPoint, le tabelle incomprensibili, i link rotti e le traduzioni maccheroniche... Quand'è che si è smesso di [fare le cose bene](mappa-urbano-trento-2006.jpg)?
 
 ---
 
 *Grazie a Sandro per la segnalazione. La parte 5 riguarderà la nuova piattaforma software (NPTT), stay tuned...*
+
+<!-- https://web.archive.org/web/20091218055902/http://mappery.com/map-of/Trento-Bus-Route-Map-Italian -->
