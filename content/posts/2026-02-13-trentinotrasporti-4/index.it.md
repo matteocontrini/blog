@@ -3,7 +3,7 @@ title: "Il digitale secondo Trentino Trasporti (parte 4 - edizione olimpica)"
 date: 2026-02-14T00:00:00+01:00
 lastmod: 2026-02-14T00:00:00+01:00
 slug: trentino-trasporti-digitale-4
-summary: "Le Olimpiadi invernali arrivano in Trentino con linee e corse speciali. Come se la cava il nuovo sito Trentino Trasporti? Eh..."
+summary: "Le Olimpiadi invernali arrivano in Trentino con linee e corse speciali di Trentino Trasporti. Come se la cava il nuovo sito? Eh..."
 ---
 
 <style>
