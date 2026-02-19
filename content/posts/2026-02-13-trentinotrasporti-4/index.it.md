@@ -15,7 +15,7 @@ summary: "Le Olimpiadi invernali arrivano in Trentino con linee e corse speciali
     }
 </style>
 
-Sono in corso le **Olimpiadi invernali Milano-Cortina**, che si svolgono in parte anche in Trentino, a Tesero e Predazzo (val di Fiemme). Per l'occasione sono stati finanziati diversi interventi legati al trasporto pubblico, tra cui il rinnovamento della stazione ferroviaria di Trento e il nuovo [hub intermodale di Cavalese](https://www.trentinotrasporti.it/it/news/inaugurazione-centro-intermodale-cavalese-per-il-progetto-brt) (bello).
+Sono in corso le **Olimpiadi invernali Milano-Cortina**, che si svolgono in parte anche in Trentino, a Tesero e Predazzo (val di Fiemme). Per l'occasione sono stati finanziati diversi interventi legati al trasporto pubblico, tra cui il rinnovamento della stazione ferroviaria di Trento e il nuovo [hub intermodale di Cavalese](https://www.trentinotrasporti.it/it/azienda/trentino-trasporti/realizzazioni/inaugurazione-centro-intermodale-cavalese-per-il-progetto-brt) (bello).
 
 **Trentino Trasporti** ha poi pubblicato una [sezione dedicata del sito](https://www.trentinotrasporti.it/it/viaggia-con-noi/olimpiadi-2026), tra l'altro rinnovato da poco, per illustrare le linee di autobus che si possono usare per raggiungere i luoghi delle gare.
 
