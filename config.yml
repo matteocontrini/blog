@@ -31,9 +31,11 @@ params:
     enabled: true
     subtitle: Software engineer. Building digital products.
     buttons:
-    - name: Blog 🇮🇹
+    - name: 🇮🇹 Blog
       url: "/it/blog/"
-    - name: Blog 🇬🇧
+    - name: 🇮🇹 Note
+      url: "https://notedimatteo.it"
+    - name: 🇬🇧 Blog
       url: "/blog/"
     imageUrl: /glitch.jpg
 
