@@ -8,10 +8,16 @@ defaultContentLanguage: en
 languages:
   en:
     languageName: English
-    description: I'm Matteo, a software engineer from Italy.
+    params:
+      description: I'm Matteo, a software engineer from Italy.
+      profileMode:
+        subtitle: I'm a software engineer and independent founder.<br>I build digital products and write about software and digital.
   it:
     languageName: Italiano
-    description: Sono Matteo, uno sviluppatore software.
+    params:
+      description: Sono Matteo, uno sviluppatore software.
+      profileMode:
+        subtitle: Sono un ingegnere del software e founder indipendente.<br>Costruisco prodotti digitali e qui scrivo di software e digitale.
 
 menu:
   main:
@@ -29,7 +35,6 @@ params:
 
   profileMode:
     enabled: true
-    subtitle: Software engineer. Building digital products.
     buttons:
     - name: 🇮🇹 Blog
       url: "/it/blog/"
