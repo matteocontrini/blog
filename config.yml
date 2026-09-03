@@ -1,5 +1,4 @@
 baseURL: https://matteosonoio.it/
-locale: en-US
 title: Matteo Contrini
 theme: PaperMod
 
@@ -7,13 +6,17 @@ defaultContentLanguage: en
 
 languages:
   en:
+    contentDir: content/en
     label: English
+    locale: en-US
     params:
       description: I'm Matteo, a software engineer from Italy.
       profileMode:
         subtitle: I'm a software engineer and independent founder.<br>I build digital products and write about software and digital.
   it:
+    contentDir: content/it
     label: Italiano
+    locale: it-IT
     params:
       description: Sono Matteo, uno sviluppatore software.
       profileMode:
