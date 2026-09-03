@@ -4,6 +4,10 @@ date: 2026-09-03T11:00:00+02:00
 lastmod: 2026-09-03T11:00:00+02:00
 slug: asuit-digitale
 summary: "I disservizi informatici dell'ASUIT e cosa succede a dismettere le competenze interne rinunciando all'innovazione e al controllo dei sistemi critici."
+cover:
+  image: trec.jpg
+  alt: "Messaggi di errore dell'app TreC+"
+  relative: true
 ---
 
 La cronaca trentina degli ultimi mesi è stata spesso occupata dai **disservizi software dell'azienda sanitaria provinciale** (**ASUIT**, o APSS fino all'anno scorso). I problemi hanno riguardato numerosi sistemi che sembrano avere il denominatore comune di essere software acquisiti tramite appalti, a differenza delle applicazioni storicamente realizzate internamente dalla provincia.
