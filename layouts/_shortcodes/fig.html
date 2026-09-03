@@ -1,9 +1,18 @@
+{{- $src := .Get "src" -}}
+{{- if not (urls.Parse $src).IsAbs -}}
+  {{- with .Page.Resources.Get $src -}}
+    {{- $src = .RelPermalink -}}
+  {{- else -}}
+    {{- errorf "fig shortcode: resource %q not found in %s" $src .Page.Path -}}
+  {{- end -}}
+{{- end -}}
+
 <figure{{ if .Get "vertical" }} class="vertical"{{ end }}>
   {{- if not (.Get "nolink") }}
-  <a href="{{ .Get "src" }}" target="_blank">
+  <a href="{{ $src }}" target="_blank" rel="noopener noreferrer">
   {{- end }}
 
-  <img src="{{ .Get "src" }}" loading="lazy" {{ with .Get "alt" }}alt="{{ . }}" {{ end }}>
+  <img src="{{ $src }}" loading="lazy" {{ with .Get "alt" }}alt="{{ . }}" {{ end }}>
 
   {{- if not (.Get "nolink") }}
   </a>
