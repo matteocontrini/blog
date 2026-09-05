@@ -1,7 +1,7 @@
 ---
 title: "Come è messa Trentino Digitale"
 date: 2026-09-05T17:00:00+02:00
-lastmod: 2026-09-05T17:00:00+02:00
+lastmod: 2026-09-05T18:00:00+02:00
 slug: trentino-digitale
 summary: "La in-house trentina perde costantemente competenze. Una prospettiva esterna e cosa gli manca per diventare una tech company attrattiva."
 cover:
@@ -10,7 +10,7 @@ cover:
   relative: true
 ---
 
-Ho scritto nell'articolo precedente ([Il fallimento digitale della sanità del Trentino](/it/asuit-digitale)) di cosa succede quando si riducono o smantellano le competenze interne nella pubblica amministrazione per esternalizzare software e servizi digitali critici: bando dopo bando **la qualità dell'ecosistema software precipiata** perché gli appalti finiscono sempre nelle mani delle solite grandi software house (Engineering, Accenture, Reply, ecc.), che hanno come obiettivo chiudere contratti e spuntare checkbox con un disallineamento completo rispetto alla missione del servizio pubblico.
+Ho scritto nell'articolo precedente ([Il fallimento digitale della sanità del Trentino](/it/asuit-digitale)) di cosa succede quando si riducono o smantellano le competenze interne nella pubblica amministrazione per esternalizzare software e servizi digitali critici: bando dopo bando **la qualità dell'ecosistema software precipiata** perché gli appalti finiscono sempre nelle mani delle solite grandi software house (Engineering, Accenture, Reply, ecc.), che hanno come obiettivo chiudere contratti e spuntare checkbox con incentivi completamente disallineati rispetto alla missione del servizio pubblico.
 
 **Questo metodo funziona male e non è di beneficio per nessuno**: né per la PA locale, che offre così servizi digitali sistematicamente mediocri (spostando tra l'altro risorse e opportunità di lavoro lontano dal territorio), né per le persone che lavorano nelle società di consulenza.
 
