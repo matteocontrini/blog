@@ -11,4 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - uses: astral-sh/setup-uv@v10.0.1
+        with:
+          cache-dependency-glob: scripts/prepare_images.py
       - run: uv run scripts/prepare_images.py --check
