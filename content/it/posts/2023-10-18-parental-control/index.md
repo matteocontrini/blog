@@ -31,14 +31,14 @@ L'articolo 7-bis del decreto, tutt'ora in vigore senza modifiche, obbliga gli op
 
 Questi servizi di controllo parentale dovrebbero essere **gratuiti**, **preattivati su tutti i contratti di fornitura Internet** ma disattivabili dal titolare del contratto.
 
-<img src="articolo.png" loading="lazy" style="width: 90%" alt="
+{{< fig src="articolo.png" width="90%" alt=`
 Art. 7-bis
 (Sistemi di protezione dei minori dai rischi del cyberspazio.)
     1)  I  contratti  di  fornitura  nei  servizi  di   comunicazione elettronica disciplinati dal codice di cui al decreto legislativo  1° agosto 2003, n. 259,  devono  prevedere  tra  i  servizi  preattivati sistemi  di  controllo  parentale  ovvero  di  filtro  di   contenuti inappropriati per i minori e di blocco di contenuti riservati  ad  un pubblico di eta' superiore agli anni diciotto.
     2) I servizi  preattivati  di  cui  al  comma  1  sono  gratuiti  e disattivabili  solo  su  richiesta  del  consumatore,  titolare   del contratto.
     3)  Gli  operatori  di  telefonia,  di   reti   televisive   e   di comunicazioni elettroniche assicurano adeguate forme  di  pubblicita' dei servizi preattivati di cui al comma 1 in modo da assicurare che i consumatori possano compiere scelte informate.
     4) In  caso  di  violazione  degli  obblighi  di  cui  al  presente articolo, l'Autorita' per  le  garanzie  nelle  comunicazioni  ordina all'operatore la cessazione della condotta e  la  restituzione  delle eventuali somme ingiustificatamente addebitate agli utenti, indicando in ogni caso un termine non inferiore a  sessanta  giorni  entro  cui adempiere.
-">
+` >}}
 
 La formulazione dell'articolo è talmente scarna, generica e interpretabile che da subito ci sono diverse perplessità.
 
@@ -121,7 +121,7 @@ Ma specifica poi che **AGCOM non ha (ancora) né liste né criteri per individua
 
 Nel provvedimento definitivo sono indicate delle categorie di contenuti da bloccare ma non sono di grande aiuto: si parla non solo di **contenuti per adulti** ma anche di **"violenza"** e **"odio e discriminazione"**. Nella lista sono anche menzionati **"anonymizer"** (intesi come VPN e simili) e le **"sette"** (chi promuove incantesimi e maledizioni), **tutte categorie un po' ampie e per le quali è difficile dare un'interpretazione unica e condivisa**.
 
-<img src="categorie.png" loading="lazy" style="width: 80%" alt="
+{{< fig src="categorie.png" width="80%" alt=`
 Contenuti per adulti: Siti web riservati ad un pubblico maggiorenne, siti che mostrano nudità totale o parziale in un contesto sessuale pornografico, accessori sessuali, attività orientate al sesso. Siti che supportano l'acquisto online di tali beni e servizi.
 Gioco d’azzardo/scommesse: Siti che forniscono informazioni o promuovono il gioco d'azzardo o supportano il gioco d'azzardo online e/o scommesse.
 Armi: Siti che forniscono informazioni, promuovono o supportano la vendita di armi e articoli correlati.
@@ -129,7 +129,7 @@ Violenza: Siti che presentano o promuovono violenza o lesioni personali, compres
 Odio e discriminazione: Siti che promuovono o supportano l’odio o l'intolleranza verso qualsiasi individuo o gruppo Promozione di pratiche che possono danneggiare la salute alla luce di consolidate conoscenze mediche A titolo di esempio siti che promuovono o supportano l'anoressia e/o la bulimia, l’uso di sostanze stupefacenti illegali, di alcol o di tabacco
 Anonymizer: Siti che forniscono strumenti e modalità per rendere l’attività online irrintracciabile.
 Sette: Siti che promuovono o che offrono metodi, mezzi di istruzione o altre risorse per influire su eventi reali attraverso l'uso di incantesimi, maledizioni, poteri magici o essere soprannaturali.
-">
+` >}}
 
 ## Il decreto legge del 2023
 
@@ -141,7 +141,7 @@ Il decreto prevede anche che gli Internet Service Provider inviino «una comunic
 
 Ad esempio, questa è la comunicazione inviata da Vodafone:
 
-<img src="vodafone.png" loading="lazy" style="width: 80%" alt="
+{{< fig src="vodafone.png" width="80%" alt=`
 Come Vodafone ci impegniamo a mettere a disposizione
 dei nostri clienti gli strumenti più avanzati per proteggere
 la navigazione in rete e in particolare riteniamo che
@@ -149,7 +149,7 @@ la tutela dei minori sia di primaria importanza.
 Ti ricordiamo che esistono applicazioni di controllo parentale
 (o parental control), strumenti efficaci per aumentare
 la sicurezza dei minori online.
-Con i migliori saluti, Il Team Vodafone">
+Con i migliori saluti, Il Team Vodafone` >}}
 
 Il tempismo non è sicuramente stato studiato molto bene: sarebbe stato opportuno **accorpare queste comunicazioni** con l'introduzione effettiva dei nuovi sistemi obbligatori di parental control, cosa che avverrà entro il 21 novembre 2023 (nove mesi dopo la pubblicazione del provvedimento AGCOM).
 

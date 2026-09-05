@@ -46,13 +46,13 @@ It comes with "segments", which are additional labels decorating the prompt.
 
 I personally use the lean style with some tweaks, but there are many other possible configurations.
 
-<img src="powerlevel10k.png">
+{{< fig src="powerlevel10k.png" >}}
 
 ## zaw
 
 [zaw](https://github.com/zsh-users/zaw) is a replacement for the `CTRL-R` (`^R`) reverse history search. I use it all the time.
 
-<img src="zaw.png">
+{{< fig src="zaw.png" >}}
 
 *(☝️ me trying to install PyTorch for CPU)*
 

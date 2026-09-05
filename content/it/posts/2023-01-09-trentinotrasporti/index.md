@@ -71,7 +71,7 @@ Bisogna richiedere la **smart card**, cioè una tessera RFID (e questo va beniss
 
 Il modulo è questo:
 
-<img src="modulo.png" loading="lazy" style="width: 50%" alt="Modulo per la richiesta di una tessera Trentino Trasporti.">
+{{< fig src="modulo.png" width="50%" alt="Modulo per la richiesta di una tessera Trentino Trasporti." >}}
 
 Mi chiedo se qualcuno in provincia abbia mai provato a compilarlo e si sia reso conto di quanto sia estremamente scomodo scrivere all'interno di quei quadratini. Evidentemente no. Notare anche la filigrana con il logo della provincia di Trento al centro della pagina. Un'opera d'arte.
 
@@ -102,11 +102,11 @@ Nel secondo caso facciamo presto: **Trentino Trasporti non pubblica i dati in te
 
 Per quanto riguarda la **FTM** sono effettivamente presenti dei dati in tempo reale: bisogna premere quel tasto **"LIVE"** sul sito Trentino Trasporti. È un po' per aria da qualche anno, non se ne sono ancora accorti. Si finisce su un altro capolavoro, la [*train view*](http://trainview.algorab.net/).
 
-<img src="treni-1.png" loading="lazy" alt="Screenshot del sito Trentino Trasporti nella sezione ferrovia.">
+{{< fig src="treni-1.png" alt="Screenshot del sito Trentino Trasporti nella sezione ferrovia." >}}
 
 Tanto per cambiare, **è un colabrodo**. Funziona anche ma ha un layout molto particolare e sembra più un giocattolo per vedere dove sono i treni più che qualcosa di utile per capire tra quanto arriva il treno a cui si è interessati. A volte i treni smettono di "aggiornarsi" per qualche motivo e non è indicato da nessuna parte che i dati potrebbero non essere aggiornati. Per un'analisi tecnica del perché non si salva nulla di questo strumento, [qua](https://youtu.be/IgBRGQdQlLQ) c'è un mio video su YouTube.
 
-<img src="treni-2.png" style="width: 75%" loading="lazy" alt="Screenshot dell'interfaccia per monitorare i treni della ferrovia Trento-Malé-Mezzana.">
+{{< fig src="treni-2.png" width="75%" alt="Screenshot dell'interfaccia per monitorare i treni della ferrovia Trento-Malé-Mezzana." >}}
 
 ## Come si poteva fare
 
@@ -124,8 +124,8 @@ Seguono idee sparse.
   - È chiaro invece che farsi la propria app che funziona male (e che poi usa comunque le API di Google Maps) è una strategia fallimentare.
   - Che piaccia o no, **gli utenti già usano app come Google Maps** e un'azienda di trasporti **non può ignorarlo** e mettersi a reinventare la ruota facendola quadrata.
   - Seguono screenshot di Google Maps a Torino con i ritardi reali dei mezzi.
-<img src="gtt-1.png" style="width: 50%" loading="lazy" alt="Screenshot di Google Maps che mostra i dati in tempo reale per la città di Torino.">
-<img src="gtt-2.png" style="width: 50%" loading="lazy" alt="Screenshot di Google Maps che mostra i dati in tempo reale per la città di Torino.">
+{{< fig src="gtt-1.png" width="50%" alt="Screenshot di Google Maps che mostra i dati in tempo reale per la città di Torino." >}}
+{{< fig src="gtt-2.png" width="50%" alt="Screenshot di Google Maps che mostra i dati in tempo reale per la città di Torino." >}}
 - Una volta pubblicati i dati, **non ci sarebbe nemmeno bisogno di sviluppare un'applicazione dedicata**. Si spende di meno e si ottiene un'esperienza di gran lunga superiore. Non piace Google Maps? Va bene, ci sono altre applicazioni che si possono promuovere, probabilmente anche "open". Ma non mi sembra comunque questo il problema visto che Google Maps è indicata letteralmente come prima cosa sulla homepage del sito Trentino Trasporti.
 - I **codici fermata** potrebbero essere assegnati con un criterio più sensato ed essere così esposti chiaramente alle fermate. Ho sviluppato il sito web [Tra quanto passa](https://traquantopassa.in/) come alternativa a Muoversi in Trentino e se il codice fermata fosse indicato non in miniatura alle fermate potrebbe essere utilizzato per accedere velocemente a un fermata specifica e vedere quali corse passeranno nei prossimi minuti.
 - Il **sistema di abbonamenti** andrebbe rivisto in ottica 2023 e reso più moderno. Alla fine basta copiare qualche idea dall'Alto Adige.

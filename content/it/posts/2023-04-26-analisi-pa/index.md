@@ -29,9 +29,7 @@ Quest'anno ho analizzato **46 siti web** (+9) ed estratto i seguenti parametri d
 - punteggio Lighthouse mobile/desktop **(nuovo)**
 - conformità alle linee guida di design per i servizi della pubblica amministrazione
 
-<a href="tabella.png" target="_blank">
-    <img src="tabella.png" alt="">
-</a>
+{{< fig src="tabella.png" >}}
 
 Il foglio Excel originale lo trovate [qua](https://1drv.ms/x/s!AgJdWI23CtyPmr1F1RFDPOEBGoIovw).
 
@@ -178,7 +176,7 @@ Nota: questa categorizzazione non è una scienza esatta e in alcuni casi è un p
 
 - `https://infratelitalia.it/` porta a una pagina di errore della "CGIL Funzione Pubblica". Mi sfugge cosa c'entri la CGIL con Infratel Italia
 
-<img src="infratel.png" loading="lazy" alt="FP CGIL. Stai accedendo al server da un dominio non attendibile. Contatta il tuo amministratore di sistema. Se sei un amministratore di questa istanza, configura l'impostazione trusted_domains in config/config.php. Viene fornita una configurazione di esempio in config/config.sample.php o nella documentazione.">
+{{< fig src="infratel.png" alt="FP CGIL. Stai accedendo al server da un dominio non attendibile. Contatta il tuo amministratore di sistema. Se sei un amministratore di questa istanza, configura l'impostazione trusted_domains in config/config.php. Viene fornita una configurazione di esempio in config/config.sample.php o nella documentazione." >}}
 
 - Il sito del Ministero della Giustizia (`www.giustizia.it`) ha questa `Content-Security-Policy`: `Content-Security-Policy: script-src 'unsafe-inline' 'unsafe-eval' * ;`. Ora, io non sono un esperto di CSP, ma l'asterisco unito alle altre sorgenti mi sembra equivalente a non impostare l'header del tutto
 
@@ -202,7 +200,7 @@ Se togliamo il requisito CSP, che effettivamente in alcuni casi (come per i siti
 
 - Il MEF (`www.mef.gov.it`) ha donato al web dell'ASCII art:
 
-<img src="mef.png" loading="lazy" alt="ASCII art nel sorgente della homepage MEF.">
+{{< fig src="mef.png" alt="ASCII art nel sorgente della homepage MEF." >}}
 
 - Il Ministero della Salute (`www.salute.gov.it`) e il Quirinale (`www.quirinale.it`) hanno un header `Content-Length` aggiuntivo ma con alcune lettere scambiate (`ntcoent-length` e `cteonnt-length`). Il valore dovrebbe essere la dimensione della risposta non compressa e secondo [alcuni](https://davidkeen.com/blog/2017/10/jumbled-headers/) sarebbe un "trick employed by hardware appliances (e.g. Citrix NetScaler) to ‘remove’ a header without affecting the check-sum value".
 

@@ -20,7 +20,7 @@ Il portale ufficiale del governo del Regno Unito, [GOV.UK](https://www.gov.uk/),
 
 Funziona talmente bene come sistema che ha ispirato anche altri governi (Germania, Francia, Grecia) e secondo me andrebbe semplicemente copiato. Dovremmo farlo specialmente in Italia, visto che non abbiamo nulla di nemmeno vagamente confrontabile.
 
-<img src="govuk.png" loading="lazy" alt="Screenshot della homepage del sito web GOV.UK.">
+{{< fig src="govuk.png" alt="Screenshot della homepage del sito web GOV.UK." >}}
 
 Ma prima, vediamo alcuni esempi di situazioni in cui GOV.UK può aiutare. Poi confronteremo con la situazione italiana.
 

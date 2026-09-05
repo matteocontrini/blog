@@ -26,7 +26,7 @@ Poi non è successo niente.
 
 Arriva il 2023, il 4 aprile 2023, e l'Agenzia delle Entrate pubblica un [provvedimento](https://www.agenziaentrate.gov.it/portale/documents/20143/5202816/Provvedimento+del+4_4_23+servizi+in+Api.pdf/4e3a2055-c75b-fb0c-daac-7dda27ee6a1c) in cui si decide di attivare "la **piattaforma di API Management** per l'erogazione dei servizi di libero accesso". I primi due servizi ad essere attivati sono proprio la verifica partita IVA e codice fiscale, a partire dal 15 maggio 2023.
 
-<img src="ade1.png" alt="3. Servizi disponibili
+{{< fig src="ade1.png" alt=`3. Servizi disponibili
 3.1. A partire dal 15 maggio 2023, sono resi disponibili attraverso la piattaforma di API
 Management i seguenti Servizi API:
 a) servizio per la verifica di esistenza e validità del codice fiscale, volto a
@@ -37,15 +37,15 @@ b) servizio per la verifica di esistenza e validità della partita IVA, volto a
 verificare la validità del numero di partita IVA attribuito e a fornire le
 informazioni relative allo stato di attività della partita IVA, alla denominazione
 del soggetto o, in assenza di questa, al cognome e nome della persona fisica
-titolare.">
+titolare.` >}}
 
 Il 15 maggio il servizio di "API Management" effettivamente compare, ma risulta essere **disponibile solo ad un "numero ristretto di sperimentatori"**.
 
-<img src="ade2.png" alt="Nuovo servizio API Management.
+{{< fig src="ade2.png" alt=`Nuovo servizio API Management.
 I servizi Verifica validità codice fiscale e Verifica validità partita IVA in API Management di cui al
 Provvedimento dell'Agenzia delle Entrate del 04/04/2023, sono attualmente disponibili ad un numero
 ristretto di sperimentatori. In esito della fase di sperimentazione i servizi saranno gradualmente resi
-disponibili ad ulteriori soggetti a partire dai soggetti accreditati allo SDI.">
+disponibili ad ulteriori soggetti a partire dai soggetti accreditati allo SDI.` >}}
 
 Per [vie traverse](https://forum.italia.it/t/servizi-per-check-codice-fiscale-e-partita-iva/10732/134) si scopre che **questi sperimentatori sono alcune software house associate all'associazione di categoria AssoSoftware**, che possono quindi già integrare le nuove API nei loro software.
 
@@ -57,13 +57,13 @@ In ogni caso, **i mesi continuano a passare ma novità non se ne vedono**. L'Age
 
 Più o meno. Ad alcuni funziona, ad altri no. A volte è sufficiente *Cambiare utenza di lavoro* e selezionare la propria azienda, altre volte no. Non si capisce, e l'Agenzia delle Entrate ha scelto di non comunicare. Le cose cambiano, ma non lo dice a nessuno.
 
-<img src="ade3.png" alt="Mancata autorizzazione. L'utente non è autorizzato al servizio richiesto.">
+{{< fig src="ade3.png" alt="Mancata autorizzazione. L'utente non è autorizzato al servizio richiesto." >}}
 
 **Ma come sono fatte queste API? Ne è valsa la pena?**
 
 Quello che si sa al momento è che sono previsti diversi piani ([fonte](https://forum.italia.it/t/servizi-per-check-codice-fiscale-e-partita-iva/10732/165)):
 
-<img src="ade4.jpg" alt="Piano standard
+{{< fig src="ade4.jpg" alt=`Piano standard
 • Limite di frequenza:
 500/1day
 • Limite di picco
@@ -76,18 +76,18 @@ Piano business
 Piano premium
 • Limite di frequenza:
 110000/1day
-• Limite di picco: 70/1 minute">
+• Limite di picco: 70/1 minute` >}}
 
 Notate come uno dei piani si chiami "business": come se gli altri piani non fossero pensati per il business.
 
 Secondo [un post](https://forum.italia.it/t/servizi-per-check-codice-fiscale-e-partita-iva/10732/195) pubblicato sul forum Italia.it che i piani vengono **assegnati automaticamente in base al numero di fatture emesse in media al giorno** dall'azienda, calcolate sul primo semestre del 2023. Ad esempio **il piano standard si applica a chi crea meno di 10.000 fatture al giorno**.
 
-<img src="ade5.png" alt="Informazioni aggiuntive sui criteri
+{{< fig src="ade5.png" alt=`Informazioni aggiuntive sui criteri
 Il criterio per determinare il piano di utilizzo considera il numero di fatture inviate dal soggetto nel primo
 semestre 2023. Determinando:
 • La fascia Premium se il soggetto invia mediamente da 100.000 a 500.000 fatture giornaliere
 • La fascia Business se il soggetto invia mediamente da 10.000 a 100.000 fatture giornaliere
-• La fascia Standard se il soggetto invia mediamente un numero di fatture inferiore a 10.000">
+• La fascia Standard se il soggetto invia mediamente un numero di fatture inferiore a 10.000` >}}
 
 Quello che fa storcere il naso sono i **rate limit** associati ai piani: ad esempio nel piano standard il limite sarebbe di 500 richieste al giorno, a fronte di 10.000 fatture emesse. Lascia ancora più perplessi il limite di **2 richieste al minuto**: significa che se uno inserisce un numero di partita IVA in un form e sbaglia una cifra, al secondo tentativo **il limite è già raggiunto**.
 

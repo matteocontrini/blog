@@ -28,7 +28,7 @@
   <picture>
     <source srcset="{{ $src }}" type="image/webp">
   {{- end }}
-  <img src="{{ $href }}" loading="lazy"{{ with $image }} width="{{ .Width }}" height="{{ .Height }}"{{ end }} alt="{{ .Get "alt" }}">
+  <img src="{{ $href }}" loading="lazy"{{ with $image }} width="{{ .Width }}" height="{{ .Height }}"{{ end }}{{ with .Get "width" }} style="width: {{ . }}; margin-left: auto; margin-right: auto"{{ end }} alt="{{ .Get "alt" }}">
   {{- if ne $src $href }}
   </picture>
   {{- end }}

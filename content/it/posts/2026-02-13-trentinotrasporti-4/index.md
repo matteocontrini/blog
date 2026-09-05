@@ -23,7 +23,7 @@ Come se la sono cavata? Eh...
 
 Per cominciare, la pagina iniziale a me fa un po' paura perché non capisco quale link devo cliccare per primo:
 
-<img src="olimpiadi-01.png" loading="lazy" alt="">
+{{< fig src="olimpiadi-01.png" >}}
 
 Scoprirò poi che tutti questi link in realtà sono linkati anche nelle altre pagine, è tutto un loop. O quasi, dato che due link ci sono solo qui, quindi bisogna risalire la corrente per ritrovarli. Le linee non sono tra l'altro nemmeno ordinate (TS04 → 03 → 02, mentre la medaglia d'oro non c'è).
 
@@ -31,7 +31,7 @@ Comunque, prendo il primo, [**Orari autobus Val di Fiemme Olimpiadi Milano Corti
 
 C'è una lista di linee. Devo dire che non è molto chiaro come un visitatore dovrebbe capire quale linea è di suo interesse senza studiarle una alla volta.
 
-<img src="olimpiadi-02.png" loading="lazy" alt="">
+{{< fig src="olimpiadi-02.png" >}}
 
 Prendiamo la prima: [**B101 Ora - Castello di Fiemme - Cavalese - Predazzo - Moena - Penia**](https://www.trentinotrasporti.it/it/viaggia-con-noi/olimpiadi-2026/milano-cortina-2026-linea-ts01-ora-castello-di-fiemme-cavalese-predazzo-moena-penia).
 
@@ -39,21 +39,21 @@ Secondo la [pagina extraurbano](https://www.trentinotrasporti.it/it/linea-extrau
 
 Come arrivo a Ora? Boh. La linea è stata variata per le Olimpiadi? Boh, non c'è scritto. Mi interessa qualcosa della val di Fassa? Non credo, non ci sono Olimpiadi in val di Fassa.
 
-<img src="olimpiadi-03.png" loading="lazy" alt="">
+{{< fig src="olimpiadi-03.png" >}}
 
 Gli orari comunque sono diversi da quelli "standard", quindi se vado nelle tabelle standard non trovo tutte le corse che invece esistono in questa tabella specifica per le Olimpiadi. La tabella è rigorosamente in **PDF ultra-wide** impossibile da consultare su mobile:
 
-<img src="olimpiadi-04.png" loading="lazy" alt="">
+{{< fig src="olimpiadi-04.png" >}}
 
 Next one: [**TS-02 Tesero Piazza Battisti - Bus Terminal Tesero: linea verde ogni 15 minuti**](https://www.trentinotrasporti.it/it/viaggia-con-noi/olimpiadi-2026/milano-cortina-2026-linea-ts02-tesero-piazza-battisti-hub-lago-di-tesero-localita-la-val). È una specie di navetta con frequenza 15 minuti interna a Tesero. Clicco:
 
-<img src="olimpiadi-05.png" loading="lazy" alt="">
+{{< fig src="olimpiadi-05.png" >}}
 
 È improvvisamente **cambiata la lingua** in inglese, non si sa perché. Forse per farmi distrarre da questo **capolavoro di mappa**? Uno screenshot sgranato e schiacciato di OpenStreetMap su cui sono state disegnate figure e frecce presumibilmente con Word o PowerPoint, a giudicare dallo stile.
 
 Proseguo e mi trovo questa tabella:
 
-<img src="olimpiadi-06.png" loading="lazy" alt="">
+{{< fig src="olimpiadi-06.png" >}}
 
 Ho dei dubbi sull'accessibilità visto che si presenta come uno **screenshot in JPEG di bassa qualità**, in questo caso probabilmente di Excel.
 
@@ -61,11 +61,11 @@ Ho dei dubbi sull'accessibilità visto che si presenta come uno **screenshot in 
 
 La [linea TS04](https://www.trentinotrasporti.it/it/viaggia-con-noi/olimpiadi-2026/milano-cortina-2026-linea-ts04-moena-predazzo-hub-lago-di-tesero-localita-la-val) invece collega un po' di parcheggi a Tesero. Ad esempio il "parcheggio del campo sportivo di Moena", che però nella mappa cambia nome e diventa "parcheggio auto Predazzo Bore", o qualche pixel più in là "piazzale delle Bore". Ho perso gli ultimi 10 minuti su Google Maps ad associare i nomi.
 
-<img src="olimpiadi-07.png" loading="lazy" alt="">
+{{< fig src="olimpiadi-07.png" >}}
 
 Segue l'orario della linea circolare:
 
-<img src="olimpiadi-08.png" loading="lazy" alt="">
+{{< fig src="olimpiadi-08.png" >}}
 
 C'è una novità: partenza e arrivo ora si chiamano **"START"** e **"FINISH"**. Saetta McQueen.
 
@@ -79,13 +79,13 @@ Wait a second, mi dici adesso che tutto quello che ho appena sfogliato in realt�
 
 Apro il link. Scruto. Sai cosa? Mi sa che mi accontenterò di non aver capito:
 
-<img src="olimpiadi-09.png" loading="lazy" alt="">
+{{< fig src="olimpiadi-09.png" >}}
 
 (Faccio solo notare che l'*arrivo* ha cambiato nome di nuovo e ora è *arrival stop*, mentre a questo giro bisogna arrangiarsi per *andata* e *ritorno*, non tradotti.)
 
 Risalendo la corrente c'è anche questo link, [**Elenco dei parcheggi PARK & BUS e mappa**](https://www.trentinotrasporti.it/it/viaggia-con-noi/olimpiadi-2026/olimpiadi-milano-cortina-2026-parcheggi-di-attestamento), che porta a questa pagina dove ovviamente non c'è alcuna mappa:
 
-<img src="olimpiadi-10.png" loading="lazy" alt="">
+{{< fig src="olimpiadi-10.png" >}}
 
 Però scopro che alcuni *park* in alcune *città* hanno il **PRM**. Altre non ce l'hanno, il PRM. Cos'è il PRM? Chi lo sa.
 
@@ -93,15 +93,15 @@ Quanti *posti* ha il parcheggio Moena Bore? *55 buses* (ma non era un parcheggio
 
 Continuo a risalire la corrente e scopro un universo parallelo che mi ero fin qui perso, cioè **gli orari serali!** C'è una pagina separata dove tutto quello che avete imparato finora non serve più a niente, perché ora bisogna capire cosa sono e a cosa servono altre 6 linee, di cui due in grassetto (non so se è rilevante, nel dubbio...):
 
-<img src="olimpiadi-11.png" loading="lazy" alt="">
+{{< fig src="olimpiadi-11.png" >}}
 
 Ad esempio la **linea B113**, che parte da Cavalese (*nuova autostazione*, ma non si chiamava orgogliosamente *hub intermodale*?), gira un po' di paesi e torna indietro. La apro giusto per vedere, mi aspetto una tabella come quelle di prima:
 
-<img src="olimpiadi-12.png" loading="lazy" alt="">
+{{< fig src="olimpiadi-12.png" >}}
 
 Uhm... scopro invece che sono *instituiti* (con la *n*) nuovi collegamenti tra Tesero e Pampeago. Pampeago? Boh, ok. Comunque, si presentano così:
 
-<img src="olimpiadi-13.png" loading="lazy" alt="">
+{{< fig src="olimpiadi-13.png" >}}
 
 Io invece mi presento così:
 
@@ -109,13 +109,13 @@ Io invece mi presento così:
 
 Ma non è finita, perché nel momento in cui si cambia la lingua del sito da italiano a inglese si apre un universo parallelo. Qui le paralimpiadi si chiamano *Paralimpic games* (senza *y*) e le corse degli autobus *courses*. Come quelli dell'università.
 
-<img src="olimpiadi-15.png" loading="lazy" alt="">
+{{< fig src="olimpiadi-15.png" >}}
 
-<img src="olimpiadi-16.png" loading="lazy" alt="">
+{{< fig src="olimpiadi-16.png" >}}
 
 La pagina con la lista dei parcheggi invece si presenta così. Pure multilingua.
 
-<img src="olimpiadi-14.png" loading="lazy" alt="">
+{{< fig src="olimpiadi-14.png" >}}
 
 ---
 

@@ -20,11 +20,11 @@ Il tema di questa seconda parte riguarda quindi le **nuove tabelle degli orari**
 
 Queste tabelle prima erano fatte così:
 
-<img src="prima.jpg" loading="lazy">
+{{< fig src="prima.jpg" >}}
 
 Adesso sono fatte così:
 
-<img src="dopo.jpg" loading="lazy">
+{{< fig src="dopo.jpg" >}}
 
 Vedete anche voi quello che vedo io? Sembra un **passo indietro dal punto di vista grafico**: si è passati da un design chiaramente studiato (e che sarebbe ancora abbastanza attuale) a quattro tabelle squadrate che **sembrano (o sono) fatte con Word, con i testi in Arial**.
 
@@ -36,7 +36,7 @@ Ma ci sono alcuni problemi, che si vedono al volo:
 - È più difficile seguire le righe perché non sono più di colore alternato come prima.
 - Oltretutto quando le corse sono poche si creano questi enormi buchi bianchi 🤔:
 
-<img src="vuoto.jpg" loading="lazy">
+{{< fig src="vuoto.jpg" >}}
 
 - Il numero della linea (in alto a sinistra) è molto più piccolo e meno visibile. Anche il colore della linea è in generale meno visibile di prima, visto che non è più richiamato all'interno della tabella.
 - La scelta dei titoli delle colonne è incomprensibile e lo si capisce guardando le traduzioni in inglese:
@@ -55,19 +55,15 @@ Una cosa positiva è che il **codice fermata** è messo più in risalto rispetto
 
 Con le vecchie tabelle, la pagina dove si veniva portati [era fatta così](http://tte.objectlinks.biz/t?id=eSW2):
 
-<img src="qr-prima.jpg" style="width: 50%" loading="lazy">
+{{< fig src="qr-prima.jpg" width="50%" >}}
 
 In questo momento le voci di questa pagina non funzionano più (e non mi ricordo come funzionavano), ma almeno se ne intuisce l'utilità: "prossimi passaggi a questa fermata" suona promettente.
 
 Ora invece è [così](https://www.trentinotrasporti.it/app-list?Cod_Nodo=20125p):
 
 <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 8px">
-    <a href="qr-dopo-1.jpg">
-        <img src="qr-dopo-1.jpg" loading="lazy">
-    </a>
-    <a href="qr-dopo-2.jpg">
-        <img src="qr-dopo-2.jpg" loading="lazy">
-    </a>
+    {{< fig src="qr-dopo-1.jpg" >}}
+    {{< fig src="qr-dopo-2.jpg" >}}
 </div>
 
 Sarò brutale ma questa pagina è **non solo inusabile ma completamente inutile**.
@@ -83,7 +79,7 @@ Continuando nella pagina ci sono gli **"Orari di fermata"**, per ciascuna linea:
 
 Poi ci sono gli **"Orari di linea"**, che sono dei file PDF lunghi di solito diverse pagine, anche più di dieci. Fortunatamente da qualche anno sono almeno orientati verticalmente:
 
-<img src="orari-linea.jpg" style="width: 70%" loading="lazy">
+{{< fig src="orari-linea.jpg" width="70%" >}}
 
 È senz'altro vero che in alcuni casi sia più comodo consultare queste tabelle, perché danno molte informazioni in un formato condensato, **ma perché fornirle in PDF**?
 

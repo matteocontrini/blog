@@ -29,9 +29,7 @@ Quest'anno ho analizzato **62 siti web** (+17) ed estratto i seguenti parametri 
 
 Rispetto all'anno scorso ho rimosso il punteggio Lighthouse (un indice delle prestazioni del sito, spesso non molto indicativo e non deterministico).
 
-<a href="tabella.png" target="_blank">
-    <img src="tabella.png" alt="">
-</a>
+{{< fig src="tabella.png" >}}
 
 *Clicca per ingrandire. Il foglio Excel originale si trova [qua](https://1drv.ms/x/s!AgJdWI23CtyPmr1F1RFDPOEBGoIovw).*
 
@@ -215,7 +213,7 @@ Non tutti se la cavano molto bene. Ad esempio:
 - **0 domini su 62 supportano DNSSEC!**
 - C'è una grande frammentazione nei nameserver usati per i domini. Per quasi il 40% è Akamai ma è spesso mischiato con altro in modo variabile (presumo in configurazione primario/secondario). La vetta si raggiunge con Camera e Senato che hanno una configurazione abbastanza creativa:
 
-<img src="camera-senato-ns.png" loading="lazy" alt="">
+{{< fig src="camera-senato-ns.png" >}}
 
 - Anche sui registrar c'è un po' di caos: i più usati sono ITnet (29%), Aruba (18%) e TIM Business (13%) ma si scopre che l'AgID stessa è un registrar accreditato dal NIC. E però su 62 siti solo 3 sono registrati tramite l'AgID. Viene da chiedersi a cosa serve avere un registrar "pubblico" se poi non viene usato.
 
