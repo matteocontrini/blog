@@ -1,7 +1,7 @@
 ---
 title: "Come è messa Trentino Digitale"
 date: 2026-09-05T17:00:00+02:00
-lastmod: 2026-09-05T18:45:00+02:00
+lastmod: 2026-09-05T22:45:00+02:00
 slug: trentino-digitale
 summary: "La in-house trentina perde costantemente competenze. Una prospettiva esterna e cosa gli manca per diventare una tech company attrattiva."
 cover:
@@ -100,9 +100,9 @@ Sono un disco rotto e mi appello di nuovo a PagoPA: negli annunci di lavoro l'az
 
 {{< fig src="lavora-con-noi.png" >}}
 
-E allora cosa serve? C'è prima di tutto un aspetto di cultura tecnologia che si vede nelle scelte: non è irrilevante che Trentino Digitale usi GitLab (self-hosted) anziché GitHub, come invece fa il resto del mondo. Oppure che, da quel che si capisce, ci sia un uso prevalente di Windows quando il resto del mondo nello stesso settore tende a usare macOS; che le specifiche tecniche siano [su Google Drive](https://www.trentinodigitale.it/piattaforme/specifiche-di-integrazione/); che l'[organizzazione GitHub](https://github.com/trentinodigitale) sia essenzialmente abbandonata da anni; che il poco codice open source che c'è è un mirror evidentemente non aggiornato e desincronizzato con le repository interne (e quindi pubblicato per esigenze teatrali più che per una reale intenzione di seguire principi e approcci dell'open source). Nel codice ci sono [commenti in italiano](https://github.com/ProvinciaAutonomaTrento/PITre/blob/8a21a28a68b5bf8983605ff0cc409f8ba9250e59/application/pi3.app.legacy.admin.webapi/DocsPaVO/ricerche/SearchItem.cs) che mi fanno venire qualche brivido, assieme ai titoli dei commit, e non c'è accenno di tecnologie oggi dominanti come TypeScript (adoro .NET e C#, ma il resto del mondo ahimè no).
+E allora cosa serve? C'è prima di tutto un aspetto di cultura tecnologia che si vede nelle scelte: non è irrilevante che Trentino Digitale usi GitLab (self-hosted) anziché GitHub, che è [di gran lunga](https://survey.stackoverflow.co/2025/technology#admired-and-desired-da-office-stack-async-office-stack-async-desire-admire) più apprezzato. Oppure che, da quel che si capisce, ci sia un uso prevalente di Windows quando nel settore di solito prevale macOS; che le specifiche tecniche siano [su Google Drive](https://www.trentinodigitale.it/piattaforme/specifiche-di-integrazione/); che l'[organizzazione GitHub](https://github.com/trentinodigitale) sia essenzialmente abbandonata da anni; che il poco codice open source che c'è è un mirror evidentemente non aggiornato e desincronizzato con le repository interne (e quindi pubblicato per esigenze teatrali più che per una reale intenzione di seguire principi e approcci dell'open source). Nel codice ci sono [commenti in italiano](https://github.com/ProvinciaAutonomaTrento/PITre/blob/8a21a28a68b5bf8983605ff0cc409f8ba9250e59/application/pi3.app.legacy.admin.webapi/DocsPaVO/ricerche/SearchItem.cs) che mi fanno venire qualche brivido, assieme ai titoli dei commit, e non c'è accenno di tecnologie oggi dominanti come TypeScript (adoro .NET e C#, ma il resto del mondo ahimè no).
 
-Non c'è poi alcuna traccia di file AGENTS.md o di **integrazioni con strumenti AI**, non un ottimo segnale nel 2026 e una carenza ingiustificabile nel momento in cui oggi nessuno scrive più codice a mano.
+Non c'è poi alcuna traccia di file AGENTS.md o segnali di **integrazioni con strumenti AI**, non un ottimo segnale nel 2026 e una carenza ingiustificabile nel momento in cui oggi quasi nessuno scrive più codice a mano.
 
 {{< fig src="github-commit.png" caption="La release 4.0.1 di PITre è contenuta in un singolo commit gigantesco che tocca 10mila file e comprende modifiche funzionali, test e cleanup vari. Non un esempio eccellente del semantic versioning o dell'open source, per usare un eufemismo." >}}
 
