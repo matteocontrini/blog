@@ -1,7 +1,7 @@
 ---
 title: "Come è messa Trentino Digitale"
 date: 2026-09-05T17:00:00+02:00
-lastmod: 2026-09-05T18:00:00+02:00
+lastmod: 2026-09-05T18:45:00+02:00
 slug: trentino-digitale
 summary: "La in-house trentina perde costantemente competenze. Una prospettiva esterna e cosa gli manca per diventare una tech company attrattiva."
 cover:
@@ -68,7 +68,7 @@ Ma navigando il sito ufficiale questo progetto, di cui bisognerebbe andare fieri
 
 Se l'immagine che l'azienda dà di sè è che i prodotti di punta non sono in realtà svilupati dall'azienda, **l'attrattività è per forza bassissima**. (E non stupisce che molti dipendenti, talvolta storici, abbiano il badge *open to work* attivo sul proprio profilo LinkedIn.)
 
-È andata diversamente in un'altra nota società in-house, in questo caso nazionale, cioè **PagoPA S.p.A.**, un raro se non unico esempio di successo di una *tech company* nella pubblica amministrazione che ha fatto propria la ricetta del team digitale. PagoPA sviluppa vari servizi pubblici digitali, tra cui l'app IO. Si può immaginare che le persone che ci lavorano siano orgogliose dell'impatto positivo che il proprio lavoro ha letteralmente su quasi ogni persona che hanno intorno. Con un po' di comunicazione questo diventa grande motivo di attrazione: vedi PagoPA e sai già su cosa lavorerai e soprattutto come. **Questo elemento è quasi inesistente nella in-house trentina.**
+È andata diversamente in un'altra nota società in-house, in questo caso nazionale, cioè **PagoPA S.p.A.**, un raro se non unico esempio di successo di una *tech company* nella pubblica amministrazione che ha fatto propria la ricetta del team digitale. PagoPA sviluppa vari servizi pubblici digitali, tra cui l'app IO, e le persone che ci lavorano sono [orgogliose](https://www.linkedin.com/pulse/5-anni-pagopa-costruire-prodotti-per-milioni-di-giuseppe-de-giorgi-qjymf/) dell'impatto positivo che il proprio lavoro ha letteralmente su quasi ogni persona che hanno intorno. Con un po' di comunicazione questo diventa grande motivo di attrazione: vedi PagoPA e sai già su cosa lavorerai e soprattutto come. **Questo elemento è quasi inesistente nella in-house trentina.**
 
 ## Assunzioni
 
@@ -90,7 +90,7 @@ Il lato positivo è che le retribuzioni (RAL) sono da sempre indicate in tutti i
 
 Dopo aver sfogliato più di 100 profili LinkedIn di dipendenti di Trentino Digitale mi sembra anche di capire che **le carriere sono isolate**, del tipo che uno sviluppatore software resta tale a vita e non può diventare lead o manager del suo team. Se non è così qualcuno mi corregga, ma non ho trovato una sola persona che abbia fatto questo percorso, che è invece la normalità in praticamente tutte le aziende tech: anche partendo dal ruolo più junior che esista una persona forte può di solito ambire a scalare muovendosi progressivamente da "individual contributor" a ruoli ibridi o di management, in base ai propri [obiettivi di carriera](https://bitfieldconsulting.com/posts/career). Leader si diventa, insomma. Il limite c'è anche per i "direttori" e "dirigenti", che in Trentino Digitale sono selezionati con il requisito di essere *già stati* direttori/dirigenti (immagino altrove).
 
-C'è secondo me anche della confusione di ruoli, del tipo che i project manager si trovano a fare anche gli UX/UI designer, due mestieri che non c'entrano nulla tra loro. Non si trova poi traccia di nemmeno un bando per l'assunzione di designer o esperti di prodotto, che escluderei quindi che abbiano un ruolo centrale nella progettazione dei servizi, come invece dovrebbe essere. (E anche se un bando ci fosse, l'elemento [più importante](https://www.pagopa.it/it/lavora-con-noi/jobposition-109/), cioè il portfolio dei progetti realizzati, rischierebbe di non essere considerato, per colpa del metodo di selezione macchinoso e standardizzato.)
+C'è secondo me anche della confusione di ruoli, del tipo che i project manager si trovano a fare anche gli UX/UI designer, due mestieri che non c'entrano nulla tra loro. Non si trova poi traccia di nemmeno un bando per l'assunzione di designer o esperti di prodotto, che escluderei quindi che abbiano un ruolo centrale nella progettazione dei servizi, [come invece dovrebbe essere](https://www.productheroes.it/product-management-settore-pubblico-esperienza-pagopa/). (E anche se un bando ci fosse, l'elemento [più importante](https://www.pagopa.it/it/lavora-con-noi/jobposition-109/), cioè il portfolio dei progetti realizzati, rischierebbe di non essere considerato, per colpa del metodo di selezione macchinoso e standardizzato.)
 
 ## Cultura
 
