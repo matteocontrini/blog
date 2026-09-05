@@ -4,6 +4,10 @@ theme: PaperMod
 
 defaultContentLanguage: en
 
+caches:
+  images:
+    dir: ':cacheDir/images'
+
 languages:
   en:
     contentDir: content/en
