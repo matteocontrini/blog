@@ -76,8 +76,6 @@ Server-side rendering or server functions were not considered in this comparison
 - ✅ HTTP/3
 - ✅ IPv6
 
-{{< dmarcwise >}}
-
 ## [Render](https://render.com/)
 
 - ⚠️ CDN: no details available ("global CDN")

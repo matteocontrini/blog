@@ -268,5 +268,3 @@ There are certainly many variations of this approach, and it can also easily por
 Let me know your thoughts below!
 
 *Thanks to Rob Janssen and Andrew Lock for creating and maintaining the libraries mentioned in this post.*
-
-{{< dmarcwise >}}
