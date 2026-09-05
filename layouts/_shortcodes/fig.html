@@ -1,7 +1,19 @@
 {{- $src := .Get "src" -}}
+{{- $href := $src -}}
+{{- $image := false -}}
 {{- if not (urls.Parse $src).IsAbs -}}
   {{- with .Page.Resources.Get $src -}}
     {{- $src = .RelPermalink -}}
+    {{- $href = $src -}}
+    {{- if reflect.IsImageResourceProcessable . -}}
+      {{- $image = . -}}
+    {{- end -}}
+    {{- if in (slice "image/png" "image/jpeg") .MediaType.Type -}}
+      {{- $webp := .Process "webp lossy q85" -}}
+      {{- if lt (len $webp.Content) (len .Content) -}}
+        {{- $src = $webp.RelPermalink -}}
+      {{- end -}}
+    {{- end -}}
   {{- else -}}
     {{- errorf "fig shortcode: resource %q not found in %s" $src .Page.Path -}}
   {{- end -}}
@@ -9,10 +21,17 @@
 
 <figure{{ if .Get "vertical" }} class="vertical"{{ end }}>
   {{- if not (.Get "nolink") }}
-  <a href="{{ $src }}" target="_blank" rel="noopener noreferrer">
+  <a href="{{ $href }}" target="_blank" rel="noopener noreferrer">
   {{- end }}
 
-  <img src="{{ $src }}" loading="lazy" {{ with .Get "alt" }}alt="{{ . }}" {{ end }}>
+  {{- if ne $src $href }}
+  <picture>
+    <source srcset="{{ $src }}" type="image/webp">
+  {{- end }}
+  <img src="{{ $href }}" loading="lazy"{{ with $image }} width="{{ .Width }}" height="{{ .Height }}"{{ end }} alt="{{ .Get "alt" }}">
+  {{- if ne $src $href }}
+  </picture>
+  {{- end }}
 
   {{- if not (.Get "nolink") }}
   </a>
