@@ -1,7 +1,7 @@
 ---
 title: "Il fallimento digitale della sanità del Trentino"
 date: 2026-09-03T11:00:00+02:00
-lastmod: 2026-09-03T11:00:00+02:00
+lastmod: 2026-09-07T17:00:00+02:00
 slug: asuit-digitale
 summary: "I disservizi informatici dell'ASUIT e cosa succede a dismettere le competenze interne rinunciando all'innovazione e al controllo dei sistemi critici."
 cover:
@@ -78,11 +78,13 @@ Il famoso SIO, che sta facendo impazzire i pronto soccorso, era [precedentemente
 
 Eppure la direzione scelta negli ultimi anni è stata esattamente opposta, cioè **esternalizzare il più possibile** riducendo progressivamente le competenze interne ed essenzialmente ignorando l'esistenza della in-house Trentino Digitale (che in teoria dovrebbe avere le capacità per portare avanti progetti complessi ma che nel concreto è in buona parte una stazione appaltante con sempre meno competenze e poca visione).
 
-Una possibile obiezione a queste righe è che la scelta fatta comporti un **risparmio** e che acquisire prodotti dal mercato anziché realizzarli e mantenerli costi quindi meno, ma non ne sono convinto. Sono in gioco decine di milioni di euro, quando il bilancio intero di Trentino Digitale, che gestisce centinaia di servizi e applicazioni della provincia, è di circa 60 milioni.
+**— Leggi anche:** [Com'è messa Trentino Digitale](/it/trentino-digitale)
 
-Nell'era dell'AI, che ha aumentato significativamente la produttività, **queste risorse potrebbero finanziare interi team interni (e locali) di eccellenza**, con alta specializzazione e con retribuzioni adeguate, per modernizzare l'ecosistema software. Sostenere che affidarsi ai bandi PNRR non ricadata sulla collettività è insensato dato che fra pochissimi anni questi appalti milionari (che puntualmente finiscono in mano di multinazionali concentrate a Milano) andranno rinnovati.
+Una possibile obiezione a queste righe è che la scelta fatta comporti un **risparmio** e che acquisire prodotti dal mercato anziché realizzarli e mantenerli costi quindi meno, ma non ne sono convinto. Sono in gioco decine di milioni di euro: nell'era dell'AI, che ha aumentato significativamente la produttività, **queste risorse potrebbero finanziare interi team interni (e locali) di eccellenza**, con alta specializzazione e con retribuzioni adeguate, per modernizzare l'ecosistema software. Ci vuole poco a calcolare che anche strapagando le persone i costi sarebbero significativamente minori rispetto a quelli attuali, dato che i bandi di gara devono inevitabilmente considerare anche un margine di guadagno per le aziende del mercato.
 
-La provincia autonoma di Trento ha a disposizione **risorse economiche** che le regioni a statuto ordinario non hanno: sarebbe un'occasione imperdibile per finanziare un sistema che renda **il Trentino pioniere di una nuova generazione di servizi pubblici locali digitali, innovativi, moderni e open source** (come previsto dal CAD). Seguendo le migliori pratiche di progettazione e sviluppo, raccogliendo i migliori talenti dell’università, mettendo alla guida un CTO laureato in informatica in questo secolo, magari liberandoci del concetto di “trasformazione digitale” (non c'è più niente da trasformare, si tratta di progettare digital-first) e rendendo questo lavoro, questa competenza e questa trasparenza **la miglior pubblicità per alimentare automaticamente il sistema dell’innovazione locale**.
+Fare diversamente e poi difendersi dicendo che i bandi PNRR permettono di non far ricadere i costi sulla collettività è insensato, dato che fra pochissimi anni questi appalti milionari (che puntualmente finiscono in mano a multinazionali concentrate a Milano) andranno rinnovati. **Spenderemo comunque e avremo risultati mediocri: il danno e anche la beffa.**
+
+Non è poi irrilevante che la provincia autonoma di Trento abbia a disposizione **risorse economiche** che le regioni a statuto ordinario non hanno: sarebbe un'occasione imperdibile per finanziare un sistema che renda **il Trentino pioniere di una nuova generazione di servizi pubblici locali digitali, innovativi, moderni e open source** (come previsto dal CAD). Seguendo le migliori pratiche di progettazione e sviluppo, raccogliendo i migliori talenti dell’università, mettendo alla guida un CTO laureato in informatica in questo secolo, magari liberandoci del concetto di “trasformazione digitale” (non c'è più niente da trasformare, si tratta di progettare digital-first) e rendendo questo lavoro, questa competenza e questa trasparenza **la miglior pubblicità per alimentare automaticamente il sistema dell’innovazione locale**.
 
 Non significa ovviamente bandire completamente servizi e software privati dalla pubblica amministrazione, ma rendersi conto che l'approccio attuale porta *sistematicamente* a servizi mediocri. Le grandi software house a cui vengono assegnati questi appalti si dimostrano *ogni singola volta* completamente incapaci di realizzare servizi digitali di qualità. Di fronte a questo **non c'è nessun motivo ragionevole per continuare a spendere valanghe di soldi per fare le cose male.**
 
